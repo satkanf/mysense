@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MySense</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <menu class="header__menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/svg/mysense-logo.svg" alt="">
+                    </a>
+                </div>
+                <nav class="header__navigation">
+                    
+                    <div class="mobile-menu">
+                        <span class="mobile-menu__close"></span>
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="doctors.html">Наші психотерапевти</a></li>
+                            <li class="mobile-menu__item"><a href="vebinares.html">Вабінари</a></li>
+                            <li class="mobile-menu__item"><a href="articles.html">Статті</a></li>
+                            <li class="mobile-menu__item"><a href="#">Психологам</a></li>
+                        </ul>
+                    </div>
+                    
+                    <ul class="navigation">
+                        <li class="navigation__item"><a href="doctors.html">Наші психотерапевти</a></li>
+                        <li class="navigation__item"><a href="vebinares.html">Вабінари</a></li>
+                        <li class="navigation__item"><a href="articles.html">Статті</a></li>
+                        <li class="navigation__item"><a href="#">Психологам</a></li>
+                    </ul>
+                </nav>
+                <div class="blur-bg">
+                    <div class="authentication popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <h3>Вхід в особистий кабінет</h3>
+                        <span>Увійдіть до свого облікового запису</span>
+                        <div class="authentication__social">
+                            <a href="#">Війти через Google</a>
+                            <a href="#">Війти через Facebook</a>
+                        </div>
+                        <span>Або</span>
+                        <div class="authentication__form">
+                            <form action="">
+    
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Ел. адреса">
+                                    <span class="input-box__pl">Ел. адреса</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="password" placeholder="Пароль">
+                                    <span class="input-box__pl">Пароль</span>
+                                </div>
+                                <div class="authentication__links">
+                                    <button class="sing-in-link">Реєстрація</button>
+                                    <a href="">Не пам'ятаєте свій пароль?</a>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn" value="Увійти">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <h3>Створення облікового запису</h3>
+                        <span>Введіть ваші дані</span>
+                        <div class="registration__form">
+                            <form action="">
+                                <div class="input-box">
+                                    <input type="text" name="login" placeholder="Ваше  ім'я">
+                                    <span class="input-box__pl">Ваше  ім'я</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="tel" name="phone" placeholder="Номер телефону">
+                                    <span class="input-box__pl">Номер телефону</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Ел. адреса">
+                                    <span class="input-box__pl">Ел. адреса</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="password" placeholder="Пароль">
+                                    <span class="input-box__pl">Пароль</span>
+                                </div>
+                                <div class="registration__checked">
+                                    <label for="" class="">
+                                        <input type="checkbox" class="real-chackbox">
+                                        <div class="custom-checkbox">
+                                            <svg width="12" height="11" class="chackedmark" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path  d="M1 5.8L4.57143 9L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>
+                                                
+                                        </div>
+                                        Я погоджуюсь з <a href="#"> політикою конфіденційності</a>
+                                    </label>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn registration__btn" value="Продовжити">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration-code popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <h3>Підтвердження створення</h3>
+                        <span>Код підтвердження відправлений на вашу електрону адресу</span>
+                        <div class="registration-code__form">
+                            <form action="" method="post">
+                                <div class="input-box">
+                                    <input type="text" name="code" placeholder="Код підтвердження">
+                                    <span class="input-box__pl">Код підтвердження</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn registration-code__submit" value="Підтвердити">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration-done popup">
+                        
+                        <h3>Вітаємо, ви успішно пройшли реєстрацію! </h3>
+                        <span>Тепер ви можете записатись на сесію</span>
+                        <button class="form-btn popup-close">Продовжити</button>
+                    </div>
+                </div>
+                <div class="header__useraction">
+                    <div class="">
+                        <a href="#">Відділ підтримки</a>
+                    </div>
+                    <div class="">
+                        <button  class="btn-auth">Вхід</button>
+                        <div class="lang-switcher ">
+                            <span class="lang-header filter__select select__current">UA</span>
+                            <ul class="lang-switcher__list filter__select__list">
+                                <li class="lang-swicher__item filter__select__item">UA</li>
+                                <li class="lang-swicher__item filter__select__item">RU</li>
+                                <li class="lang-swicher__item filter__select__item">EN</li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </menu>
+
+        </div>
+   </header>
+   <secction class="singl-article">
+    <div class="bg-section"></div>
+        <div class="container">
+            <section class="article">
+                <div class="article__author">
+                    <div class="article__author__img">
+                        <img src="images/picture/avatar-4.png" alt="">
+                    </div>
+                    <div class="article__author__description">
+                        <span>Автор</span>
+                        <p class="article__author__name">Марина ребрик</p>
+                    </div>
+                </div>
+                <h2 class="article__title">Коли варто звернутися до психотерапевта?</h2>
+                <div class="article__info">
+                    <ul class="article__use">
+                        <li class="share"><i><img src="images/svg/share.svg" alt=""></i></li>
+                        <li class="likes"><i><img src="images/svg/like.svg" alt=""></i>9</li>
+                        <li class="views"><i><img src="images/svg/eye.svg""></i>66</li>
+                    </ul>
+                    <span class="article__date">5 вересня, 2023</span>
+                </div>
+                <div class="article__body">
+                    <div class="article__body__images">
+                        <img src="images/picture/article.png" alt="">
+                    </div>
+                    <div class="article__body__text">
+                        <p>
+                            Перше звернення до психотерапевта — це як похід до будь-якого іншого лікаря. Йдеш коли боли
+                            ь і дуже переймаєшся тим, що буде далі. А ще постійно відкладаєш в надії, що пройде саме по собі. Отже, рішення відвідати психолога дається іноді дуже складно.</p>
+                        <p>Колись і я була на місці клієнта і також довго вагалась, чи потрібно це мені, бо дійсно важко 
+                            прийти до незнайомої людини і говорити з нею про особисте.</p>
+                        <p>Проте, подолавши сумніви, я все ж таки звернулась за допомогою до спеціаліста і зараз вже маючи 
+                            досвід і як клієнта, і як практикуючий психотерапевта — я можу з упевненістю сказати, що так, наважитись складно, але воно того варте.
+                        </p>
+                        <p class="article__quote">
+                            Як же зрозуміти, що вам потрібна психологічна допомога вже зараз і настав час вирішувати проблему, а не відкладати її.
+                             Є багато ситуацій, які не варто ігнорувати, а потрібно прислухатись до себе і почати працювати над їх вирішенням.
+                        </p>
+                        <div class="psikholog__banner">
+                            <div class="psikholog__banner__text">
+                                <span>З 9:00 по 17:00</span>
+                                <h2>Хочете в терапію, але не знаєте з чого почати?</h2>
+                                <p>Почніть із дзвінка нам</p>
+                                <p class="psikholog__banner__phone">+38 098 123 33 22</p>
+                            </div>
+                            <div class="psikholog__banner__img">
+                                <img src="images/picture/img-banner-2.png" alt="">
+                            </div>
+                        </div>
+                        <h2>Ситуації, що говорять про необхідність психотерапії:</h2>
+                        <ul>
+                            <li>Ви маєте проблему, яка псує ваше життя і вирішити яку ви безрезультатно намагались не один раз.</li>
+                            <li>Вас переслідує відчуття, що ніхто з близьких вас не розуміє, вам важко спілкуватись з ними і виникає бажання уникати цього спілкування.</li>
+                            <li>Ви гостро відчуваєте самотність, спроби побудувати дружні чи близькі стосунки закінчуються розчаруванням.</li>
+                            <li>Ви маєте хвороби, які не піддаються традиційному лікуванню, і вже навіть лікарі натякають на психосоматику.</li>
+                            <li>Ви відчуваєте постійну втому та бажання усамітнитись. Вам важко прокидатися вранці, не можете зібрати себе докупи та займатись справами, життя здається сумним і ви взагалі не відчуваєте радості.</li>
+                            <li>Ви спостерігаєте у себе різкі зміни настрою без об'єктивних на то причин.</li>
+                            <li>Ви гостро реагуєте на все, що відбувається навколо, події з вашого життя вас часто дратують чи змушують плакати, близькі люди натякають на вашу зверх емоційність.</li>
+                            <li>Ви досі шукаєте своє місце і покликання, у вас немає хобі, яке б приносило задоволення, ви спробували багато професій та не знайшли роботу для душі.</li>
+                            <li>У вас виникають думки про самогубство, і це повторюється все частіше.</li>
+                            <li>У вас є проблеми з прийняттям рішень, ви не можете взяти на себе відповідальність. Ви вважаєте себе особистістю, яка нікому не цікава, та навіть не намагаєтеся проявляти себе.</li>
+                            <li>Ви пережили в минулому травматичну подія, яка досі відгукується у вашому житті. Вас переслідують думки, що може трапитись щось погане, ви не можете довіряти людям та відчуваєте постійний страх.</li>
+                            <li>Ви помітили, що стали зловживати їжею чи алкоголем для того щоб подолати стрес і вам важко зупинитись. Або ви багато працюєте і зовсім не відпочиваєте, навіть відчувши сильну втому. Коли ви все ж таки намагаєтесь себе стримувати чи ви відчуваєте дискомфорт, який змушує вас потім ще більше пити або їсти. Так само і на роботі після відпустки ви працюєте ще більше до цілковитого виснаження.</li>
+                            <li>Вам складно відмовляти людям, особливо близьким. Ви намагаєтесь догодити всім пересилюючи власне небажання і це вас дуже втомлює.</li>
+                            <li>Ви довгий час не можете оговтатись від розлучення, розриву близьких відносин, або втрати близької людини.</li>
+                            <li>Ви довгий час знаходитесь у відносинах, в яких не відчуваєте себе щасливими, при цьому не розриваєте відносини і не розумієте що робити, щоб їх покращити.</li>
+                            <li>У вас є питання чи проблема, але ви не можете поділитись цим з близькими людьми. Ця тема стає страшною таємницею та отруює ваше життя.</li>
+                        </ul>
+                        <p class="article__quote">
+                            Якщо хоч одна з цих ситуацій вам відгукнулась - подбайте про себе, та зверніться до психотерапевта. . 
+                            Просити про допомогу - не соромно, дбати про себе - не соромно.
+                        </p>
+                        <p>
+                            Психотерапевт - це людина, яка обов'язково допоможе вам покращити власне життя, зрозуміти і пізнати вашу особистість, розібратись у своїх 
+                            відчуттях та побудувати здорові відносини з навколишнім світом.
+                        </p>
+                    </div>
+                </div>
+                <div class="psikholog__item">
+                    <div class="psikholog__item__profile">
+                        <div class="psikholog__item__foto">
+                            <img src="images/picture/avatar-6.png" alt="">
+                            <span>Знайомство 15 хв</span>
+                        </div>
+                        <div class="psikholog__item__info">
+                            <p class="psikholog__item__city">Київ</p>
+                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
+                            <ul class="psikholog__item__experience">
+                                <li><i>
+                                    <img src="images/svg/dosvids.svg" alt="">
+                                </i>5 років практики</li>
+                                
+                                <li><i>
+                                    <img src="images/svg/sessia.svg" alt="">
+                                </i>220+ сесій</li>
+                            </ul>
+                            <ul class="psikholog__item__speciality">
+                                <li>Психолог</li>
+                                <li>Сімейний психолог</li>
+                                <li>Гештальт-терапевт</li>
+                            </ul>
+                            <ul class="psikholog__item__direction">
+                                <li>Складно прийняти важливе рішення</li>
+                                <li>Розлучення</li>
+                                <li>Зрада</li>
+                                <li>Страх нових стосунків</li>
+                                <li>Почуття самотності</li>
+                                <li>Та інше</li>
+                            </ul>
+                            <ul class="psikholog__item__format">
+                                <li><i>
+                                    <img src="images//svg/ochno.svg" alt="">
+                                </i>Онлайн</li>
+                                та
+                                <li><i>
+                                    <img src="images/svg/onlain.svg" alt="">
+                                </i>Очно</li>
+                            </ul>
+                            <span class="psikholog__item__price">від 1200 &#8372;</span>
+                            <div class="psikholog__item__btn">
+                                <a href="">Чат з терапевтом</a>
+                                <a href="">В профіль</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+            <section class="articles-author">
+                <div class="container">
+                    <h3 class="section-title">Інші статті психолога</h3>
+                    <div class="advice__block">
+                        <div class="advice__item">
+                            <div class="advice__item__img">
+                                <img src="images/picture/image2.png" alt="">
+                            </div>
+                            <div class="advice__item__description">
+                                <h3 class="advice__item__title">
+                                    <a href="#">Коли варто звернутися до психотерапевта?</a>
+                                </h3>
+                                <p class="advice__item__text">
+                                    Як же зрозуміти, що вам потрібна психологічна допомога вже 
+                                    зараз і настав час вирішувати проблему, а не відкладати її.
+                                </p>
+                                <span class="advice__item__date">
+                                    5 вересня, 2023
+                                </span>
+                                <picture class="advice__item__author">
+                                    <img src="images/picture/avatar-2.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="advice__item">
+                            <div class="advice__item__img">
+                                <img src="images/picture/image1.png" alt="">
+                            </div>
+                            <div class="advice__item__description">
+                                <h3 class="advice__item__title">
+                                    <a href="#">Коли варто звернутися до психотерапевта?</a>
+                                </h3>
+                                <p class="advice__item__text">
+                                    Як же зрозуміти, що вам потрібна психологічна допомога вже 
+                                    зараз і настав час вирішувати проблему, а не відкладати її.
+                                </p>
+                                <span class="advice__item__date">
+                                    5 вересня, 2023
+                                </span>
+                                <picture class="advice__item__author">
+                                    <img src="images/picture/avatar-5.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="other-doctors">
+                <div class="container">
+                    <h3 class="section-title">Інші психологи, що працюють з панічними атаками</h3>
+                    <div class="other-doctors__wrapper">
+                        <div class="psikholog__item">
+                            <div class="psikholog__item__profile">
+                                <div class="psikholog__item__foto">
+                                    <img src="images/picture/avatar-7.png" alt="">
+                                    <span>Знайомство 15 хв</span>
+                                </div>
+                                <div class="psikholog__item__info">
+                                    <p class="psikholog__item__city">Київ</p>
+                                    <h3 class="psikholog__item__name">Борисенко Андрій</h3>
+                                    <ul class="psikholog__item__experience">
+                                        <li><i>
+                                            <img src="images/svg/dosvids.svg" alt="">
+                                        </i>5 років практики</li>
+                                        
+                                        <li><i>
+                                            <img src="images/svg/sessia.svg" alt="">
+                                        </i>220+ сесій</li>
+                                    </ul>
+                                    <ul class="psikholog__item__speciality">
+                                        <li>Психолог</li>
+                                        <li>Сімейний психолог</li>
+                                        <li>Гештальт-терапевт</li>
+                                    </ul>
+                                    <ul class="psikholog__item__direction">
+                                        <li>Складно прийняти важливе рішення</li>
+                                        <li>Розлучення</li>
+                                        <li>Зрада</li>
+                                        <li>Страх нових стосунків</li>
+                                        <li>Почуття самотності</li>
+                                        
+                                    </ul>
+                                    <ul class="psikholog__item__format">
+                                        <li><i>
+                                            <img src="images//svg/ochno.svg" alt="">
+                                        </i>Онлайн</li>
+                                        та
+                                        <li><i>
+                                            <img src="images/svg/onlain.svg" alt="">
+                                        </i>Очно</li>
+                                    </ul>
+                                    <span class="psikholog__item__price">від 1200 &#8372;</span>
+                                    <div class="psikholog__item__btn">
+                                        <a href="">Чат з терапевтом</a>
+                                        <a href="">В профіль</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="psikholog__item">
+                            <div class="psikholog__item__profile">
+                                <div class="psikholog__item__foto">
+                                    <img src="images/picture/avatar-7.png" alt="">
+                                    <span>Знайомство 15 хв</span>
+                                </div>
+                                <div class="psikholog__item__info">
+                                    <p class="psikholog__item__city">Київ</p>
+                                    <h3 class="psikholog__item__name">Борисенко Андрій</h3>
+                                    <ul class="psikholog__item__experience">
+                                        <li><i>
+                                            <img src="images/svg/dosvids.svg" alt="">
+                                        </i>5 років практики</li>
+                                        
+                                        <li><i>
+                                            <img src="images/svg/sessia.svg" alt="">
+                                        </i>220+ сесій</li>
+                                    </ul>
+                                    <ul class="psikholog__item__speciality">
+                                        <li>Психолог</li>
+                                        <li>Сімейний психолог</li>
+                                        <li>Гештальт-терапевт</li>
+                                    </ul>
+                                    <ul class="psikholog__item__direction">
+                                        <li>Складно прийняти важливе рішення</li>
+                                        <li>Розлучення</li>
+                                        <li>Зрада</li>
+                                        <li>Страх нових стосунків</li>
+                                        <li>Почуття самотності</li>
+                                        
+                                    </ul>
+                                    <ul class="psikholog__item__format">
+                                        <li><i>
+                                            <img src="images//svg/ochno.svg" alt="">
+                                        </i>Онлайн</li>
+                                        та
+                                        <li><i>
+                                            <img src="images/svg/onlain.svg" alt="">
+                                        </i>Очно</li>
+                                    </ul>
+                                    <span class="psikholog__item__price">від 1200 &#8372;</span>
+                                    <div class="psikholog__item__btn">
+                                        <a href="">Чат з терапевтом</a>
+                                        <a href="">В профіль</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+   </secction>
+   <footer class="footer">
+    <div class="container">
+        <div class="footer__navigation">
+            <nav class="footer__menu">
+                <ul class="footer__menu__list">
+                    <li class="footer__menu__item"><a href="">Наші психотерапевти</a></li>
+                    <li class="footer__menu__item"><a href="">Про нас</a></li>
+                    <li class="footer__menu__item"><a href="">Статті</a></li>
+                    <li class="footer__menu__item"><a href="">Психологам</a></li>
+                </ul>
+            </nav>
+            <div class="footer__contact">
+                <ul class="footer__contact__list">
+                    <li class="footer__contact__item">care@mysense.care</li>
+                    <li class="footer__contact__item">
+                        <a href="">
+                            <img src="images/svg/Instagram.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/svg/Teleg.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/svg/Facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer__contact__item">
+                        <a href="">
+                            Відділ підтримки
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <ul class="footer__bottom__contract">
+                <li class="footer__bottom__item">
+                    <a href="">Договір оферта</a>
+                </li>
+                <li class="footer__bottom__item">
+                    <a href="">Політика конфіденційності</a>
+                </li>
+            </ul>
+            <ul class="footer__bottom__payment">
+                <li><img src="images/svg/Vctor.svg" alt=""></li>
+                <li><img src="images/svg/Vecor.svg" alt=""></li>
+                <li><img src="images/svg/Vecto.svg" alt=""></li>
+                <li><img src="images/svg/Vector.svg" alt=""></li>
+            </ul>
+            <span class="footer__bottom__copyright">© 2023 Mysense. всі права захищені</span>
+        </div>
+    </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

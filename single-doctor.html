@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MySense</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <menu class="header__menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/svg/mysense-logo.svg" alt="">
+                    </a>
+                </div>
+                <nav class="header__navigation">
+                    
+                    <div class="mobile-menu">
+                        <span class="mobile-menu__close"></span>
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="doctors.html">Наші психотерапевти</a></li>
+                            <li class="mobile-menu__item"><a href="vebinares.html">Вабінари</a></li>
+                            <li class="mobile-menu__item"><a href="articles.html">Статті</a></li>
+                            <li class="mobile-menu__item"><a href="#">Психологам</a></li>
+                        </ul>
+                    </div>
+                    
+                    <ul class="navigation">
+                        <li class="navigation__item"><a href="doctors.html">Наші психотерапевти</a></li>
+                        <li class="navigation__item"><a href="vebinares.html">Вабінари</a></li>
+                        <li class="navigation__item"><a href="articles.html">Статті</a></li>
+                        <li class="navigation__item"><a href="#">Психологам</a></li>
+                    </ul>
+                </nav>
+                <div class="blur-bg">
+                    <div class="authentication popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <h3>Вхід в особистий кабінет</h3>
+                        <span>Увійдіть до свого облікового запису</span>
+                        <div class="authentication__social">
+                            <a href="#">Війти через Google</a>
+                            <a href="#">Війти через Facebook</a>
+                        </div>
+                        <span>Або</span>
+                        <div class="authentication__form">
+                            <form action="">
+    
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Ел. адреса">
+                                    <span class="input-box__pl">Ел. адреса</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="password" placeholder="Пароль">
+                                    <span class="input-box__pl">Пароль</span>
+                                </div>
+                                <div class="authentication__links">
+                                    <button class="sing-in-link">Реєстрація</button>
+                                    <a href="">Не пам'ятаєте свій пароль?</a>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn" value="Увійти">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <h3>Створення облікового запису</h3>
+                        <span>Введіть ваші дані</span>
+                        <div class="registration__form">
+                            <form action="">
+                                <div class="input-box">
+                                    <input type="text" name="login" placeholder="Ваше  ім'я">
+                                    <span class="input-box__pl">Ваше  ім'я</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="tel" name="phone" placeholder="Номер телефону">
+                                    <span class="input-box__pl">Номер телефону</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Ел. адреса">
+                                    <span class="input-box__pl">Ел. адреса</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="password" placeholder="Пароль">
+                                    <span class="input-box__pl">Пароль</span>
+                                </div>
+                                <div class="registration__checked">
+                                    <label for="" class="">
+                                        <input type="checkbox" class="real-chackbox">
+                                        <div class="custom-checkbox">
+                                            <svg width="12" height="11" class="chackedmark" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path  d="M1 5.8L4.57143 9L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>
+                                                
+                                        </div>
+                                        Я погоджуюсь з <a href="#"> політикою конфіденційності</a>
+                                    </label>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn registration__btn" value="Продовжити">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration-code popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <h3>Підтвердження створення</h3>
+                        <span>Код підтвердження відправлений на вашу електрону адресу</span>
+                        <div class="registration-code__form">
+                            <form action="" method="post">
+                                <div class="input-box">
+                                    <input type="text" name="code" placeholder="Код підтвердження">
+                                    <span class="input-box__pl">Код підтвердження</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn registration-code__submit" value="Підтвердити">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration-done popup">
+                        
+                        <h3>Вітаємо, ви успішно пройшли реєстрацію! </h3>
+                        <span>Тепер ви можете записатись на сесію</span>
+                        <button class="form-btn popup-close">Продовжити</button>
+                    </div>
+                </div>
+                <div class="header__useraction">
+                    <div class="">
+                        <a href="#">Відділ підтримки</a>
+                    </div>
+                    <div class="">
+                        <button  class="btn-auth">Вхід</button>
+                        <div class="lang-switcher ">
+                            <span class="lang-header filter__select select__current">UA</span>
+                            <ul class="lang-switcher__list filter__select__list">
+                                <li class="lang-swicher__item filter__select__item">UA</li>
+                                <li class="lang-swicher__item filter__select__item">RU</li>
+                                <li class="lang-swicher__item filter__select__item">EN</li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </menu>
+
+        </div>
+   </header>
+   <section class="single-psiholog">
+        
+            <div class="psiholog">
+                <div class="container">
+                    <div class="psiholog__basic">
+                        <div class="psiholog__basic__left">
+                            <div class="psiholog__basic__info">
+                                <div class="psiholog__basic__images">
+                                    <img src="images/picture/avatar-4.png" alt="">
+                                </div>
+                                <div class="psiholog__basic__description">
+                                    <h3 class="psiholog__name">Борисенко Андрій</h3>
+                                    <span class="psiholog__status"><i></i>Перевіренний фахівець</span>
+                                    <ul class="psiholog__format">
+                                        <li><i>
+                                            <img src="images//svg/ochno.svg" alt="">
+                                        </i>Онлайн</li>
+                                        та
+                                        <li><i>
+                                            <img src="images/svg/onlain.svg" alt="">
+                                        </i>Очно</li>
+                                    </ul>
+                                    <ul class="psiholog__experience">
+                                        <li><i>
+                                            <img src="images//svg/Heart.svg" alt="">
+                                        </i>5 років практики</li>
+                                        
+                                        <li><i>
+                                            <img src="images/svg/Done.svg" alt="">
+                                        </i>220+ сесій</li>
+                                    </ul>
+                                    <ul class="psiholog__speciality">
+                                        <li>Психолог</li>
+                                        <li>Сімейний психолог</li>
+                                        <li>Гештальт-терапевт</li>
+                                        <li>Гештальт-терапевт</li>
+                                    </ul>
+                                    <div class="psiholog__basic__price">
+                                        <div class="price-individual">
+                                            <span>1200 ₴</span>
+                                            <span>Індивідуальна </span>
+                                        </div>
+                                        <div class="price-group">
+                                            <span>2000 ₴</span>
+                                            <span>Сімейна </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="psiholog__basic__location">
+                                <div class="location-item">
+                                    <span>Місто:</span>
+                                    <span>Київ</span>
+                                </div>
+                                <div class="location-item">
+                                    <span>Місце прийому:</span>
+                                    <span>Вул. Огієнка 33</span>
+                                </div>
+                                <div class="location-item">
+                                    <span>Мова спілкування:</span>
+                                    <span>Українська, Російська</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="psiholog__basic__right">
+                            <video src="images/picture/video.png"></video>
+                            <div class="psiholog__basic__btn">
+                                <a href="doctor-query.html">
+                                    <i><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z" fill="white"/>
+                                        </svg>
+                                    </i>
+                                    Записатися на сесію
+                                </a>
+                                <a href="#">
+                                    <i>
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.49921 20H12.9865C14.6447 19.9992 16.2665 19.5134 17.652 18.6024C19.0376 17.6915 20.1265 16.3951 20.7845 14.8731C21.4425 13.351 21.641 11.6697 21.3554 10.0362C21.0699 8.4028 20.3128 6.88855 19.1774 5.68001C18.042 4.47147 16.5779 3.62141 14.9654 3.23456C13.353 2.8477 11.6626 2.94093 10.1024 3.50276C8.54231 4.0646 7.18058 5.07051 6.18498 6.39658C5.18938 7.72265 4.6034 9.31098 4.49921 10.9659V11.0105V20ZM12.9865 4.41667C14.8651 4.41667 16.6668 5.16294 17.9951 6.49133C19.3235 7.81971 20.0698 9.62138 20.0698 11.5C20.0698 13.3786 19.3235 15.1803 17.9951 16.5087C16.6668 17.8371 14.8651 18.5833 12.9865 18.5833H5.91588V11.0332C6.03734 9.23993 6.83479 7.55956 8.14717 6.33145C9.45955 5.10335 11.1891 4.41902 12.9865 4.41667Z" fill="white"/>
+                                            <path d="M8.5 7.95825H12.5V9.37492H8.5V7.95825Z" fill="white"/>
+                                            <path d="M8.5 10.7917H15.5V12.2084H8.5V10.7917Z" fill="white"/>
+                                            <path d="M8.5 13.625H15.5V15.0417H8.5V13.625Z" fill="white"/>
+                                        </svg>   
+                                    </i>
+                                    Чат з терапевтом
+                                </a>
+                                <a href="#">
+                                    <i>
+                                        <svg width="24" height="24" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.99038 13.4371L9.72687 19.1735" stroke="#795BDA" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.7097 15.8061L6.21774 10.2802C5.48629 9.5442 4.3003 9.5442 3.56879 10.2802C2.83728 11.0162 2.83728 12.2096 3.56879 12.9456L9.06069 18.4715L4.89327 14.2783C4.16175 13.5422 2.97576 13.5422 2.24425 14.2783C1.51286 15.0143 1.51286 16.2076 2.24425 16.9437L7.81494 22.5488C9.63111 24.3762 16.1652 28.6869 20.3191 28.2696M7.54228 11.6129L4.97362 9.02836C4.24211 8.29232 4.24211 7.09904 4.97362 6.363C5.70513 5.62696 6.89113 5.62696 7.62258 6.363L14.3587 13.1408L8.94711 7.69568C8.2156 6.9597 8.2156 5.76632 8.94711 5.03034C9.67863 4.2943 10.8646 4.2943 11.5961 5.03034L20.3191 13.8074L20.3191 9.5802C20.3191 8.5394 21.1576 7.69568 22.192 7.69568C23.2263 7.69568 24.0649 8.5394 24.0649 9.5802L25.3478 20.0635" stroke="#795BDA" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.9566 33C4.11464 33 1.0001 29.8855 1.0001 26.0435" stroke="#A498D9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.9566 29.5217C6.03562 29.5217 4.47835 27.9644 4.47835 26.0434" stroke="#A498D9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M26.0435 1.00004C29.8855 1.00004 33 4.11458 33 7.95654" stroke="#A498D9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M26.0435 4.47829C27.9645 4.47829 29.5217 6.03556 29.5217 7.95654" stroke="#A498D9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </i>
+                                    Знайомство 15 хв
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="psiholog__contant">
+                        <div class="psiholog__about psiholog__item">
+                            <div class="psiholog__item__tabs">
+                            
+                                <div class="tab-btn">
+                                        <span class="tabs-item tab-active" data-target-id="0">Про мене</span>
+                                </div>
+                                <div class="tab-btn">
+                                        <span class="tabs-item" data-target-id="1">Як я працюю</span>
+                                </div>
+                                <div class="tab-btn" >
+                                        <span class="tabs-item" data-target-id="2">Мої цінності</span>
+
+                                </div>
+                                
+                            </div>
+                            <div class="psiholog__item__body">
+                                <div class="psiholog__item__text tab-show" data-id="0">
+                                    <p>Мене звати Борисенко Андрій. Я сертифікований психотерапевт, практикую з 2018 року. Працюю у гештальт підході з чоловіками, жінками та підлітками...</p> 
+                                    <p>Я маю спеціалізації по роботі з парами та сім’ями, тому можу бути корисним у наданні психотерапевтичної допомоги подружжям, парам, які починають стосунки, у дитячо-батьківських відносинах, міжособистісних стосунках між членами сім’ї та колегами. Моя робота полягає у тому, </p>    
+                                </div>
+                                <div class="psiholog__item__text" data-id="1">
+                                    <p>ене звати Борисенко Андрій. Я сертифікований психотерапевт, практикую з 2018 року. Працюю у гештальт підході з чоловіками, жінками та підлітками...</p> 
+                                    <p>Я маю спеціалізації по роботі з парами та сім’ями, тому можу бути корисним у наданні психотерапевтичної допомоги подружжям, парам, які починають стосунки, у дитячо-батьківських відносинах, міжособистісних стосунках між членами сім’ї та колегами. Моя робота полягає у тому, </p>    
+                                </div>
+                                <div class="psiholog__item__text" data-id="2">
+                                    <p> звати Борисенко Андрій. Я сертифікований психотерапевт, практикую з 2018 року. Працюю у гештальт підході з чоловіками, жінками та підлітками...</p> 
+                                    <p>Я маю спеціалізації по роботі з парами та сім’ями, тому можу бути корисним у наданні психотерапевтичної допомоги подружжям, парам, які починають стосунки, у дитячо-батьківських відносинах, міжособистісних стосунках між членами сім’ї та колегами. Моя робота полягає у тому, </p>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="psiholog__therapy psiholog__item">
+                            <div class="psiholog__item__tabs">
+                                <div class="tab-btn">
+                                    <span class="tabs-item tab-active" data-target-id="3">Індивідуальна терапія</span>
+                            </div>
+                            <div class="tab-btn">
+                                    <span class="tabs-item" data-target-id="4">Сімейна терапія</span>
+                            </div>
+                            <div class="tab-btn" >
+                                    <span class="tabs-item" data-target-id="5">Дитяча терапія</span>
+
+                            </div>
+                            </div>
+                            <div class="psiholog__item__body">
+                                <div id="therapy-tab-1" class="psiholog__item__text" data-id="3">
+                                    <label for="">
+                                        Я працюю
+                                        <ul>
+                                            <li>Проблеми у спілкуванні</li>
+                                            <li>Еміграція</li>
+                                            <li>Проблеми із мотивацією та самореалізацією</li>
+                                            <li>Стосунки з родичами/друзями</li>
+                                            <li>Почуття самотності</li>
+                                            <li>Складно прийняти важливе рішення</li>
+                                            <li>Адаптація до нових умов життя</li>
+                                            <li>Проблеми у відносинах з дітьми</li>
+                                            <li>Зрада</li>
+                                            <li>Завершення стосунків</li>
+                                        </ul>
+                                    </label>
+                                  
+                                    
+                                </div>
+                                <div id="therapy-tab-2" class="psiholog__item__text" data-id="4">
+                                    <label for="">
+                                        Я працюю
+                                        <ul>
+                                            <li>Проблеми у спілкуванні</li>
+                                            <li>Еміграція</li>
+                                            <li>Проблеми із мотивацією та самореалізацією</li>
+                                            <li>Стосунки з родичами/друзями</li>
+                                            <li>Почуття самотності</li>
+                                            <li>Складно прийняти важливе рішення</li>
+                                            <li>Адаптація до нових умов життя</li>
+                                            <li>Проблеми у відносинах з дітьми</li>
+                                            <li>Зрада</li>
+                                            <li>Завершення стосунків</li>
+                                        </ul>
+                                    </label>
+                                   <label for="">
+                                    Я не працюю
+                                    <ul>
+                                        <li>Сексуальні стосунки</li>
+                                        <li>Хімічні залежності</li>
+                                        <li>Спроби самогубства</li>
+                                        <li>Ставлення до їжі</li>
+                                    </ul>
+                                   </label>
+                                    
+                                </div>
+                                <div id="therapy-tab-3" class="psiholog__item__text tab-show" data-id="5">
+                                    <label for="">
+                                        Я працюю
+                                        <ul>
+                                            <li>Проблеми у спілкуванні</li>
+                                            <li>Еміграція</li>
+                                            <li>Проблеми із мотивацією та самореалізацією</li>
+                                            <li>Стосунки з родичами/друзями</li>
+                                            <li>Почуття самотності</li>
+                                            <li>Складно прийняти важливе рішення</li>
+                                            <li>Адаптація до нових умов життя</li>
+                                            <li>Проблеми у відносинах з дітьми</li>
+                                            <li>Зрада</li>
+                                            <li>Завершення стосунків</li>
+                                        </ul>
+                                    </label>
+                                   <label for="">
+                                    Я не працюю
+                                    <ul>
+                                        <li>Сексуальні стосунки</li>
+                                        <li>Хімічні залежності</li>
+                                        <li>Спроби самогубства</li>
+                                        <li>Ставлення до їжі</li>
+                                    </ul>
+                                   </label>
+                                    
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="psiholog__education psiholog__item">
+                            <div class="psiholog__item__tabs">
+                                <div class="tab-btn">
+                                    <span class="tabs-item tab-active" data-target-id="0">Вища та професійна освіта</span>
+                            </div>
+                            <div class="tab-btn">
+                                    <span class="tabs-item" data-target-id="1">Спеціалізації</span>
+                            </div>
+                            <div class="tab-btn" >
+                                    <span class="tabs-item" data-target-id="2">Інший досвід</span>
+
+                            </div>
+                            </div>
+                            <div class="psiholog__item__body">
+                                <div id="education-tab-1" class="psiholog__item__text tab-show" data-id="0">
+                                    <div class="psiholog__item__type">
+                                        <span>2017</span>
+                                        <span>Національний педагогічний університет імені М.П.Драгоманова Психологія</span>
+                                        <span>Перевірено</span>
+                                    </div>
+                                    <div class="psiholog__item__type">
+                                        <span>2017</span>
+                                        <span>Національний педагогічний університет імені М.П.Драгоманова Психологія</span>
+                                        <span>Перевірено</span>
+                                    </div>
+                                </div>
+                                <div id="education-tab-2" class="psiholog__item__text" data-id="1">
+                                    <div class="psiholog__item__type">
+                                        <span>2018</span>
+                                        <span>Національний педагогічний університет імені М.П.Драгоманова Психологія</span>
+                                        <span>Перевірено</span>
+                                    </div>
+                                    <div class="psiholog__item__type">
+                                        <span>2017</span>
+                                        <span>Національний педагогічний університет імені М.П.Драгоманова Психологія</span>
+                                        <span>Перевірено</span>
+                                    </div>
+                                </div>
+                                <div id="education-tab-3" class="psiholog__item__text" data-id="2">
+                                    <div class="psiholog__item__type">
+                                        <span>2019</span>
+                                        <span>Національний педагогічний університет імені М.П.Драгоманова Психологія</span>
+                                        <span>Перевірено</span>
+                                    </div>
+                                    <div class="psiholog__item__type">
+                                        <span>2017</span>
+                                        <span>Національний педагогічний університет імені М.П.Драгоманова Психологія</span>
+                                        <span>Перевірено</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="psiholog__diplom-slider psiholog__item">
+                            <h3 class="item-title">Дипломи</h3>
+                            <div class="diplom-slider__wrapper">    
+                                <ul class="diplom-slider__list">
+                                    <li class="diplom-slider__item">
+                                        <img src="images/diplom1.png" alt="">
+                                    </li>
+                                    <li class="diplom-slider__item">
+                                        <img src="images/diplom2.png" alt="">
+                                    </li>
+                                    <li class="diplom-slider__item">
+                                        <img src="images/diplom3.png" alt="">
+                                    </li>
+                                    
+                                    <li class="diplom-slider__item">
+                                        <img src="images/diplom4.png" alt="">
+                                    </li>
+                                   
+                                    <li class="diplom-slider__item">
+                                        <img src="images/diplom5.png" alt="">
+                                    </li>
+                                    <li class="diplom-slider__item">
+                                        <img src="images/diplom4.png" alt="">
+                                    </li>
+                                   
+                                    <li class="diplom-slider__item">
+                                        <img src="images/diplom5.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="reservation psiholog__item">
+                            <h3 class="item-title">Забронювати сесію</h3>
+                            <p class="item-description">Бронювання проводиться за київським часом</p>
+                            
+                            <div class="reservation__filter">
+                                <div class="reservation__filter__format">
+                                    <div class="filter__btn">
+                                        <label for="fl-r-1">
+                                            <input type="radio" name="format" id="fl-r-1" checked>
+                                            <div class="filter-btn">
+                                                Онлайн
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="filter__btn">
+                                        <label for="fl-r-2">
+                                            <input type="radio" name="format" id="fl-r-2">
+                                            <div class="filter-btn">
+                                                Очно
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="reservation__filter__type">
+                                    <form action="">
+                                        <div class="filter__btn">
+                                            <label for="fl-r-3">
+                                                <input type="radio" name="format" id="fl-r-3" checked>
+                                                <div class="filter-btn">
+                                                    Для мене
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="filter__btn">
+                                            <label for="fl-r-4">
+                                                <input type="radio" name="format" id="fl-r-4">
+                                                <div class="filter-btn">
+                                                    Для пари/сім'ї 
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="filter__btn">
+                                            <label for="fl-r-5">
+                                                <input type="radio" name="format" id="fl-r-5">
+                                                <div class="filter-btn">
+                                                    Для дитини
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                            <div class="calendar">
+                                <div class="calendar__arrows">
+                                    <div class="calendar__arrows__prev"></div>
+                                    <div class="calendar__arrows__next"></div>
+                                </div>
+                                <span class="calendar__week">жов 2–8, 2023</span>
+                                <div class="calendar__wrapper">
+                                    <div class="calendar__date data-active">
+                                        <div class="calendar__date__day">
+                                            <span class="calendar__date__name">Пн</span>
+                                            <span class="calendar__date__number">2</span>
+                                        </div>
+                                        <ul class="calendar__date__time">
+                                            <li>09:00</li>
+                                            <li>10:00</li>
+                                            <li>11:00</li>
+                                            <li>12:00</li>
+                                            <li>13:00</li>
+                                            <li>14:00</li>
+                                            <li>15:00</li>
+                                            <li>16:00</li>
+                                            <li>17:00</li>
+                                            <li>18:00</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="calendar__date">
+                                        <div class="calendar__date__day">
+                                            <span class="calendar__date__name">Вт</span>
+                                            <span class="calendar__date__number">3</span>
+                                        </div>
+                                        <ul class="calendar__date__time">
+                                            <li>12:00</li>
+                                            <li>13:00</li>
+                                            <li>14:00</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="calendar__date">
+                                        <div class="calendar__date__day">
+                                            <span class="calendar__date__name">Ср</span>
+                                            <span class="calendar__date__number">4</span>
+                                        </div>
+                                        <ul class="calendar__date__time">
+                                            <li>09:00</li>
+                                            <li>10:00</li>
+                                            <li>11:00</li>
+                                            <li>12:00</li>
+                                            <li>13:00</li>
+                                            <li>14:00</li>
+                                            <li>15:00</li>
+                                            <li>16:00</li>
+                                            <li>17:00</li>
+                                            <li>18:00</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="calendar__date">
+                                        <div class="calendar__date__day">
+                                            <span class="calendar__date__name">Чт</span>
+                                            <span class="calendar__date__number">5</span>
+                                        </div>
+                                        <ul class="calendar__date__time">
+                                            <li>09:00</li>
+                                            <li>10:00</li>
+                                            <li>11:00</li>
+                                            <li>15:00</li>
+                                            <li>16:00</li>
+                                            <li>17:00</li>
+                                            <li>18:00</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="calendar__date">
+                                        <div class="calendar__date__day">
+                                            <span class="calendar__date__name">Пт</span>
+                                            <span class="calendar__date__number">6</span>
+                                        </div>
+                                        <ul class="calendar__date__time">
+                                            <li>10:00</li>
+                                            <li>11:00</li>
+                                            <li>14:00</li>
+                                            <li>18:00</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="calendar__date">
+                                        <div class="calendar__date__day">
+                                            <span class="calendar__date__name">Сб</span>
+                                            <span class="calendar__date__number">7</span>
+                                        </div>
+                                        <ul class="calendar__date__time">
+                                            <li>09:00</li>
+                                            <li>15:00</li>
+                                            <li>17:00</li>
+                                            
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="calendar__date">
+                                        <div class="calendar__date__day">
+                                            <span class="calendar__date__name">Нд</span>
+                                            <span class="calendar__date__number">8</span>
+                                        </div>
+                                        <ul class="calendar__date__time">
+                                            
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="psiholog__request psiholog__item">
+                            <h3 class="item-title">Відправте запит і я звʼяжуся з вами найближчим часом, щоб домовитися про сесію</h3>
+                            <div class="psiholog__request__btn">
+                                <a href="doctor-query.html">Відправити запит</a>
+                            </div>
+                       </div>
+                       <div class="psiholog__additionally psiholog__item">
+                            <div class="psiholog__additionally__item">
+                                <p>!!! 15 хв знайомство</p>
+                                <p>безкоштовне 15 хвилинне знайомство з терапевтом</p>
+                            </div>
+                            <div class="psiholog__additionally__item">
+                                <p>Зміна психолога</p>
+                                <p>зміна психолога та перенесення сесії без додаткової оплати</p>
+                            </div>
+                            <div class="psiholog__additionally__item">
+                                <p>У форс мажорних ситуаціях</p>
+                                <p>перенесемо сеанс безкоштовно, чи повернемо кошти</p>
+                            </div>
+                       </div>
+                       <div class="psiholog__service-packages psiholog__item">
+                        <h3 class="item-title">Сплачуйте послугу пакетом</h3>
+                            <div class="service-packages">
+                                <div class="service-packages__item">
+                                    <h3 class="service-packages__name">Старт</h3>
+                                    <p class="service-packages__description">Включає 3 сесій з психологом</p>
+                                    <div class="service-packages__price">
+                                        <div class="service-packages__box">
+                                            <span>Ціна за 150 хв.</span>
+                                            <span>3600 ₴</span>
+                                        </div>
+                                        <div class="service-packages__box">
+                                            <span>Знижка</span>
+                                            <span>5%</span>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="service-packages__btn">
+                                        <a href="session-payment.html">Замовити</a>
+                                    </div>
+                                </div>
+                                <div class="service-packages__item">
+                                    <h3 class="service-packages__name">Розширений</h3>
+                                    <p class="service-packages__description">Включає 5 сесій з психологом</p>
+                                    <div class="service-packages__price">
+                                        <div class="service-packages__box">
+                                            <span>Ціна за 150 хв.</span>
+                                            <span>3600 ₴</span>
+                                        </div>
+                                        <div class="service-packages__box">
+                                            <span>Знижка</span>
+                                            <span>5%</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="service-packages__btn">
+                                        <a href="session-payment.html">Замовити</a>
+                                    </div>
+                                </div>
+                                <div class="service-packages__item">
+                                    <h3 class="service-packages__name">Повний</h3>
+                                    <p class="service-packages__description">Включає 3 сесій з психологом</p>
+                                    <div class="service-packages__price">
+                                        <div class="service-packages__box">
+                                            <span>Ціна за 150 хв.</span>
+                                            <span>3600 ₴</span>
+                                        </div>
+                                        <div class="service-packages__box">
+                                            <span>Знижка</span>
+                                            <span>5%</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="service-packages__btn">
+                                        <a href="session-payment.html">Замовити</a>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="comments">
+                        <h3 class="comments__title">Відгуки клієнтів</h3>
+                        <div class="comments__count">Всього: <span>251 відгуків</span></div>
+                        <div class="comments__item">
+                            <div class="comments-block">
+                                <div class="wrapper-item">
+                                    <div class="comments-block__item__user">
+                                    <div class="comments-block__item__avatar">
+                                        <img src="images/picture/avatar-5.png" alt="">
+                                    </div>
+                                    <p class="comments-block__item__name">Олеся Тимчук</p>
+                                    <span class="comments-block__item__date">5 вересня, 2023</span>
+                                    </div>
+                                    <div class="comments-block__item__comment">
+                                        Дуже задоволена, що все ж наважилася на консультацію, 
+                                        навіть перша консультація дала важливий напрямок для мене.
+                                        З фахівцем підібрали зручний час для мене, а сама консультація 
+                                        пройшла легко і в задоволення. Радію додатковим матеріалам для 
+                                        самоопрацювання і домашнім завданням.Дякую платформі і усім хто 
+                                        її створював, це необхідність у сучасному світі 💙💛
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="comments-block comments-reply">
+                                <div class="wrapper-item">
+                                    <div class="comments-block__item__user">
+                                    <div class="comments-block__item__avatar">
+                                        <img src="images/picture/avatar-5.png" alt="">
+                                    </div>
+                                    <p class="comments-block__item__name">Олеся Тимчук</p>
+                                    <span class="comments-block__item__date">5 вересня, 2023</span>
+                                    </div>
+                                    <div class="comments-block__item__comment">
+                                        Дуже задоволена, що все ж наважилася на консультацію, 
+                                        навіть перша консультація дала важливий напрямок для мене.
+                                        З фахівцем підібрали зручний час для мене, а сама консультація 
+                                        пройшла легко і в задоволення. Радію додатковим матеріалам для 
+                                        самоопрацювання і домашнім завданням.Дякую платформі і усім хто 
+                                        її створював, це необхідність у сучасному світі 💙💛
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="comments__btn">
+                            <a href="#" class="comments__more">Показати ще</a>
+                            <a href="#" class="comments__leave">Залишити відгук</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+            <section class="vebinares__planned">
+                <div class="container">
+                    <h2 class="section-title">Заплановані вабінари психолога</h2>
+                    <div class="vebinares__planned__list">
+                        <div class="vebinares__planned__item">
+                            <div class="vebinares__planned__images">
+                                <img src="images/picture/image10.png" alt="">
+                            </div>
+                            <div class="vebinares__planned__description">
+                                <span class="vebinares__planned__price">Безкоштовно</span>
+                                <ul class="vebinares__planned__author">
+                                    <li><a href="">
+                                        <div class=""><img src="images/picture/avatar-5.png" alt=""></div>
+                                        <span>Анна Рибкіна</span>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class=""><img src="images/picture/avatar-7.png" alt=""></div>
+                                        <span>Наталья Варта</span>
+                                    </a></li>
+                                </ul>
+                                <ul class="vebinares__planned__info">
+                                    <li class="vebinares__planned__date"><i><img src="images/svg/calendar-2.svg" alt=""></i>чт, 05 жовтня</li>
+                                    <li class="vebinares__planned__time"><i><img src="images/svg/clock.svg" alt=""></i>1 година 30 хв.</li>
+                                </ul>
+                                <a href="#"> <h3 class="vebinares__planned__title">Психологічна допомога в умовах війни</h3></a>
+                               
+                                <div class="vebinares__planned__bottom">
+                                    <div class="vebinares__planned__left">
+                                        <a href="#">Забронювати</a>
+                                        <div class="vebinares__planned__timer timer">
+                                            <div class="timer__item timer__days">00</div>
+                                            <div class="timer__item timer__hours">00</div>
+                                            <div class="timer__item timer__minutes">00</div>
+                                            <div class="timer__item timer__seconds">00</div>
+                                        </div>
+                                    </div>
+                                    <ul class="vebinares__planned__use">
+                                        <li class="likes"><i><img src="images/svg/like.svg" alt=""></i>9</li>
+                                        <li class="views"><i><img src="images/svg/eye.svg"></i>66</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vebinares__planned__item">
+                            <div class="vebinares__planned__images">
+                                <img src="images/picture/image10.png" alt="">
+                            </div>
+                            <div class="vebinares__planned__description">
+                                <span class="vebinares__planned__price">Безкоштовно</span>
+                                <ul class="vebinares__planned__author">
+                                    <li><a href="">
+                                        <div class=""><img src="images/picture/avatar-5.png" alt=""></div>
+                                        <span>Анна Рибкіна</span>
+                                    </a></li>
+                                    <li><a href="">
+                                        <div class=""><img src="images/picture/avatar-7.png" alt=""></div>
+                                        <span>Наталья Варта</span>
+                                    </a></li>
+                                </ul>
+                                <ul class="vebinares__planned__info">
+                                    <li class="vebinares__planned__date"><i><img src="images/svg/calendar-2.svg" alt=""></i>чт, 05 жовтня</li>
+                                    <li class="vebinares__planned__time"><i><img src="images/svg/clock.svg" alt=""></i>1 година 30 хв.</li>
+                                </ul>
+                                <a href="#"> <h3 class="vebinares__planned__title">Психологічна допомога в умовах війни</h3></a>
+                               
+                                <div class="vebinares__planned__bottom">
+                                    <div class="vebinares__planned__left">
+                                        <a href="#">Забронювати</a>
+                                        <div class="vebinares__planned__timer timer">
+                                            <div class="timer__item timer__days">00</div>
+                                            <div class="timer__item timer__hours">00</div>
+                                            <div class="timer__item timer__minutes">00</div>
+                                            <div class="timer__item timer__seconds">00</div>
+                                        </div>
+                                    </div>
+                                    <ul class="vebinares__planned__use">
+                                        <li class="likes"><i><img src="images/svg/like.svg" alt=""></i>9</li>
+                                        <li class="views"><i><img src="images/svg/eye.svg"></i>66</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="vebinares__completed">
+                <div class="container">
+                    <h2 class="section-title">Проведені вебінари</h2>
+                   
+                    <div class="vebinares__completed__list">
+                        <div class="vebinares__completed__item">
+                            <div class="vebinares__completed__images">
+                                <img src="images/picture/image 111.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h3 class="vebinares__completed__title">Психологічна допомога в умовах війни</h3>
+                            </a>
+                            
+                            <div class="vebinares__completed__bottom">
+                                <span class="vebinares__completed__date">07 вересня 2023</span>
+                                <ul class="vebinares__planned__use">
+                                    <li class="likes"><i><img src="images/svg/like.svg" alt=""></i>9</li>
+                                    <li class="views"><i><img src="images/svg/eye.svg"></i>66</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="vebinares__completed__item">
+                            <div class="vebinares__completed__images">
+                                <img src="images/picture/image 111.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h3 class="vebinares__completed__title">Психологічна допомога в умовах війни</h3>
+                            </a>
+                            <div class="vebinares__completed__bottom">
+                                <span class="vebinares__completed__date">07 вересня 2023</span>
+                                <ul class="vebinares__planned__use">
+                                    <li class="likes"><i><img src="images/svg/like.svg" alt=""></i>9</li>
+                                    <li class="views"><i><img src="images/svg/eye.svg"></i>66</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="vebinares__completed__item">
+                            <div class="vebinares__completed__images">
+                                <img src="images/picture/image 111.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h3 class="vebinares__completed__title">Психологічна допомога в умовах війни</h3>
+                            </a>
+                            <div class="vebinares__completed__bottom">
+                                <span class="vebinares__completed__date">07 вересня 2023</span>
+                                <ul class="vebinares__planned__use">
+                                    <li class="likes"><i><img src="images/svg/like.svg" alt=""></i>9</li>
+                                    <li class="views"><i><img src="images/svg/eye.svg"></i>66</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="vebinares__completed__item">
+                            <div class="vebinares__completed__images">
+                                <img src="images/picture/image 111.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h3 class="vebinares__completed__title">Психологічна допомога в умовах війни</h3>
+                            </a>
+                            <div class="vebinares__completed__bottom">
+                                <span class="vebinares__completed__date">07 вересня 2023</span>
+                                <ul class="vebinares__planned__use">
+                                    <li class="likes"><i><img src="images/svg/like.svg" alt=""></i>9</li>
+                                    <li class="views"><i><img src="images/svg/eye.svg"></i>66</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button class="advice__more-downloadd">Завантажити ще</button>
+                    
+                    
+                </div>
+                
+            </section>
+            <section class="advice-page advice" id="advice-page">
+                <div class="advice__bg"></div>
+                <div class="container">
+                    <h2 class="section-title">Статті психолога </h2>
+                    
+                    <div class="advice__block">
+                        <div class="advice__item">
+                            <div class="advice__item__img">
+                                <img src="images/picture/image2.png" alt="">
+                            </div>
+                            <div class="advice__item__description">
+                                <h3 class="advice__item__title">Коли варто звернутися до психотерапевта?</h3>
+                                <p class="advice__item__text">
+                                    Як же зрозуміти, що вам потрібна психологічна допомога вже 
+                                    зараз і настав час вирішувати проблему, а не відкладати її.
+                                </p>
+                                <span class="advice__item__date">
+                                    5 вересня, 2023
+                                </span>
+                                <picture class="advice__item__author">
+                                    <img src="images/picture/avatar-2.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="advice__item">
+                            <div class="advice__item__img">
+                                <img src="images/picture/image1.png" alt="">
+                            </div>
+                            <div class="advice__item__description">
+                                <h3 class="advice__item__title">Коли варто звернутися до психотерапевта?</h3>
+                                <p class="advice__item__text">
+                                    Як же зрозуміти, що вам потрібна психологічна допомога вже 
+                                    зараз і настав час вирішувати проблему, а не відкладати її.
+                                </p>
+                                <span class="advice__item__date">
+                                    5 вересня, 2023
+                                </span>
+                                <picture class="advice__item__author">
+                                    <img src="images/picture/avatar-5.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button class="advice__more-downloadd">Завантажити ще</button>
+                   
+                </div>
+            </section>
+            <div class="last-views">
+                <div class="container">
+                    <h3 class="last-views__title">Ви переглядали</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/picture/avatar-1.png" alt="">
+                            <div class="last-views__info">
+                                <p class="last-views__name">Наталя</p>
+                                <p class="last-views__experience">9 років практики</p>
+                            </div>
+                            <div class="last-views__mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/picture/avatar-1.png" alt="">
+                            <div class="last-views__info">
+                                <p class="last-views__name">Наталя</p>
+                                <p class="last-views__experience">9 років практики</p>
+                            </div>
+                            <div class="last-views__mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/picture/avatar-2.png" alt="">
+                            <div class="last-views__info">
+                                <p class="last-views__name">Наталя</p>
+                                <p class="last-views__experience">9 років практики</p>
+                            </div>
+                            <div class="last-views__mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/picture/avatar-3.png" alt="">
+                            <div class="last-views__info">
+                                <p class="last-views__name">Наталя</p>
+                                <p class="last-views__experience">9 років практики</p>
+                            </div>
+                            <div class="last-views__mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/picture/avatar-4.png" alt="">
+                            <div class="last-views__info">
+                                <p class="last-views__name">Наталя</p>
+                                <p class="last-views__experience">9 років практики</p>
+                            </div>
+                            <div class="last-views__mask"></div>
+                        </a>
+                    </li>
+                    
+                </ul>
+                </div>
+            </div>
+   </section>
+   <footer class="footer">
+    <div class="container">
+        <div class="footer__navigation">
+            <nav class="footer__menu">
+                <ul class="footer__menu__list">
+                    <li class="footer__menu__item"><a href="">Наші психотерапевти</a></li>
+                    <li class="footer__menu__item"><a href="">Про нас</a></li>
+                    <li class="footer__menu__item"><a href="">Статті</a></li>
+                    <li class="footer__menu__item"><a href="">Психологам</a></li>
+                </ul>
+            </nav>
+            <div class="footer__contact">
+                <ul class="footer__contact__list">
+                    <li class="footer__contact__item">care@mysense.care</li>
+                    <li class="footer__contact__item">
+                        <a href="">
+                            <img src="images/svg/Instagram.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/svg/Teleg.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/svg/Facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer__contact__item">
+                        <a href="">
+                            Відділ підтримки
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <ul class="footer__bottom__contract">
+                <li class="footer__bottom__item">
+                    <a href="">Договір оферта</a>
+                </li>
+                <li class="footer__bottom__item">
+                    <a href="">Політика конфіденційності</a>
+                </li>
+            </ul>
+            <ul class="footer__bottom__payment">
+                <li><img src="images/svg/Vctor.svg" alt=""></li>
+                <li><img src="images/svg/Vecor.svg" alt=""></li>
+                <li><img src="images/svg/Vecto.svg" alt=""></li>
+                <li><img src="images/svg/Vector.svg" alt=""></li>
+            </ul>
+            <span class="footer__bottom__copyright">© 2023 Mysense. всі права захищені</span>
+        </div>
+    </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

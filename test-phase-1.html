@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MySense</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <menu class="header__menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/svg/mysense-logo.svg" alt="">
+                    </a>
+                </div>
+                <nav class="header__navigation">
+                    
+                    <div class="mobile-menu">
+                        <span class="mobile-menu__close"></span>
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="doctors.html">Наші психотерапевти</a></li>
+                            <li class="mobile-menu__item"><a href="vebinares.html">Вабінари</a></li>
+                            <li class="mobile-menu__item"><a href="articles.html">Статті</a></li>
+                            <li class="mobile-menu__item"><a href="#">Психологам</a></li>
+                        </ul>
+                    </div>
+                    
+                    <ul class="navigation">
+                        <li class="navigation__item"><a href="doctors.html">Наші психотерапевти</a></li>
+                        <li class="navigation__item"><a href="vebinares.html">Вабінари</a></li>
+                        <li class="navigation__item"><a href="articles.html">Статті</a></li>
+                        <li class="navigation__item"><a href="#">Психологам</a></li>
+                    </ul>
+                </nav>
+                <div class="blur-bg">
+                    <div class="authentication popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <h3>Вхід в особистий кабінет</h3>
+                        <span>Увійдіть до свого облікового запису</span>
+                        <div class="authentication__social">
+                            <a href="#">Війти через Google</a>
+                            <a href="#">Війти через Facebook</a>
+                        </div>
+                        <span>Або</span>
+                        <div class="authentication__form">
+                            <form action="">
+    
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Ел. адреса">
+                                    <span class="input-box__pl">Ел. адреса</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="password" placeholder="Пароль">
+                                    <span class="input-box__pl">Пароль</span>
+                                </div>
+                                <div class="authentication__links">
+                                    <button class="sing-in-link">Реєстрація</button>
+                                    <a href="">Не пам'ятаєте свій пароль?</a>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn" value="Увійти">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <h3>Створення облікового запису</h3>
+                        <span>Введіть ваші дані</span>
+                        <div class="registration__form">
+                            <form action="">
+                                <div class="input-box">
+                                    <input type="text" name="login" placeholder="Ваше  ім'я">
+                                    <span class="input-box__pl">Ваше  ім'я</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="tel" name="phone" placeholder="Номер телефону">
+                                    <span class="input-box__pl">Номер телефону</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Ел. адреса">
+                                    <span class="input-box__pl">Ел. адреса</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="password" placeholder="Пароль">
+                                    <span class="input-box__pl">Пароль</span>
+                                </div>
+                                <div class="registration__checked">
+                                    <label for="" class="">
+                                        <input type="checkbox" class="real-chackbox">
+                                        <div class="custom-checkbox">
+                                            <svg width="12" height="11" class="chackedmark" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path  d="M1 5.8L4.57143 9L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>
+                                                
+                                        </div>
+                                        Я погоджуюсь з <a href="#"> політикою конфіденційності</a>
+                                    </label>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn registration__btn" value="Продовжити">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration-code popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <h3>Підтвердження створення</h3>
+                        <span>Код підтвердження відправлений на вашу електрону адресу</span>
+                        <div class="registration-code__form">
+                            <form action="" method="post">
+                                <div class="input-box">
+                                    <input type="text" name="code" placeholder="Код підтвердження">
+                                    <span class="input-box__pl">Код підтвердження</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn registration-code__submit" value="Підтвердити">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration-done popup">
+                        
+                        <h3>Вітаємо, ви успішно пройшли реєстрацію! </h3>
+                        <span>Тепер ви можете записатись на сесію</span>
+                        <button class="form-btn popup-close">Продовжити</button>
+                    </div>
+                </div>
+                <div class="header__useraction">
+                    <div class="">
+                        <a href="#">Відділ підтримки</a>
+                    </div>
+                    <div class="">
+                        <button  class="btn-auth">Вхід</button>
+                        <div class="lang-switcher ">
+                            <span class="lang-header filter__select select__current">UA</span>
+                            <ul class="lang-switcher__list filter__select__list">
+                                <li class="lang-swicher__item filter__select__item">UA</li>
+                                <li class="lang-swicher__item filter__select__item">RU</li>
+                                <li class="lang-swicher__item filter__select__item">EN</li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </menu>
+
+        </div>
+   </header>
+
+   <section class="test test-phase-1">
+    <div class="bg-section"></div>
+    <div class="container">
+        <div class="test__slider">
+            <div class="test__progress">
+                <ul class="test__progress__list">
+                    <li class="test__progress__item test__progress__active">1</li>
+                    <li class="test__progress__item">2</li>
+                    <li class="test__progress__item">3</li>
+                    <li class="test__progress__item">4</li>
+                    <li class="test__progress__item">5</li>
+                </ul>
+            </div>
+            <div class="test__body">
+                <h3 class="test__question">Оберіть для кого ви шукаєте психолога</h3>
+                <div class="test__body__options">
+                    <div class="test__body__options__item">
+                            <label for="for-me" class="option-label">
+                                <input type="checkbox" id="for-me" class="real-checkbox">
+                                <div class="checkboxImg-wrapper">
+                                    <div class="custom-checkboxImg">
+                                        <img src="images/picture/for-me.png" alt="">
+                                    </div>
+                                </div>
+                                
+                                <p>Для себе</p>
+                            </label>
+                    </div>
+                    <div class="test__body__options__item">
+                        <label for="for-family" class="option-label">
+                            <input type="checkbox" id="for-family" class="real-checkbox">
+                            <div class="checkboxImg-wrapper">
+                                <div class="custom-checkboxImg">
+                                    <img src="images/picture/for-family.png" alt="">
+                                </div>
+                            </div>
+                            
+                            <p>Для пари / сім'ї</p>
+                        </label>
+                    </div>
+                    <div class="test__body__options__item">
+                        <label for="for-children" class="option-label">
+                            <input type="checkbox" id="for-children" class="real-checkbox">
+                            <div class="checkboxImg-wrapper">
+                                <div class="custom-checkboxImg">
+                                    <img src="images/picture/for-children_.png" alt="">
+                                </div>
+                            </div>
+                            
+                            <p>Для дитини</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test__control">
+            <div class="test__control__checked">
+                <p>Тільки перевірені фахівці</p>
+                
+            </div>
+            <div class="test__control__arrows">
+                <a href="index.html" class="test__control__prev">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow-icon" d="M15.5 8H1.5M1.5 8L8.5 15M1.5 8L8.5 1" stroke="#795BDA" stroke-width="1.5"/>
+                    </svg>
+                </a>
+                <a href="test-phase-2.html" class="test__control__next">Вперед</a>
+            </div>
+            <div class="test__control__result">
+                <p>Знайденно: <span>21</span></p>
+                <ul class="test__control__doctors">
+                    <li><a href="#"><img src="images/picture/avatar-4.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/picture/avatar-7.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/picture/avatar-6.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/picture/avatar-1.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   </section>
+   <footer class="footer">
+    <div class="container">
+        <div class="footer__navigation">
+            <nav class="footer__menu">
+                <ul class="footer__menu__list">
+                    <li class="footer__menu__item"><a href="">Наші психотерапевти</a></li>
+                    <li class="footer__menu__item"><a href="">Про нас</a></li>
+                    <li class="footer__menu__item"><a href="">Статті</a></li>
+                    <li class="footer__menu__item"><a href="">Психологам</a></li>
+                </ul>
+            </nav>
+            <div class="footer__contact">
+                <ul class="footer__contact__list">
+                    <li class="footer__contact__item">care@mysense.care</li>
+                    <li class="footer__contact__item">
+                        <a href="">
+                            <img src="images/svg/Instagram.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/svg/Teleg.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/svg/Facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer__contact__item">
+                        <a href="">
+                            Відділ підтримки
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <ul class="footer__bottom__contract">
+                <li class="footer__bottom__item">
+                    <a href="">Договір оферта</a>
+                </li>
+                <li class="footer__bottom__item">
+                    <a href="">Політика конфіденційності</a>
+                </li>
+            </ul>
+            <ul class="footer__bottom__payment">
+                <li><img src="images/svg/Vctor.svg" alt=""></li>
+                <li><img src="images/svg/Vecor.svg" alt=""></li>
+                <li><img src="images/svg/Vecto.svg" alt=""></li>
+                <li><img src="images/svg/Vector.svg" alt=""></li>
+            </ul>
+            <span class="footer__bottom__copyright">© 2023 Mysense. всі права захищені</span>
+        </div>
+    </div>
+</footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>
