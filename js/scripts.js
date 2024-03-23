@@ -13734,6 +13734,12 @@ $(document).ready(function() {
       slidesToScroll: 1,
       dots: true,
       variableWidth:true,
+      responsive: [
+        {
+           breakpoint: 480,
+           settings: "unslick"
+        }
+     ]
       
      
     });
@@ -13745,6 +13751,7 @@ $(document).ready(function() {
       autoplay: true,
       speed:300,
     });
+
     $('.test-result__list').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -13753,6 +13760,8 @@ $(document).ready(function() {
       variableWidth:true
     });
 
+    
+
     $(document).mouseup(function (e) {
       var container = $(".filter__select__list ");
       if (container.has(e.target).length === 0){
@@ -13760,9 +13769,72 @@ $(document).ready(function() {
       }
   });
 
-  $('.comments-block__item,.diplom-slider__item,.test-result__item').removeAttr('style');
+  $('.comments-block__item,.diplom-slider__item,.test-result__item,.problem-solving__item').removeAttr('style');
 
 });
+
+if (window.matchMedia("(max-width: 480px)").matches) {
+  /* the viewport is at least 400 pixels wide */
+  $('.problem-solving__list').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay:true,
+    speed:30,
+    dots: true,
+    arrows:false,
+    variableWidth:true
+  });
+
+
+      
+
+
+} else {
+  /* the viewport is less than 400 pixels wide */
+}
+
+if (window.matchMedia("(max-width: 360px)").matches) {
+  /* the viewport is at least 400 pixels wide */
+const textBtn = document.querySelector('.problem-solving__link');
+textBtn.innerHTML = 'Підібрати психолога ';
+
+      
+
+
+} else {
+  /* the viewport is less than 400 pixels wide */
+}
+
+
+
+const commentsMore = document.querySelector('.comments-block__more');
+const commetsItem = document.querySelectorAll('.comments-block__item');
+const commentsList = document.querySelector('.comments-block__slider');
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  commentsMore.addEventListener('click', () => {
+    commetsItem.forEach(function(item){
+      item.style.display ='flex';
+      commentsMore.innerHTML = "Сховати";
+  
+      commentsMore.addEventListener('click',() => {
+        item.style.display = 'none';
+        commentsList.firstChild.style.display = 'flex';
+        commentsMore.innerHTML = "Показати ще";
+      });
+  
+    });
+  });
+});
+
+
+
+
+  
+
+
+
 
 
 const showTab = (elTabBtn) => {
@@ -13822,6 +13894,12 @@ document.querySelectorAll('.vebinar__question__title').forEach((item) =>
     }
   })
 )
+
+
+
+
+
+
 
 const selectCurrent = document.querySelectorAll(".type-therapy");
 
