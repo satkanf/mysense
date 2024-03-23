@@ -13793,7 +13793,7 @@ if (window.matchMedia("(max-width: 480px)").matches) {
   /* the viewport is less than 400 pixels wide */
 }
 
-if (window.matchMedia("(max-width: 360px)").matches) {
+if (window.matchMedia("(min-width: 360px) and (max-width: 479px").matches) {
   /* the viewport is at least 400 pixels wide */
 const textBtn = document.querySelector('.problem-solving__link');
 textBtn.innerHTML = 'Підібрати психолога ';
