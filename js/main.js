@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
 
   $('.comments-block__slider').slick({
@@ -43,13 +45,133 @@ $(document).ready(function() {
 
 });
 
+const btnCloseFilter = document.querySelector('.psiholog-query__close');
+const filterQuery = document.querySelector('.psiholog-query');
+const btnfilterQuery = document.querySelector('.psiholog-query__btn');
 
 
+if(btnfilterQuery){
+  btnfilterQuery.addEventListener('click', () => {
+    filterQuery.classList.add('psiholog-query__active');
+  })
+  btnCloseFilter.addEventListener('click', () => {
+    filterQuery.classList.remove('psiholog-query__active');
+  })
+}
+
+const aboutMore = document.querySelector('.psiholog__item__more');
+const psBody = document.querySelector('.psiholog__about > .psiholog__item__body');
+
+const popupWrapp = document.querySelector('.blur-bg');
+const logIn = document.querySelector('.authentication'); 
+const singIn = document.querySelector('.registration'); 
+const registerCode = document.querySelector('.registration-code');
+const registerCBtn = document.querySelector('.registration__btn');
+const registerCodeBtn = document.querySelector('.registration-code__submit');
+const registerDone = document.querySelector('.registration-done');
+const  openPopupButtons = document.querySelector('.btn-auth');
+const  closePopupButton = document.querySelectorAll('.popup-close'); 
+const singInLink = document.querySelector('.sing-in-link');
+const commentsMore = document.querySelector('.comments-block__more');
+const commetsItem = document.querySelectorAll('.comments-block__item');
+const commentsList = document.querySelector('.comments-block__slider');
+
+const checkClose = document.querySelector('.mobile-filter__cancel');
+
+const filterMobileBtn = document.querySelector('.mobile-filter-btn');
+const filterMobile = document.querySelector('.mobile-filter');
+const filterMobileClose = document.querySelector('.mobile-filter__close');
+const filterAppl = document.querySelector('.mobile-filter__apply');
+
+const filterBox = document.querySelector('.filter__box'); // Само окно
+const filterActive = document.querySelector('.filter__active');
+const filterBtn = document.querySelector('.filter__open'); // Кнопки для показа окна
+const closeFilter = document.querySelector('.filter__close'); // Кнопка для скрытия окна
+const filterApply = document.querySelector(".filter__apply");
+const selectCurrent = document.querySelectorAll(".type-therapy");
+const langCurrent = document.querySelectorAll(".lang-switcher");
+const replaceTtext = document.querySelector('.replace-text');
+const burgerMenu = document.querySelector('.burger-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeMobile = document.querySelector('.mobile-menu__close');
+if(burgerMenu){
+  burgerMenu.addEventListener('click', function(){ 
+    
+    mobileMenu.classList.add('mobile-menu__active');
+});
+};
+
+
+if(closeMobile){
+  closeMobile.addEventListener('click',() => { 
+  
+    mobileMenu.classList.remove('mobile-menu__active');
+  });
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  if(commentsMore){
+    commentsMore.addEventListener('click', () => {
+      commetsItem.forEach(function(item){
+        item.style.display ='flex';
+        commentsMore.innerHTML = "Сховати";
+    
+        commentsMore.addEventListener('click',() => {
+          item.style.display = 'none';
+          commentsList.firstChild.style.display = 'flex';
+          commentsMore.innerHTML = "Показати ще";
+        });
+    
+      });
+    });
+  };
+ 
+
+});
+
+
+openPopupButtons.addEventListener('click', () => { 
+  // e.preventDefault();
+logIn.classList.add('popup-active'); 
+popupWrapp.classList.add('popup-active');  
+}),
+
+singInLink.addEventListener('click',(e) => {
+e.preventDefault();
+singIn.classList.add('popup-active');
+logIn.classList.remove('popup-active');
+}) ,
+
+registerCBtn.addEventListener('click',(e) => {
+e.preventDefault();
+registerCode.classList.add('popup-active');
+singIn.classList.remove('popup-active');
+}) ,
+
+registerCodeBtn.addEventListener('click',(e) => {
+e.preventDefault();
+registerDone.classList.add('popup-active');
+registerCode.classList.remove('popup-active');
+}) ;
+closePopupButton.forEach( function(item){
+item.addEventListener('click', () => {
+  logIn.classList.remove('popup-active');
+  singIn.classList.remove('popup-active');
+  popupWrapp.classList.remove('popup-active');
+})
+});
 
 if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
   /* the viewport is at least 400 pixels wide */
   const textBtn = document.querySelector('.problem-solving__link');
-  textBtn.innerHTML = 'Підібрати психолога ';
+  if(textBtn){
+    textBtn.innerHTML = "Підібрати психолога";
+  }
+  if(replaceTtext){
+    replaceTtext.innerHTML = 'Для пари'
+  }
 
   $('.problem-solving__list').slick({
     slidesToShow: 1,
@@ -81,87 +203,26 @@ if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
     variableWidth:true
   });
 
+
+ 
+
 } else {
   /* the viewport is less than 400 pixels wide */
 }
 
 
-
-
-
-
-const aboutMore = document.querySelector('.psiholog__item__more');
-const psBody = document.querySelector('.psiholog__about > .psiholog__item__body');
-
-const popupWrapp = document.querySelector('.blur-bg');
-const logIn = document.querySelector('.authentication'); 
-const singIn = document.querySelector('.registration'); 
-const registerCode = document.querySelector('.registration-code');
-const registerCBtn = document.querySelector('.registration__btn');
-const registerCodeBtn = document.querySelector('.registration-code__submit');
-const registerDone = document.querySelector('.registration-done');
-const  openPopupButtons = document.querySelector('.btn-auth');
-const  closePopupButton = document.querySelectorAll('.popup-close'); 
-const singInLink = document.querySelector('.sing-in-link');
-
-function abMore(){
+if(aboutMore){
   aboutMore.addEventListener('click', function() {
     psBody.style.height = '100%';
     aboutMore.innerHTML = "";
     
   });
-};
+}
 
-function auth(){
-  
-  openPopupButtons.addEventListener('click', () => { 
-    // e.preventDefault();
-    logIn.classList.add('popup-active'); 
-    popupWrapp.classList.add('popup-active');  
-  });
-
-  singInLink.addEventListener('click',(e) => {
-  e.preventDefault();
-  singIn.classList.add('popup-active');
-  logIn.classList.remove('popup-active');
-  }) ;
-
-  registerCBtn.addEventListener('click',(e) => {
-  e.preventDefault();
-  registerCode.classList.add('popup-active');
-  singIn.classList.remove('popup-active');
-  }) ;
-
-  registerCodeBtn.addEventListener('click',(e) => {
-  e.preventDefault();
-  registerDone.classList.add('popup-active');
-  registerCode.classList.remove('popup-active');
-  }) ;
-
-
-
-  closePopupButton.forEach( function(item){
-  item.addEventListener('click', () => {
-    logIn.classList.remove('popup-active');
-    singIn.classList.remove('popup-active');
-    popupWrapp.classList.remove('popup-active');
-  })
-  });
-
-};
-abMore();
-auth();
 
 
 
   
-
-
-
-
-
-
-
 document.querySelectorAll('.psiholog__item__title').forEach((item) => 
   item.addEventListener('click', () => {
     const parent = item.parentNode;
@@ -198,69 +259,38 @@ document.querySelectorAll('.vebinar__question__title').forEach((item) =>
 
 
 
-
-const checkClose = document.querySelector('.mobile-filter__cancel');
-
-checkClose.addEventListener('click', function(){
-  const checkItem = document.querySelectorAll('.filter__btn input');
-
-  checkItem.forEach(function(el){
-    el.checked = false;
+if(checkClose){
+  checkClose.addEventListener('click', function(){
+    const checkItem = document.querySelectorAll('.filter__btn input');
+  
+    checkItem.forEach(function(el){
+      el.checked = false;
+    })
   })
-})
+  
+}
 
-const filterMobileBtn = document.querySelector('.mobile-filter-btn');
-const filterMobile = document.querySelector('.mobile-filter');
-const filterMobileClose = document.querySelector('.mobile-filter__close');
-const filterAppl = document.querySelector('.mobile-filter__apply');
 
-filterMobileBtn.addEventListener('click', function(){ 
+
+
+if(filterMobileBtn){
+  filterMobileBtn.addEventListener('click', function(){ 
  
-  filterMobile.classList.add('mobile-filter__active');
-});
-
-filterAppl.addEventListener('click',() => { 
-
-  filterMobile.classList.remove('mobile-filter__active');
-  
-});
-filterMobileClose.addEventListener('click',() => { 
-
-  filterMobile.classList.remove('mobile-filter__active');
-  
-});
-
-
-
-const commentsMore = document.querySelector('.comments-block__more');
-const commetsItem = document.querySelectorAll('.comments-block__item');
-const commentsList = document.querySelector('.comments-block__slider');
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  commentsMore.addEventListener('click', () => {
-    commetsItem.forEach(function(item){
-      item.style.display ='flex';
-      commentsMore.innerHTML = "Сховати";
-  
-      commentsMore.addEventListener('click',() => {
-        item.style.display = 'none';
-        commentsList.firstChild.style.display = 'flex';
-        commentsMore.innerHTML = "Показати ще";
-      });
-  
-    });
+    filterMobile.classList.add('mobile-filter__active');
   });
-});
+  
+  filterAppl.addEventListener('click',() => { 
+  
+    filterMobile.classList.remove('mobile-filter__active');
+    
+  });
+  filterMobileClose.addEventListener('click',() => { 
+  
+    filterMobile.classList.remove('mobile-filter__active');
+    
+  });
+}
 
-
-document.addEventListener('click', (e) => {
-  if (e.target && !e.target.closest('.tabs-item')) {
-    return;
-  }
-  const elTabBtn = e.target.closest('.tabs-item');
-  showTab(elTabBtn);
-});
 
 document.querySelectorAll('.test__body__title').forEach((item) => 
   item.addEventListener('click', () => {
@@ -279,11 +309,6 @@ document.querySelectorAll('.test__body__title').forEach((item) =>
 )
 
 
-
-
-
-
-const selectCurrent = document.querySelectorAll(".type-therapy");
 
 selectCurrent.forEach(function(select){
 
@@ -310,7 +335,7 @@ selectCurrent.forEach(function(select){
 
 });
 
-const langCurrent = document.querySelectorAll(".lang-switcher");
+
 
 langCurrent.forEach(function(select){
 
@@ -337,55 +362,31 @@ langList.querySelectorAll("li").forEach(function(item) {
 
 });
 
-const mobileMenu = document.querySelector('.mobile-menu'); // Само окно
-const mobileActive = document.querySelector('.mobile-menu__active');
-const burgerMenu = document.querySelector('.burger-menu'); // Кнопки для показа окна
-const closeMobile = document.querySelector('.mobile-menu__close'); // Кнопка для скрытия окна
-
-  
-burgerMenu.addEventListener('click', function(){ 
-    
-     mobileMenu.classList.add('mobile-menu__active');
-});
-
-
-closeMobile.addEventListener('click',() => { 
-  
-  mobileMenu.classList.remove('mobile-menu__active');
-});
 
 
 
 
 
-
-
-const filterBox = document.querySelector('.filter__box'); // Само окно
-const filterActive = document.querySelector('.filter__active');
-const filterBtn = document.querySelector('.filter__open'); // Кнопки для показа окна
-const closeFilter = document.querySelector('.filter__close'); // Кнопка для скрытия окна
-const filterApply = document.querySelector(".filter__apply");
-
-  
-filterBtn.addEventListener('click', function(){ 
+if(filterBtn){
+  filterBtn.addEventListener('click', function(){ 
    
-     filterBox.classList.add('filter__active');
+    filterBox.classList.add('filter__active');
 });
 
 
 closeFilter.addEventListener('click',() => { 
-  
-    filterBox.classList.remove('filter__active');
-    
+ 
+   filterBox.classList.remove('filter__active');
+   
 
 });
 filterApply.addEventListener('click',() => { 
-  
-    filterBox.classList.remove('filter__active');
-    
+ 
+   filterBox.classList.remove('filter__active');
+   
 
 });
-
+}
 
 const showTab = (elTabBtn) => {
   const elTab = elTabBtn.closest('.psiholog__item');
@@ -403,9 +404,6 @@ const showTab = (elTabBtn) => {
     elTabPane.classList.add('tab-show');
   }
 }
-
-
-  
 
 
 
@@ -430,6 +428,5 @@ this._el.addEventListener('click', (e) => {
   elHeader.parentElement.classList.toggle('accordion__item_show');
 });
 
-accardion();
-Mobile();
+
 
