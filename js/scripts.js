@@ -13760,8 +13760,6 @@ $(document).ready(function() {
       variableWidth:true
     });
 
-    
-
     $(document).mouseup(function (e) {
       var container = $(".filter__select__list ");
       if (container.has(e.target).length === 0){
@@ -13769,12 +13767,19 @@ $(document).ready(function() {
       }
   });
 
+
   $('.comments-block__item,.diplom-slider__item,.test-result__item,.problem-solving__item').removeAttr('style');
 
 });
 
-if (window.matchMedia("(max-width: 480px)").matches) {
+
+
+
+if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
   /* the viewport is at least 400 pixels wide */
+  const textBtn = document.querySelector('.problem-solving__link');
+  textBtn.innerHTML = 'Підібрати психолога ';
+
   $('.problem-solving__list').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -13786,24 +13791,173 @@ if (window.matchMedia("(max-width: 480px)").matches) {
   });
 
 
-      
-
+  $('.direction__list').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay:true,
+    speed:30,
+    dots: true,
+    arrows:false,
+    variableWidth:true
+  });
+  $('.direction__tab').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay:true,
+    speed:30,
+    dots: true,
+    arrows:false,
+    variableWidth:true
+  });
 
 } else {
   /* the viewport is less than 400 pixels wide */
 }
 
-if (window.matchMedia("(min-width: 360px) and (max-width: 479px").matches) {
-  /* the viewport is at least 400 pixels wide */
-const textBtn = document.querySelector('.problem-solving__link');
-textBtn.innerHTML = 'Підібрати психолога ';
-
-      
 
 
-} else {
-  /* the viewport is less than 400 pixels wide */
-}
+
+
+
+const aboutMore = document.querySelector('.psiholog__item__more');
+const psBody = document.querySelector('.psiholog__about > .psiholog__item__body');
+
+const popupWrapp = document.querySelector('.blur-bg');
+const logIn = document.querySelector('.authentication'); 
+const singIn = document.querySelector('.registration'); 
+const registerCode = document.querySelector('.registration-code');
+const registerCBtn = document.querySelector('.registration__btn');
+const registerCodeBtn = document.querySelector('.registration-code__submit');
+const registerDone = document.querySelector('.registration-done');
+const  openPopupButtons = document.querySelector('.btn-auth');
+const  closePopupButton = document.querySelectorAll('.popup-close'); 
+const singInLink = document.querySelector('.sing-in-link');
+
+function abMore(){
+  aboutMore.addEventListener('click', function() {
+    psBody.style.height = '100%';
+    aboutMore.innerHTML = "";
+    
+  });
+};
+
+function auth(){
+  
+  openPopupButtons.addEventListener('click', () => { 
+    // e.preventDefault();
+    logIn.classList.add('popup-active'); 
+    popupWrapp.classList.add('popup-active');  
+  });
+
+  singInLink.addEventListener('click',(e) => {
+  e.preventDefault();
+  singIn.classList.add('popup-active');
+  logIn.classList.remove('popup-active');
+  }) ;
+
+  registerCBtn.addEventListener('click',(e) => {
+  e.preventDefault();
+  registerCode.classList.add('popup-active');
+  singIn.classList.remove('popup-active');
+  }) ;
+
+  registerCodeBtn.addEventListener('click',(e) => {
+  e.preventDefault();
+  registerDone.classList.add('popup-active');
+  registerCode.classList.remove('popup-active');
+  }) ;
+
+
+
+  closePopupButton.forEach( function(item){
+  item.addEventListener('click', () => {
+    logIn.classList.remove('popup-active');
+    singIn.classList.remove('popup-active');
+    popupWrapp.classList.remove('popup-active');
+  })
+  });
+
+};
+abMore();
+auth();
+
+
+
+  
+
+
+
+
+
+
+
+document.querySelectorAll('.psiholog__item__title').forEach((item) => 
+  item.addEventListener('click', () => {
+    const parent = item.parentNode;
+
+    if(parent.classList.contains('psiholog__item__active')){
+        parent.classList.remove('psiholog__item__active')
+    }else{
+      document
+              .querySelectorAll('.psiholog__item__item')
+              .forEach((child) => child.classList.remove('psiholog__item__active'))
+
+      parent.classList.toggle('psiholog__item__active');
+    }
+  })
+)
+
+
+
+document.querySelectorAll('.vebinar__question__title').forEach((item) => 
+  item.addEventListener('click', () => {
+    const parent = item.parentNode;
+
+    if(parent.classList.contains('vebinar__question__active')){
+        parent.classList.remove('vebinar__question__active')
+    }else{
+      document
+              .querySelectorAll('.vebinar__question__item')
+              .forEach((child) => child.classList.remove('vebinar__question__active'))
+
+      parent.classList.toggle('vebinar__question__active');
+    }
+  })
+)
+
+
+
+
+const checkClose = document.querySelector('.mobile-filter__cancel');
+
+checkClose.addEventListener('click', function(){
+  const checkItem = document.querySelectorAll('.filter__btn input');
+
+  checkItem.forEach(function(el){
+    el.checked = false;
+  })
+})
+
+const filterMobileBtn = document.querySelector('.mobile-filter-btn');
+const filterMobile = document.querySelector('.mobile-filter');
+const filterMobileClose = document.querySelector('.mobile-filter__close');
+const filterAppl = document.querySelector('.mobile-filter__apply');
+
+filterMobileBtn.addEventListener('click', function(){ 
+ 
+  filterMobile.classList.add('mobile-filter__active');
+});
+
+filterAppl.addEventListener('click',() => { 
+
+  filterMobile.classList.remove('mobile-filter__active');
+  
+});
+filterMobileClose.addEventListener('click',() => { 
+
+  filterMobile.classList.remove('mobile-filter__active');
+  
+});
 
 
 
@@ -13829,31 +13983,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-  
-
-
-
-
-
-const showTab = (elTabBtn) => {
-  const elTab = elTabBtn.closest('.psiholog__item');
-  if (elTabBtn.classList.contains('tab-active')) {
-    return;
-  }
-  const targetId = elTabBtn.dataset.targetId;
-  const elTabPane = elTab.querySelector(`.psiholog__item__text[data-id="${targetId}"]`);
-  if (elTabPane) {
-    const elTabBtnActive = elTab.querySelector('.tab-active');
-    elTabBtnActive.classList.remove('tab-active');
-    const elTabPaneShow = elTab.querySelector('.tab-show');
-    elTabPaneShow.classList.remove('tab-show');
-    elTabBtn.classList.add('tab-active');
-    elTabPane.classList.add('tab-show');
-  }
-}
-
 document.addEventListener('click', (e) => {
   if (e.target && !e.target.closest('.tabs-item')) {
     return;
@@ -13861,7 +13990,6 @@ document.addEventListener('click', (e) => {
   const elTabBtn = e.target.closest('.tabs-item');
   showTab(elTabBtn);
 });
-
 
 document.querySelectorAll('.test__body__title').forEach((item) => 
   item.addEventListener('click', () => {
@@ -13879,31 +14007,12 @@ document.querySelectorAll('.test__body__title').forEach((item) =>
   })
 )
 
-document.querySelectorAll('.vebinar__question__title').forEach((item) => 
-  item.addEventListener('click', () => {
-    const parent = item.parentNode;
-
-    if(parent.classList.contains('vebinar__question__active')){
-        parent.classList.remove('vebinar__question__active')
-    }else{
-      document
-              .querySelectorAll('.vebinar__question__item')
-              .forEach((child) => child.classList.remove('vebinar__question__active'))
-
-      parent.classList.toggle('vebinar__question__active');
-    }
-  })
-)
-
-
 
 
 
 
 
 const selectCurrent = document.querySelectorAll(".type-therapy");
-
-
 
 selectCurrent.forEach(function(select){
 
@@ -13930,11 +14039,7 @@ selectCurrent.forEach(function(select){
 
 });
 
-
-
 const langCurrent = document.querySelectorAll(".lang-switcher");
-
-
 
 langCurrent.forEach(function(select){
 
@@ -13967,76 +14072,16 @@ const burgerMenu = document.querySelector('.burger-menu'); // Кнопки дл�
 const closeMobile = document.querySelector('.mobile-menu__close'); // Кнопка для скрытия окна
 
   
-burgerMenu.addEventListener('click', function(){ // Для каждой вешаем обработчик событий на клик
-    // mobileActive.style.display = "flex";
-     // И для самого окна
+burgerMenu.addEventListener('click', function(){ 
+    
      mobileMenu.classList.add('mobile-menu__active');
 });
 
 
-closeMobile.addEventListener('click',() => { // Вешаем обработчик на крестик
-  // mobileMenu.style.display = "none";
+closeMobile.addEventListener('click',() => { 
+  
   mobileMenu.classList.remove('mobile-menu__active');
 });
-
-const popupWrapp = document.querySelector('.blur-bg');
-const logIn = document.querySelector('.authentication'); 
-const singIn = document.querySelector('.registration'); 
-const registerCode = document.querySelector('.registration-code');
-const registerCBtn = document.querySelector('.registration__btn');
-const registerCodeBtn = document.querySelector('.registration-code__submit');
-const registerDone = document.querySelector('.registration-done');
-const  openPopupButtons = document.querySelector('.btn-auth');
-const  closePopupButton = document.querySelectorAll('.popup-close'); 
-const singInLink = document.querySelector('.sing-in-link');
-
-
-
-openPopupButtons.addEventListener('click', (e) => { 
-      e.preventDefault();
-      logIn.classList.add('popup-active'); 
-      popupWrapp.classList.add('popup-active');  
-});
-
-singInLink.addEventListener('click',(e) => {
-  e.preventDefault();
-  singIn.classList.add('popup-active');
-  logIn.classList.remove('popup-active');
-}) ;
-
-registerCBtn.addEventListener('click',(e) => {
-  e.preventDefault();
-  registerCode.classList.add('popup-active');
-  singIn.classList.remove('popup-active');
-}) ;
-
-registerCodeBtn.addEventListener('click',(e) => {
-  e.preventDefault();
-  registerDone.classList.add('popup-active');
-  registerCode.classList.remove('popup-active');
-}) ;
-
-
-
-closePopupButton.forEach( function(item){
-  item.addEventListener('click', () => {
-    logIn.classList.remove('popup-active');
-    singIn.classList.remove('popup-active');
-    popupWrapp.classList.remove('popup-active');
-  })
-});
-
-// closePopupButton.addEventListener('click',(e) => {
-//   e.preventDefault();
-//   logIn.classList.remove('popup-active');
-//   singIn.classList.remove('popup-active');
-// });
-
-
-
-
-
-
 
 
 
@@ -14051,27 +14096,45 @@ const closeFilter = document.querySelector('.filter__close'); // Кнопка д
 const filterApply = document.querySelector(".filter__apply");
 
   
-filterBtn.addEventListener('click', function(){ // Для каждой вешаем обработчик событий на клик
-    // mobileActive.style.display = "flex";
-     // И для самого окна
+filterBtn.addEventListener('click', function(){ 
+   
      filterBox.classList.add('filter__active');
 });
 
 
-closeFilter.addEventListener('click',() => { // Вешаем обработчик на крестик
-  // mobileMenu.style.display = "none";
+closeFilter.addEventListener('click',() => { 
+  
     filterBox.classList.remove('filter__active');
     
 
 });
-filterApply.addEventListener('click',() => { // Вешаем обработчик на крестик
-  // mobileMenu.style.display = "none";
+filterApply.addEventListener('click',() => { 
+  
     filterBox.classList.remove('filter__active');
     
 
 });
 
 
+const showTab = (elTabBtn) => {
+  const elTab = elTabBtn.closest('.psiholog__item');
+  if (elTabBtn.classList.contains('tab-active')) {
+    return;
+  }
+  const targetId = elTabBtn.dataset.targetId;
+  const elTabPane = elTab.querySelector(`.psiholog__item__text[data-id="${targetId}"]`);
+  if (elTabPane) {
+    const elTabBtnActive = elTab.querySelector('.tab-active');
+    elTabBtnActive.classList.remove('tab-active');
+    const elTabPaneShow = elTab.querySelector('.tab-show');
+    elTabPaneShow.classList.remove('tab-show');
+    elTabBtn.classList.add('tab-active');
+    elTabPane.classList.add('tab-show');
+  }
+}
+
+
+  
 
 
 
@@ -14095,4 +14158,7 @@ this._el.addEventListener('click', (e) => {
   // переключим класс accordion__item_show элемента .accordion__header
   elHeader.parentElement.classList.toggle('accordion__item_show');
 });
+
+accardion();
+Mobile();
 

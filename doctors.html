@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>MySense</title>
 </head>
 <body>
@@ -287,23 +287,274 @@
                             <label for="">Зустріч-знайомство</label>
                         </fotm>
                     </div>
-                    <div class="type-therapy filter__item-price">
-                        <label for="type-therapy">Сортування:</label>
-                        <div class="filter__select select__header">
-                            <span class="filter__select__name select__current">За збільшинням ціни</span>
-                            <div class="filter__select__icon select__icon">&#8249</div>
+                    
+                    <div class="wrap">
+                        <div class="type-therapy filter__item-price">
+                            <label for="type-therapy">Сортування:</label>
+                            <div class="filter__select select__header">
+                                <span class="filter__select__name select__current">За збільшинням ціни</span>
+                                <div class="filter__select__icon select__icon">&#8249</div>
+                            </div>
+                            <div class="filter__select__list select__box">
+                                <div class="filter__select__item select__item">За збільшинням ціни</div>
+                                <div class="filter__select__item select__item">За зменшенням ціни</div>
+                                
+                            </div>
                         </div>
-                        <div class="filter__select__list select__box">
-                            <div class="filter__select__item select__item">За збільшинням ціни</div>
-                            <div class="filter__select__item select__item">За зменшенням ціни</div>
-                            
+                        <button class="mobile-filter-btn">
+                            <div class="mobile-filter-btn__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>Фільтри
+                        </button>
+                        <div class="mobile-filter">
+                            <h3 class="mobile-filter__title">Фільтри</h3>
+                            <div class="mobile-filter__close"></div>
+                            <div class="mobile-filter__content">
+                                <div class="filter__query__item">
+                                    <h3 class="filter__title title">Тип терапії</h3>
+                                    <div class="filter__query__box">
+                                        <form action="">
+                                            <div class="filter__btn">
+                                                <label for="fl-m-1">
+                                                <input type="radio" name="format" id="fl-m-1">
+                                                <div class="filter-btn">
+                                                    Індивідуальна
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="filter__btn">
+                                                <label for="fl-m-2">
+                                                <input type="radio" name="format" id="fl-m-2">
+                                                <div class="filter-btn">
+                                                    Сімейна
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="filter__btn">
+                                                <label for="fl-m-3">
+                                                <input type="radio" name="format" id="fl-m-3">
+                                                <div class="filter-btn">
+                                                    Дитяча
+                                                </div>
+                                            </label>
+                                            </div>
+                                           
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                                <div class="mobile-filter__item">
+                                    <h3 class="filter__title title">Тип терапії</h3>
+                                    <div class="test__body">
+                                
+                                    <div class="test__body__item">
+                                        <label for="ch1" class="test-label">
+                                            <input type="checkbox" name="" id="ch1" class="test-label__real"> 
+                                            <div class="test__custom-checkbox">
+                                                <svg width="12" height="11" class="chackedmark" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path  d="M1 5.8L4.57143 9L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>
+                                            </div>
+                                            Травматерапія
+                                        </label>
+                                    </div>
+                                    <div class="test__body__item">
+                                        <label for="ch2" class="test-label">
+                                            <input type="checkbox" name="" id="ch2" class="test-label__real">
+                                            <div class="test__custom-checkbox">
+                                                <svg width="12" height="11" class="chackedmark" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path  d="M1 5.8L4.57143 9L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>
+                                            </div>
+                                            КПТ
+                                        </label>
+                                    </div>
+                                    <div class="test__body__item">
+                                        <label for="ch3" class="test-label">
+                                            <input type="checkbox" name="" id="ch3" class="test-label__real">
+                                            <div class="test__custom-checkbox">
+                                                <svg width="12" height="11" class="chackedmark" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path  d="M1 5.8L4.57143 9L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>
+                                            </div>
+                                            Арт-терапія
+                                        </label>
+                                    </div>
+                                    <div class="test__body__item">
+                                        <label for="ch4" class="test-label">
+                                            <input type="checkbox" name="" id="ch4" class="test-label__real">
+                                            <div class="test__custom-checkbox">
+                                                <svg width="12" height="11" class="chackedmark" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path  d="M1 5.8L4.57143 9L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>
+                                            </div>
+                                            Сімейна терапія
+                                        </label>
+                                    </div>
+                                    <div class="test__body__item">
+                                        <label for="ch5" class="test-label">
+                                            <input type="checkbox" name="" id="ch5" class="test-label__real">
+                                            <div class="test__custom-checkbox">
+                                                <svg width="12" height="11" class="chackedmark" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path  d="M1 5.8L4.57143 9L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>
+                                            </div>
+                                            Гештальт-терапія
+                                        </label>
+                                    </div>
+                                    <div class="test__body__item">
+                                        <label for="ch5" class="test-label">
+                                            <input type="checkbox" name="" id="ch5" class="test-label__real">
+                                            <div class="test__custom-checkbox">
+                                                <svg width="12" height="11" class="chackedmark" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path  d="M1 5.8L4.57143 9L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>
+                                            </div>
+                                            EMDR
+                                        </label>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                <div class="filter__query__item">
+                                    <h3 class="filter__title title">Оберіть формат сесії</h3>
+                                    <div class="filter__query__box">
+                                        <form action="">
+                                            <div class="filter__btn">
+                                                <label for="fl-m-4">
+                                                <input type="radio" name="format" id="fl-m-4">
+                                                <div class="filter-btn">
+                                                    Онлайн
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="filter__btn">
+                                                <label for="fl-m-5">
+                                                <input type="radio" name="format" id="fl-m-5">
+                                                <div class="filter-btn">
+                                                    Очно
+                                                </div>
+                                            </label>
+                                            </div>
+                                            
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                                <div class="filter__query__item">
+                                    <h3 class="filter__title title">Оберіть стать психолога</h3>
+                                    <div class="filter__query__box">
+                                        <form action="">
+                                            <div class="filter__btn">
+                                                <label for="fl-m-6">
+                                                <input type="radio" name="format" id="fl-m-6">
+                                                <div class="filter-btn">
+                                                    Не важливо
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="filter__btn">
+                                                <label for="fl-m-7">
+                                                <input type="radio" name="format" id="fl-m-7">
+                                                <div class="filter-btn">
+                                                    Жінка
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="filter__btn">
+                                                <label for="fl-m-8">
+                                                <input type="radio" name="format" id="fl-m-8">
+                                                <div class="filter-btn">
+                                                    Чоловік
+                                                </div>
+                                            </label>
+                                            </div>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                                <div class="filter__query__item">
+                                    <h3 class="filter__title title">Оберіть мову спілкування</h3>
+                                    <div class="filter__query__box">
+                                        <form action="">
+                                            <div class="filter__btn">
+                                                <label for="fl-m-9">
+                                                <input type="radio" name="format" id="fl-m-9">
+                                                <div class="filter-btn">
+                                                    Українська
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="filter__btn">
+                                                <label for="fl-m-10">
+                                                <input type="radio" name="format" id="fl-m-10">
+                                                <div class="filter-btn">
+                                                    російська
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="filter__btn">
+                                                <label for="fl-m-11">
+                                                <input type="radio" name="format" id="fl-m-11">
+                                                <div class="filter-btn">
+                                                    Англійська
+                                                </div>
+                                            </label>
+                                            </div>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                                <div class="filter__query__item">
+                                    <h3 class="filter__title title">Оберіть прийнятну ціну</h3>
+                                    <div class="filter__query__box">
+                                        <form action="">
+                                            <div class="filter__btn">
+                                                <label for="fl-m-12">
+                                                <input type="radio" name="format" id="fl-m-12">
+                                                <div class="filter-btn">
+                                                    від 1300 ₴
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="filter__btn">
+                                                <label for="fl-m-13">
+                                                <input type="radio" name="format" id="fl-m-13">
+                                                <div class="filter-btn">
+                                                    до 1800 ₴
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="filter__btn">
+                                                <label for="fl-m-14">
+                                                <input type="radio" name="format" id="fl-m-14">
+                                                <div class="filter-btn">
+                                                    1800 ₴ і більше
+                                                </div>
+                                            </label>
+                                            </div>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-filter__btn">
+                                <button class="mobile-filter__cancel">Скасувати все</button>
+                                <button class="mobile-filter__apply">Застосувати</button>
+                            </div>
+                           
                         </div>
                     </div>
+                    
                     <div class="search filter__item-sm">
                         <form action="" class="search__form">
                             <input type="search" name="" id="" placeholder="Пошук за ім'ям та інше  ">
                         </form>
                     </div>
+                    
+                   
                 </div>
             </div>
         </div>
@@ -342,20 +593,22 @@
                                 <li>Почуття самотності</li>
                                 <li>Та інше</li>
                             </ul>
-                            <ul class="psikholog__item__format">
-                                <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                                та
-                                <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                            </ul>
-                            <span class="psikholog__item__price">від 1200 &#8372;</span>
-                            <div class="psikholog__item__btn">
-                                <a href="">Чат з терапевтом</a>
-                                <a href="single-doctor.html">В профіль</a>
-                            </div>
+                           
+                           
+                        </div>
+                        <span class="psikholog__item__price">від 1200 &#8372;</span>
+                        <ul class="psikholog__item__format">
+                            <li><i>
+                                <img src="images//svg/ochno.svg" alt="">
+                            </i>Онлайн</li>
+                            та
+                            <li><i>
+                                <img src="images/svg/onlain.svg" alt="">
+                            </i>Очно</li>
+                        </ul>
+                        <div class="psikholog__item__btn">
+                            <a href="">Чат з терапевтом</a>
+                            <a href="single-doctor.html">В профіль</a>
                         </div>
                     </div>
                     <div class="psikholog__item__session">
@@ -369,262 +622,6 @@
                             </svg>
                         </i>Домовитисть про сесію</a>
                     </div>
-                </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-7.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
-                                <li><i>
-                                    <img src="images/svg/dosvids.svg" alt="">
-                                </i>5 років практики</li>
-                                
-                                <li><i>
-                                    <img src="images/svg/sessia.svg" alt="">
-                                </i>220+ сесій</li>
-                            </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
-                            <ul class="psikholog__item__format">
-                                <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                                та
-                                <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                            </ul>
-                            <span class="psikholog__item__price">від 1200 &#8372;</span>
-                            <div class="psikholog__item__btn">
-                                <a href="">Чат з терапевтом</a>
-                                <a href="single-doctor.html">В профіль</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-7.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
-                                <li><i>
-                                    <img src="images/svg/dosvids.svg" alt="">
-                                </i>5 років практики</li>
-                                
-                                <li><i>
-                                    <img src="images/svg/sessia.svg" alt="">
-                                </i>220+ сесій</li>
-                            </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
-                            <ul class="psikholog__item__format">
-                                <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                                та
-                                <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                            </ul>
-                            <span class="psikholog__item__price">від 1200 &#8372;</span>
-                            <div class="psikholog__item__btn">
-                                <a href="">Чат з терапевтом</a>
-                                <a href="single-doctor.html">В профіль</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="psikholog__item__profile psikholog__banner">
-                    <div class="psikholog__banner__text">
-                        <span>це безкоштовно ;)</span>
-                        <h2>15 хвилин на знайомство</h2>
-                        <p>Зустріч—знайомство з фахівцем який Вам сподобався</p>
-                        <a href="test-phase-1.html">Підібрати психолога</a>
-                    </div>
-                    <div class="psikholog__banner__img">
-                        <img src="images/picture/img-banner-2.png" alt="">
-                    </div>
-                </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/problem05.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
-                                <li><i>
-                                    <img src="images/svg/dosvids.svg" alt="">
-                                </i>5 років практики</li>
-                                
-                                <li><i>
-                                    <img src="images/svg/sessia.svg" alt="">
-                                </i>220+ сесій</li>
-                            </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
-                            <ul class="psikholog__item__format">
-                                <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                                та
-                                <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                            </ul>
-                            <span class="psikholog__item__price">від 1200 &#8372;</span>
-                            <div class="psikholog__item__btn">
-                                <a href="">Чат з терапевтом</a>
-                                <a href="single-doctor.html">В профіль</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-8.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
-                                <li><i>
-                                    <img src="images/svg/dosvids.svg" alt="">
-                                </i>5 років практики</li>
-                                
-                                <li><i>
-                                    <img src="images/svg/sessia.svg" alt="">
-                                </i>220+ сесій</li>
-                            </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
-                            <ul class="psikholog__item__format">
-                                <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                                та
-                                <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                            </ul>
-                            <span class="psikholog__item__price">від 1200 &#8372;</span>
-                            <div class="psikholog__item__btn">
-                                <a href="">Чат з терапевтом</a>
-                                <a href="single-doctor.html">В профіль</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-4.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
-                                <li><i>
-                                    <img src="images/svg/dosvids.svg" alt="">
-                                </i>5 років практики</li>
-                                
-                                <li><i>
-                                    <img src="images/svg/sessia.svg" alt="">
-                                </i>220+ сесій</li>
-                            </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
-                            <ul class="psikholog__item__format">
-                                <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                                та
-                                <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                            </ul>
-                            <span class="psikholog__item__price">від 1200 &#8372;</span>
-                            <div class="psikholog__item__btn">
-                                <a href="">Чат з терапевтом</a>
-                                <a href="single-doctor.html">В профіль</a>
-                            </div>
-                        </div>
-                    </div>
-                   
                 </div>
                 <div class="psikholog__item">
                     <div class="psikholog__item__profile">
@@ -657,20 +654,288 @@
                                 <li>Почуття самотності</li>
                                 <li>Та інше</li>
                             </ul>
-                            <ul class="psikholog__item__format">
+                           
+                           
+                        </div>
+                        <span class="psikholog__item__price">від 1200 &#8372;</span>
+                        <ul class="psikholog__item__format">
+                            <li><i>
+                                <img src="images//svg/ochno.svg" alt="">
+                            </i>Онлайн</li>
+                            та
+                            <li><i>
+                                <img src="images/svg/onlain.svg" alt="">
+                            </i>Очно</li>
+                        </ul>
+                        <div class="psikholog__item__btn">
+                            <a href="">Чат з терапевтом</a>
+                            <a href="single-doctor.html">В профіль</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="psikholog__item">
+                    <div class="psikholog__item__profile">
+                        <div class="psikholog__item__foto">
+                            <img src="images/picture/avatar-6.png" alt="">
+                            <span>Знайомство 15 хв</span>
+                        </div>
+                        <div class="psikholog__item__info">
+                            <p class="psikholog__item__city">Київ</p>
+                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
+                            <ul class="psikholog__item__experience">
                                 <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                                та
+                                    <img src="images/svg/dosvids.svg" alt="">
+                                </i>5 років практики</li>
+                                
                                 <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
+                                    <img src="images/svg/sessia.svg" alt="">
+                                </i>220+ сесій</li>
                             </ul>
-                            <span class="psikholog__item__price">від 1200 &#8372;</span>
-                            <div class="psikholog__item__btn">
-                                <a href="">Чат з терапевтом</a>
-                                <a href="single-doctor.html">В профіль</a>
-                            </div>
+                            <ul class="psikholog__item__speciality">
+                                <li>Психолог</li>
+                                <li>Сімейний психолог</li>
+                                <li>Гештальт-терапевт</li>
+                            </ul>
+                            <ul class="psikholog__item__direction">
+                                <li>Складно прийняти важливе рішення</li>
+                                <li>Розлучення</li>
+                                <li>Зрада</li>
+                                <li>Страх нових стосунків</li>
+                                <li>Почуття самотності</li>
+                                <li>Та інше</li>
+                            </ul>
+                           
+                           
+                        </div>
+                        <span class="psikholog__item__price">від 1200 &#8372;</span>
+                        <ul class="psikholog__item__format">
+                            <li><i>
+                                <img src="images//svg/ochno.svg" alt="">
+                            </i>Онлайн</li>
+                            та
+                            <li><i>
+                                <img src="images/svg/onlain.svg" alt="">
+                            </i>Очно</li>
+                        </ul>
+                        <div class="psikholog__item__btn">
+                            <a href="">Чат з терапевтом</a>
+                            <a href="single-doctor.html">В профіль</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="psikholog__item__profile psikholog__banner">
+                    <div class="psikholog__banner__text">
+                        <span>це безкоштовно ;)</span>
+                        <h2>15 хвилин на знайомство</h2>
+                        <p>Зустріч—знайомство з фахівцем який Вам сподобався</p>
+                        <a href="test-phase-1.html">Підібрати психолога</a>
+                    </div>
+                    <div class="psikholog__banner__img">
+                        <img src="images/picture/img-banner-2.png" alt="">
+                    </div>
+                </div>
+                <div class="psikholog__item">
+                    <div class="psikholog__item__profile">
+                        <div class="psikholog__item__foto">
+                            <img src="images/picture/avatar-6.png" alt="">
+                            <span>Знайомство 15 хв</span>
+                        </div>
+                        <div class="psikholog__item__info">
+                            <p class="psikholog__item__city">Київ</p>
+                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
+                            <ul class="psikholog__item__experience">
+                                <li><i>
+                                    <img src="images/svg/dosvids.svg" alt="">
+                                </i>5 років практики</li>
+                                
+                                <li><i>
+                                    <img src="images/svg/sessia.svg" alt="">
+                                </i>220+ сесій</li>
+                            </ul>
+                            <ul class="psikholog__item__speciality">
+                                <li>Психолог</li>
+                                <li>Сімейний психолог</li>
+                                <li>Гештальт-терапевт</li>
+                            </ul>
+                            <ul class="psikholog__item__direction">
+                                <li>Складно прийняти важливе рішення</li>
+                                <li>Розлучення</li>
+                                <li>Зрада</li>
+                                <li>Страх нових стосунків</li>
+                                <li>Почуття самотності</li>
+                                <li>Та інше</li>
+                            </ul>
+                           
+                           
+                        </div>
+                        <span class="psikholog__item__price">від 1200 &#8372;</span>
+                        <ul class="psikholog__item__format">
+                            <li><i>
+                                <img src="images//svg/ochno.svg" alt="">
+                            </i>Онлайн</li>
+                            та
+                            <li><i>
+                                <img src="images/svg/onlain.svg" alt="">
+                            </i>Очно</li>
+                        </ul>
+                        <div class="psikholog__item__btn">
+                            <a href="">Чат з терапевтом</a>
+                            <a href="single-doctor.html">В профіль</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="psikholog__item">
+                    <div class="psikholog__item__profile">
+                        <div class="psikholog__item__foto">
+                            <img src="images/picture/avatar-6.png" alt="">
+                            <span>Знайомство 15 хв</span>
+                        </div>
+                        <div class="psikholog__item__info">
+                            <p class="psikholog__item__city">Київ</p>
+                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
+                            <ul class="psikholog__item__experience">
+                                <li><i>
+                                    <img src="images/svg/dosvids.svg" alt="">
+                                </i>5 років практики</li>
+                                
+                                <li><i>
+                                    <img src="images/svg/sessia.svg" alt="">
+                                </i>220+ сесій</li>
+                            </ul>
+                            <ul class="psikholog__item__speciality">
+                                <li>Психолог</li>
+                                <li>Сімейний психолог</li>
+                                <li>Гештальт-терапевт</li>
+                            </ul>
+                            <ul class="psikholog__item__direction">
+                                <li>Складно прийняти важливе рішення</li>
+                                <li>Розлучення</li>
+                                <li>Зрада</li>
+                                <li>Страх нових стосунків</li>
+                                <li>Почуття самотності</li>
+                                <li>Та інше</li>
+                            </ul>
+                           
+                           
+                        </div>
+                        <span class="psikholog__item__price">від 1200 &#8372;</span>
+                        <ul class="psikholog__item__format">
+                            <li><i>
+                                <img src="images//svg/ochno.svg" alt="">
+                            </i>Онлайн</li>
+                            та
+                            <li><i>
+                                <img src="images/svg/onlain.svg" alt="">
+                            </i>Очно</li>
+                        </ul>
+                        <div class="psikholog__item__btn">
+                            <a href="">Чат з терапевтом</a>
+                            <a href="single-doctor.html">В профіль</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="psikholog__item">
+                    <div class="psikholog__item__profile">
+                        <div class="psikholog__item__foto">
+                            <img src="images/picture/avatar-6.png" alt="">
+                            <span>Знайомство 15 хв</span>
+                        </div>
+                        <div class="psikholog__item__info">
+                            <p class="psikholog__item__city">Київ</p>
+                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
+                            <ul class="psikholog__item__experience">
+                                <li><i>
+                                    <img src="images/svg/dosvids.svg" alt="">
+                                </i>5 років практики</li>
+                                
+                                <li><i>
+                                    <img src="images/svg/sessia.svg" alt="">
+                                </i>220+ сесій</li>
+                            </ul>
+                            <ul class="psikholog__item__speciality">
+                                <li>Психолог</li>
+                                <li>Сімейний психолог</li>
+                                <li>Гештальт-терапевт</li>
+                            </ul>
+                            <ul class="psikholog__item__direction">
+                                <li>Складно прийняти важливе рішення</li>
+                                <li>Розлучення</li>
+                                <li>Зрада</li>
+                                <li>Страх нових стосунків</li>
+                                <li>Почуття самотності</li>
+                                <li>Та інше</li>
+                            </ul>
+                           
+                           
+                        </div>
+                        <span class="psikholog__item__price">від 1200 &#8372;</span>
+                        <ul class="psikholog__item__format">
+                            <li><i>
+                                <img src="images//svg/ochno.svg" alt="">
+                            </i>Онлайн</li>
+                            та
+                            <li><i>
+                                <img src="images/svg/onlain.svg" alt="">
+                            </i>Очно</li>
+                        </ul>
+                        <div class="psikholog__item__btn">
+                            <a href="">Чат з терапевтом</a>
+                            <a href="single-doctor.html">В профіль</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="psikholog__item">
+                    <div class="psikholog__item__profile">
+                        <div class="psikholog__item__foto">
+                            <img src="images/picture/avatar-6.png" alt="">
+                            <span>Знайомство 15 хв</span>
+                        </div>
+                        <div class="psikholog__item__info">
+                            <p class="psikholog__item__city">Київ</p>
+                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
+                            <ul class="psikholog__item__experience">
+                                <li><i>
+                                    <img src="images/svg/dosvids.svg" alt="">
+                                </i>5 років практики</li>
+                                
+                                <li><i>
+                                    <img src="images/svg/sessia.svg" alt="">
+                                </i>220+ сесій</li>
+                            </ul>
+                            <ul class="psikholog__item__speciality">
+                                <li>Психолог</li>
+                                <li>Сімейний психолог</li>
+                                <li>Гештальт-терапевт</li>
+                            </ul>
+                            <ul class="psikholog__item__direction">
+                                <li>Складно прийняти важливе рішення</li>
+                                <li>Розлучення</li>
+                                <li>Зрада</li>
+                                <li>Страх нових стосунків</li>
+                                <li>Почуття самотності</li>
+                                <li>Та інше</li>
+                            </ul>
+                           
+                           
+                        </div>
+                        <span class="psikholog__item__price">від 1200 &#8372;</span>
+                        <ul class="psikholog__item__format">
+                            <li><i>
+                                <img src="images//svg/ochno.svg" alt="">
+                            </i>Онлайн</li>
+                            та
+                            <li><i>
+                                <img src="images/svg/onlain.svg" alt="">
+                            </i>Очно</li>
+                        </ul>
+                        <div class="psikholog__item__btn">
+                            <a href="">Чат з терапевтом</a>
+                            <a href="single-doctor.html">В профіль</a>
                         </div>
                     </div>
                     
