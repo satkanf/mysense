@@ -1,0 +1,240 @@
+#advice-page{
+    background: $bg-color;
+    .bg-section{
+        height: 510px;
+    }
+    .filter__item-price{
+        width: 28.3%;
+    }
+}
+.advice-page{
+    .filter{
+        .filter__item-price{
+            width: 28.3%;
+        }
+    }
+    
+}
+.advice{
+    padding: 90px 0;
+    position: relative;
+   
+    // h2{
+    //     font-size: 40px;
+    // }
+    .filter{
+        display: flex;
+        gap: 10px;
+        background: none;
+        position: absolute;
+        justify-content: flex-end;
+        right: 0;
+        top: 10px;
+        width: 100%;
+        &__item-price{
+            width: 26.3%;
+            padding-right: 0; 
+            border: 1px solid $bg-color;;
+            select{
+                width: 70%;
+                appearance: none;
+                padding: 0;
+                padding-left: 5px;
+                margin-left: 10px;
+                background-image: url("./../images/arw.png");
+                background-repeat: no-repeat;
+                background-position: 90% center;
+            }      
+        }
+        .search{
+            width: 15%;
+            border: 1px solid $bg-color;;
+            input{
+                width: 90%;
+                padding-right: 20px;
+            }
+        }
+    }
+    &__block{
+        margin-bottom: 0;
+        
+    }
+    &__item{
+        background: #ffffff;
+        width: 48.5%;
+    }
+    .pagination{
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+.article{
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // margin-top: -50vh;
+    padding-bottom: 90px;
+    padding-top: 90px;
+    &__author{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap:16px;
+       &__img{
+        width: 50px;
+        height: 50px;
+       }
+       &__description{
+        span{
+            font-size: 14px;
+            color:#9895A6;
+            font-weight: 400;
+            line-height: 150%;
+            }
+       }
+       &__name{
+        font-size: 14px;
+        color:$title-color;
+        font-weight: 400;
+        line-height: 150%;
+        text-transform: capitalize;
+    }
+    }
+    &__title{
+        font-size: 40px;
+        font-weight: 400;
+        color: $title-color;
+        line-height: 110%;
+        margin-top: 24px;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 90px;
+        width: 100%;
+    }
+    &__use{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:5px;
+        margin-bottom: 20px;
+        li{
+            
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border:2px solid $bg-color;
+            gap:10px;
+            padding: 4px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    }
+    &__date{
+        color:#9895A6;
+        font-size: 14px;
+    }
+    &__body{
+        position: relative;
+        &__images{
+            
+            margin: 10px 0 20px 0;
+            // img{
+            //     height: 520px;
+            // }
+        }
+        &__text{
+            font-size: 20px;
+            color:$text-color;
+            line-height: 150%;
+            font-weight: 400;
+            h2{
+                font-size: 24px;
+                color: $title-color;
+                font-weight: 500;
+            }
+            p{
+                margin: 10px 0;
+            }
+            ul{
+                padding: 20px 0;
+                margin-left: 20px;
+            }
+            li{
+                font-size: 14px;
+                list-style:disc;
+            }
+        }
+        .article__quote{
+            background: $white-color;
+            padding: 24px;
+            border-bottom-left-radius: 48px;
+            margin: 40px 0;
+            box-sizing: border-box;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top:0;
+                left: -100px;
+                background: url("./../images/svg/quetes.svg");
+                background-repeat: no-repeat;
+                display: block;
+                width: 80px;
+                height: 80px;
+    
+            }
+        }
+    }
+    .psikholog__item{
+        width: 100%;
+        margin-top: 40px ;
+        .psikholog__item__profile{
+            width: 100%;
+        }
+    }
+    .psikholog__banner{
+        width: 100%;
+        padding: 16px;
+        border-radius: 8px;
+    }
+    
+   
+}
+.articles-author{
+    .advice__block{
+        margin-top: 40px;
+    }
+}
+.other-doctors{
+    padding: 90px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        .psikholog__item{
+            width: 48%;
+        }
+        .psikholog__item__profile{
+            width: 100%;
+        }
+        .psikholog__item__direction{
+            width: 100%;
+            gap:8px;
+            li{
+                font-size: 12px
+            }
+        }
+        .psikholog__item__btn{
+            width: 30%;
+        }
+    }
+    
+}

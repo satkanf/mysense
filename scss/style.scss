@@ -1,0 +1,19 @@
+
+@import "../scss/variables";
+@import "../scss/global";
+@import "../scss/media";
+
+
+
+@import "../../node_modules/normalize.scss/normalize";
+@import "../../node_modules/slick-carousel/slick/slick-theme";
+@import "../../node_modules/slick-carousel/slick/slick";
+
+
+@import "../scss/include/home";
+@import "../scss/include/article";
+@import "../scss/include/psihology";
+@import "../scss/include/vebinares";
+@import "../scss/include/payment";
+@import "../scss/include/test";
+@import "../scss//include/authentication";

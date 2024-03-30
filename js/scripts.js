@@ -13823,6 +13823,9 @@ const replaceTtext = document.querySelector('.replace-text');
 const burgerMenu = document.querySelector('.burger-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const closeMobile = document.querySelector('.mobile-menu__close');
+const replaceVerified = document.querySelector('.psiholog__status');
+
+
 if(burgerMenu){
   burgerMenu.addEventListener('click', function(){ 
     
@@ -13900,6 +13903,9 @@ if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
   }
   if(replaceTtext){
     replaceTtext.innerHTML = 'Для пари'
+  }
+  if(replaceVerified){
+    replaceVerified.innerHTML = 'Перевірений';
   }
 
   $('.problem-solving__list').slick({

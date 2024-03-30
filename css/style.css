@@ -1755,9 +1755,6 @@ ul {
     z-index: 1200;
     transform: rotate(45deg);
   }
-  body .single-psiholog .psiholog-query .save-card .custom-checkbox {
-    width: 36px;
-  }
   body .single-psiholog .psiholog-query .psiholog-query__btn {
     display: block;
   }
@@ -1765,6 +1762,9 @@ ul {
 @media screen and (min-width: 360px) and (max-width: 479px) {
   .single-psiholog .last-views .last-views__title {
     margin-top: 0;
+  }
+  .single-psiholog .save-card a {
+    margin-left: 13%;
   }
   body .content__psikhologi .psikholog__item {
     height: auto;
@@ -2138,6 +2138,9 @@ ul {
   .filter .filter__box .filter__item-price .filter__select {
     width: 90%;
   }
+  .reservation__filter .reservation__filter__type {
+    padding: 0;
+  }
   .psiholog .psiholog__basic .psiholog__basic__description .psiholog__name {
     margin: 0;
     line-height: 24px;
@@ -2151,6 +2154,16 @@ ul {
   }
   .psiholog .psiholog__basic .psiholog__basic__description .psiholog__experience {
     margin-top: 25px;
+  }
+  .psiholog .psiholog__basic .psiholog__basic__images {
+    width: 39%;
+  }
+  .psiholog .psiholog__item .psiholog__item__body ul {
+    height: 100%;
+    margin-top: 0;
+  }
+  .psiholog .psiholog__item .psiholog__item__body li {
+    width: 100%;
   }
   .vebinares .vebinares__completed .filter .filter__select__name {
     overflow: hidden;
@@ -6898,6 +6911,10 @@ th {
   color: #423F4D;
   margin: 5px 0 25px 0;
   position: relative;
+  flex-wrap: wrap;
+}
+.save-card a {
+  color: #795BDA;
 }
 .save-card .real-chackbox {
   position: absolute;
