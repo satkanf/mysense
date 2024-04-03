@@ -4065,6 +4065,12 @@ th {
   background: #ffffff;
   padding: 90px 0;
 }
+.appeal .appeal__author p {
+  font-size: 24px;
+}
+.appeal .appeal__author span {
+  color: #FF5C8D;
+}
 .appeal__entry {
   font-size: 24px;
   color: #423F4D;
@@ -4083,7 +4089,7 @@ th {
 }
 .appeal__description {
   width: 48%;
-  margin-top: 90px;
+  margin-top: 30px;
 }
 .appeal__description__title {
   font-size: 40px;
@@ -4107,24 +4113,25 @@ th {
   color: #2F264D;
   font-weight: 400;
   line-height: 150%;
+  font-size: 14px;
+}
+.appeal__description__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 32px;
+  background: url("./../images/svg/quotes.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 80px;
+  height: 80px;
 }
 .appeal__description__text p {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 }
 .appeal__description__text p:nth-child(1) {
   font-size: 20px;
   margin-top: 24px;
-}
-.appeal__description__text p:nth-child(2) {
-  font-size: 14px;
-}
-.appeal__description__text p:nth-child(3) {
-  font-size: 14px;
-}
-.appeal__description__text p:nth-child(4) {
-  margin-bottom: 0;
-  font-size: 24px;
-  font-weight: 500;
 }
 .appeal__description__text span {
   color: #FF5C8D;
@@ -4261,6 +4268,9 @@ th {
   gap: 16px;
   margin-bottom: 60px;
 }
+.direction__list__image {
+  max-width: 190px;
+}
 .direction__list__item {
   width: 18%;
   height: 200px;
@@ -4274,6 +4284,7 @@ th {
   box-sizing: border-box;
 }
 .direction__list__item img {
+  max-width: 190px;
   height: 200px;
 }
 .direction__list__description {
