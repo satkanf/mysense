@@ -13973,7 +13973,7 @@ if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
   }
 
   $('.diplom-slider__list').slick({
-    slidesToShow: 2,
+    slidesToShow: 4,
     slidesToScroll: 1,
     dots: false,
     autoplay: true,
@@ -14001,12 +14001,13 @@ if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
 
 
   $('.direction__list').slick({
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay:true,
     speed:30,
     dots: true,
     arrows:false,
+    centerMode:true,
     variableWidth:true
   });
 

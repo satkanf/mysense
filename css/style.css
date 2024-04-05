@@ -69,6 +69,12 @@ ul {
     width: 80%;
     margin: 40px auto;
   }
+  .header .lang-switcher {
+    margin-right: 16px;
+  }
+  body .header .header__useraction .btn-auth {
+    margin-right: 0;
+  }
   .header__menu .header__navigation {
     margin-left: -20px;
   }
@@ -107,10 +113,10 @@ ul {
   }
   .advice-page .advice__block .advice__item {
     justify-content: flex-start;
-    gap: 16px;
   }
   .advice-page .advice__block .advice__item__img {
     width: 30%;
+    margin-right: 16px;
   }
   .advice-page .advice__block .advice__item__description {
     width: 68%;
@@ -181,12 +187,6 @@ ul {
   }
   .vebinares__planned__item .vebinares__planned__timer {
     font-size: 16px;
-  }
-  .direction .direction__list .direction__list__item {
-    height: 150px;
-  }
-  .direction .direction__list .direction__list__item img {
-    height: 150px;
   }
   .comments-block .comments-block__slider .slick-next {
     left: 240px;
@@ -307,7 +307,6 @@ ul {
   }
   .test__control .test__control__arrows {
     margin-left: -100px;
-    gap: 20px;
   }
   .test__control .test__control__result p {
     display: flex;
@@ -318,11 +317,14 @@ ul {
     flex-direction: column;
     width: 50%;
     margin: 60px auto;
-    gap: 8px;
   }
   .test .test__body .test__body__options .test__body__options__item {
     width: 100%;
     padding: 0;
+    margin-bottom: 8px;
+  }
+  .test .test__body .test__body__options .test__body__options__item:last-child {
+    margin-bottom: 0;
   }
   .test .test__body .test__body__options .test__body__options__item .checkboxImg-wrapper {
     display: none;
@@ -446,8 +448,9 @@ ul {
     width: 100%;
     flex-direction: row-reverse;
     margin-top: 32px;
-    gap: 16px span;
-    gap-margin-top: 0;
+  }
+  .question .question__right span {
+    margin-top: 0;
   }
   .question .question__right .question__right__title {
     text-align: left;
@@ -461,14 +464,18 @@ ul {
     padding: 0;
     margin-top: 24px;
   }
-  .question .question__right .question__right__social {
-    gap: 8px;
+  .question .question__right .question__right__social a {
+    margin-right: 16px;
+  }
+  .question .question__right .question__right__social a:last-child {
+    margin-right: 0;
   }
   .question .question__right .question__right__btn {
     font-size: 14px;
   }
   .question .question__right__img {
     width: 48%;
+    margin-left: 16px;
   }
   .question .question__right__box {
     width: 50%;
@@ -547,8 +554,17 @@ ul {
     justify-content: flex-start;
     align-items: baseline;
   }
+  .footer .footer__contact__item {
+    margin-bottom: 16px;
+  }
   .footer .footer__navigation {
     justify-content: space-between;
+  }
+  .footer .footer__navigation .footer__menu__item {
+    margin-bottom: 8px;
+  }
+  .footer .footer__bottom .footer__bottom__item {
+    margin-bottom: 8px;
   }
   .footer .footer__bottom__contract {
     flex-direction: column;
@@ -573,10 +589,10 @@ ul {
   }
   .psiholog .psiholog__basic {
     flex-direction: column;
-    gap: 16px;
   }
   .psiholog .psiholog__basic__left {
     width: 100%;
+    margin-bottom: 16px;
   }
   .psiholog .psiholog__basic__right {
     width: 100%;
@@ -759,16 +775,17 @@ ul {
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(1) .filter__query__box form {
     flex-direction: column;
-    gap: 8px;
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(1) .filter__query__box .filter__btn {
     width: 100%;
+    margin-bottom: 8px;
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box form {
     flex-direction: column;
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn {
     width: 100%;
+    margin-bottom: 8px;
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:nth-child(3) {
     display: none;
@@ -778,6 +795,9 @@ ul {
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:nth-child(5) {
     display: none;
+  }
+  .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:last-child {
+    margin-bottom: 0;
   }
   .product-payment .product-payment__item .product__info {
     margin-top: 70px;
@@ -872,7 +892,6 @@ ul {
   }
   .test__control .test__control__arrows {
     margin-left: -100px;
-    gap: 20px;
   }
   .test__control .test__control__result p {
     display: flex;
@@ -883,11 +902,14 @@ ul {
     flex-direction: column;
     width: 50%;
     margin: 60px auto;
-    gap: 8px;
   }
   .test .test__body .test__body__options .test__body__options__item {
     width: 100%;
     padding: 0;
+    margin-bottom: 8px;
+  }
+  .test .test__body .test__body__options .test__body__options__item:last-child {
+    margin-bottom: 0;
   }
   .test .test__body .test__body__options .test__body__options__item .checkboxImg-wrapper {
     display: none;
@@ -1011,8 +1033,9 @@ ul {
     width: 100%;
     flex-direction: row-reverse;
     margin-top: 32px;
-    gap: 16px span;
-    gap-margin-top: 0;
+  }
+  .question .question__right span {
+    margin-top: 0;
   }
   .question .question__right .question__right__title {
     text-align: left;
@@ -1026,14 +1049,18 @@ ul {
     padding: 0;
     margin-top: 24px;
   }
-  .question .question__right .question__right__social {
-    gap: 8px;
+  .question .question__right .question__right__social a {
+    margin-right: 16px;
+  }
+  .question .question__right .question__right__social a:last-child {
+    margin-right: 0;
   }
   .question .question__right .question__right__btn {
     font-size: 14px;
   }
   .question .question__right__img {
     width: 48%;
+    margin-left: 16px;
   }
   .question .question__right__box {
     width: 50%;
@@ -1099,14 +1126,16 @@ ul {
     justify-content: flex-end;
     align-items: center;
   }
-  .footer .footer__menu {
+  body .footer .footer__menu {
     width: 40%;
     flex-wrap: wrap;
     padding: 0;
     align-items: baseline;
-    padding-top: 18px;
   }
-  .footer .footer__menu .footer__menu__list {
+  body .footer .footer__menu .footer__menu__item {
+    margin-bottom: 8px;
+  }
+  body .footer .footer__menu .footer__menu__list {
     flex-wrap: wrap;
     display: flex;
     justify-content: flex-start;
@@ -1115,11 +1144,21 @@ ul {
   .footer .footer__navigation {
     justify-content: space-between;
   }
+  body .footer__contact__item {
+    margin-bottom: 8px;
+  }
   .footer .footer__bottom__contract {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding-bottom: 30px;
+  }
+  .footer .footer__bottom__contract .footer__bottom__item {
+    margin-bottom: 8px;
+  }
+  body .footer .footer__bottom__copyright {
+    align-items: flex-end;
+    font-size: 12px;
   }
   .content__psikhologi .psikholog__banner .psikholog__banner__img {
     width: 50%;
@@ -1138,10 +1177,10 @@ ul {
   }
   .psiholog .psiholog__basic {
     flex-direction: column;
-    gap: 16px;
   }
   .psiholog .psiholog__basic__left {
     width: 100%;
+    margin-bottom: 16px;
   }
   .psiholog .psiholog__basic__right {
     width: 100%;
@@ -1324,16 +1363,17 @@ ul {
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(1) .filter__query__box form {
     flex-direction: column;
-    gap: 8px;
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(1) .filter__query__box .filter__btn {
     width: 100%;
+    margin-bottom: 8px;
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box form {
     flex-direction: column;
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn {
     width: 100%;
+    margin-bottom: 8px;
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:nth-child(3) {
     display: none;
@@ -1343,6 +1383,9 @@ ul {
   }
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:nth-child(5) {
     display: none;
+  }
+  .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:last-child {
+    margin-bottom: 0;
   }
   .product-payment .product-payment__item .product__info {
     margin-top: 70px;
@@ -1420,6 +1463,9 @@ ul {
     display: none;
   }
   .header .header__useraction .btn-auth {
+    margin-right: 42px;
+  }
+  body .header .header__useraction .btn-auth {
     margin-right: 42px;
   }
   .banner .banner__text {
@@ -1648,8 +1694,8 @@ ul {
   .question .question__right .question__right__box p {
     text-align: center;
   }
-  .question .question__right .question__right__box .question__right__link {
-    gap: 16px;
+  .question .question__right .question__right__box .question__right__link .question__right__social {
+    margin-bottom: 16px;
   }
   body .advice {
     padding: 40px 0;
@@ -1700,6 +1746,12 @@ ul {
   .footer .footer__menu {
     padding-top: 0;
   }
+  .footer .footer__contact .footer__contact__item {
+    margin-right: 0;
+  }
+  body .footer .footer__navigation .footer__contact .footer__contact__list {
+    flex-direction: column;
+  }
   body #advice-page .container {
     justify-content: flex-start;
     align-items: flex-start;
@@ -1748,7 +1800,6 @@ ul {
   .product-payment .product-payment__wrapper .product-payment__item .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box form {
     flex-direction: row;
     justify-content: stretch;
-    gap: 8px;
   }
   .product-payment .product-payment__wrapper .product-payment__item .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:nth-child(3) {
     display: flex;
@@ -1806,7 +1857,9 @@ ul {
   body .vebinar-page .vebinar__line {
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+  }
+  body .vebinar-page .vebinar__line .vebinar__author {
+    margin-bottom: 24px;
   }
   body .vebinar-page .vebinar__line .vebinar__author a {
     display: flex;
@@ -1833,9 +1886,6 @@ ul {
   }
   body .vebinar-page .vebinar__body .vebinar__about {
     margin-top: 730px;
-  }
-  body .vebinar-page .vebinar__question {
-    gap: 8px;
   }
   body .vebinar-page .vebinares__completed__list {
     margin-top: 32px;
@@ -1918,6 +1968,9 @@ ul {
   .singl-article .article__body .psikholog__banner .psikholog__banner__text {
     width: 100%;
     text-align: center;
+  }
+  body .content .content__psikhologi {
+    margin-top: -80px;
   }
   body .content .content__psikhologi .psikholog__item__btn {
     width: 100%;
@@ -2026,6 +2079,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 8px;
   }
   .filter .filter__box .filter__item {
     display: none;
@@ -2100,7 +2154,9 @@ ul {
     margin-left: 0;
     width: 100%;
     justify-content: center;
-    gap: 20px;
+  }
+  .psiholog .psiholog__basic .psiholog__basic__price div {
+    margin-right: 20px;
   }
   .psiholog .psiholog__basic .psiholog__basic__price div span:nth-child(1) {
     font-size: 20px;
@@ -4252,7 +4308,6 @@ th {
   color: #ffffff;
   font-weight: 500;
   border-radius: 48px;
-  margin-top: 70px;
   margin-left: 36%;
   transform: translateX(-27%);
 }
@@ -4299,9 +4354,10 @@ th {
 }
 .direction__list__item {
   width: 18%;
-  height: 200px;
-  min-width: 150px;
-  min-height: 150px;
+  max-width: 190px;
+  width: 190px;
+  height: 190px;
+  max-height: 190px;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -4313,7 +4369,8 @@ th {
 .direction__list__item img {
   max-width: 190px;
   width: 190px;
-  height: 200px;
+  height: 190px;
+  max-height: 190px;
 }
 .direction__list__item:last-child {
   margin-right: 0;
@@ -4748,8 +4805,9 @@ th {
   color: #ffffff;
   display: flex;
   align-items: center;
-  padding: 21px 24px;
+  padding: 21px 0;
   border-radius: 48px;
+  justify-content: center;
 }
 .question__right__btn:hover {
   background: #8E6BFF;
@@ -5944,7 +6002,6 @@ th {
   justify-content: flex-start;
   width: 32%;
   margin-top: 15px;
-  gap: 8px;
   margin-left: 306px;
   margin-top: -67px;
 }
@@ -5952,15 +6009,16 @@ th {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
   background: #F1EDFF;
   padding: 8px;
   width: 110px;
+  margin-right: 8px;
 }
 .psiholog__basic__price div span:nth-child(1) {
   font-size: 24px;
   color: #2F264D;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 .psiholog__basic__price div span:nth-child(2) {
   font-size: 14px;
