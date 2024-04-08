@@ -253,7 +253,7 @@ item.addEventListener('click', () => {
 });
 
 
-if (window.matchMedia("(min-width: 768px) and ( max-width:1024px)").matches) {
+if (window.matchMedia("(min-width: 360px) and ( max-width:1024px)").matches) {
   /* the viewport is at least 400 pixels wide */
   
 
@@ -265,7 +265,45 @@ if (window.matchMedia("(min-width: 768px) and ( max-width:1024px)").matches) {
     speed:300,
   });
 
- 
+  $('.direction__list').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed: 5000,
+    speed:30,
+    dots: true,
+    arrows:false,
+    centerMode:true,
+    variableWidth:true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 3,
+          infinite: true,
+          // variableWidth:false,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          // variableWidth:false,
+          slidesToScroll: 1
+        }
+      },
+
+    ]
+  });
  
 
  
@@ -286,13 +324,13 @@ if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
     replaceVerified.innerHTML = 'Перевірений';
   }
 
-  $('.diplom-slider__list').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    dots: false,
-    autoplay: true,
-    speed:300,
-  });
+  // $('.diplom-slider__list').slick({
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   dots: false,
+  //   autoplay: true,
+  //   speed:300,
+  // });
 
   // $('.last-views ul').slick({
   //   slidesToShow: 2,
@@ -314,17 +352,7 @@ if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
   });
 
 
-  $('.direction__list').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay:true,
-    autoplaySpeed: 5000,
-    speed:30,
-    dots: true,
-    arrows:false,
-    centerMode:true,
-    variableWidth:true
-  });
+  
 
 
   $('.direction__tab').slick({

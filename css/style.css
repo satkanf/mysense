@@ -1531,7 +1531,7 @@ ul {
     overflow: hidden;
   }
   body .qualification {
-    padding: 40px 0;
+    padding: 20px 0;
   }
   body .qualification .qualification__list {
     margin-top: 40px;
@@ -1577,11 +1577,11 @@ ul {
     margin-top: 32px;
   }
   .title-page .container > h2::after {
-    right: 16%;
-    bottom: 26%;
+    right: 14%;
+    bottom: 22px;
   }
   body .appeal {
-    padding: 40px 0;
+    padding: 20px 0;
   }
   body .appeal .appeal__box {
     flex-direction: column-reverse;
@@ -1602,7 +1602,7 @@ ul {
     height: 475px;
   }
   body .how-start {
-    padding: 40px 0;
+    padding: 20px 0;
   }
   body .how-start .how-start__list .how-start__item__text {
     width: 100%;
@@ -1615,7 +1615,7 @@ ul {
     display: none;
   }
   body .banner-selection {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   body .banner-selection .banner-selection__banner .banner-selection__banner__text {
     width: 100%;
@@ -1636,7 +1636,7 @@ ul {
     display: none;
   }
   body .comments-block {
-    padding: 40px 0;
+    padding: 20px 0;
   }
   body .comments-block__wrapper {
     background: #ffffff;
@@ -1680,21 +1680,24 @@ ul {
     right: 24px;
     top: inherit;
   }
-  .question .question__block {
-    margin-top: 40px;
+  body .question {
+    padding: 20px 0;
+  }
+  body .question .question__block {
+    margin-top: 20px;
     margin-bottom: 0;
   }
-  .question .question__block .question__right__btn {
+  body .question .question__block .question__right__btn {
     padding: 21px 24px;
   }
-  .question .question__block .question__right__social a {
+  body .question .question__block .question__right__social a {
     width: 52px;
     height: 52px;
   }
-  .question .question__right .question__right__img {
+  body .question .question__right .question__right__img {
     display: none;
   }
-  .question .question__right .question__right__box {
+  body .question .question__right .question__right__box {
     width: 100%;
     justify-content: center;
     display: flex;
@@ -1702,21 +1705,24 @@ ul {
     text-align: center;
     align-items: center;
   }
-  .question .question__right .question__right__box h3 {
+  body .question .question__right .question__right__box h3 {
     text-align: center;
   }
-  .question .question__right .question__right__box p {
+  body .question .question__right .question__right__box p {
     text-align: center;
   }
-  .question .question__right .question__right__box .question__right__link .question__right__social {
+  body .question .question__right .question__right__box .question__right__link .question__right__social {
     margin-bottom: 16px;
   }
   body .advice {
-    padding: 40px 0;
+    padding: 20px 0;
     margin-bottom: 0;
   }
   body .advice .advice__all-link {
     display: none;
+  }
+  body .advice .advice__more-downloadd {
+    margin-bottom: 0;
   }
   body .advice .advice__block {
     margin-top: 40px;
@@ -1749,7 +1755,7 @@ ul {
     width: 25%;
   }
   body .direction {
-    padding: 40px 0;
+    padding: 20px 0;
   }
   body .direction .direction__more {
     display: block;
@@ -1762,6 +1768,9 @@ ul {
   }
   .footer .footer__contact .footer__contact__item {
     margin-right: 0;
+  }
+  body .psikholog__item__btn a {
+    margin-bottom: 0;
   }
   body .footer .footer__navigation .footer__contact .footer__contact__list {
     flex-direction: column;
@@ -2550,6 +2559,9 @@ ul {
     top: 34%;
     left: 12px;
   }
+  body .onlain-consul {
+    padding: 20px 0;
+  }
 }
 @media screen and (min-width: 360px) and (max-width: 478px) {
   .single-psiholog .last-views .last-views__title {
@@ -3037,9 +3049,13 @@ ul {
     width: 100%;
     margin-left: 0;
   }
+  body .title-page h2 {
+    margin: 20px 0;
+  }
   body .filter {
     width: calc(100% + 40px);
     margin-left: -20px;
+    margin-top: 80px;
   }
   body .filter .meeting {
     display: none;
@@ -4386,9 +4402,6 @@ th {
   height: 190px;
   max-height: 190px;
 }
-.direction__list__item:last-child {
-  margin-right: 0;
-}
 .direction__list__description {
   position: absolute;
   left: 16px;
@@ -4435,6 +4448,9 @@ th {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
+}
+.how-start__item:last-child {
+  margin-bottom: 0;
 }
 .how-start__item__text {
   text-align: left;
