@@ -6514,6 +6514,7 @@ th {
 
 .last-views {
   padding-bottom: 60px;
+  overflow: hidden;
 }
 .last-views__title {
   font-size: 40px;
