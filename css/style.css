@@ -1943,7 +1943,7 @@ ul {
   }
   body .test-phase-2 .container .test__control {
     position: fixed;
-    bottom: 20px;
+    top: 700px;
   }
   body .test-phase-3 .container .test__body {
     margin-top: 30px;
@@ -8744,6 +8744,7 @@ th {
   width: 70%;
   margin: 70px auto;
   position: relative;
+  overflow: hidden;
 }
 .test-result__item {
   max-width: 186px;
@@ -8783,7 +8784,7 @@ th {
 }
 .test-result .slick-next {
   right: -150px;
-  top: 48px;
+  top: -44px;
   background-image: url("./../images/svg/arrow-right-focus.svg");
   background-repeat: no-repeat;
   background-position: center center;
