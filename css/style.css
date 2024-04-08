@@ -1952,7 +1952,7 @@ ul {
   }
   body .test-phase-2 .container .test__control {
     position: fixed;
-    top: 700px;
+    top: 550px;
   }
   body .test-phase-3 .container .test__body {
     margin-top: 30px;
@@ -2588,6 +2588,9 @@ ul {
   body .content .content__psikhologi .psikholog__item .psikholog__item__format {
     flex-direction: column;
   }
+  body .content .content__psikhologi .psikholog__item .psikholog__item__experience {
+    left: -1px;
+  }
   body .singl-article .psikholog__item .psikholog__item__profile .psikholog__item__format {
     top: 50%;
     flex-direction: column;
@@ -3040,6 +3043,7 @@ ul {
   }
   body .content .content__psikhologi .psikholog__item .psikholog__item__profile .psikholog__item__format {
     top: 50%;
+    left: 16px;
   }
   .pagination {
     margin: 40px auto;
