@@ -261,6 +261,14 @@ ul {
     margin-left: 0;
     padding-left: 0;
   }
+  .test-result__list .test-result__item {
+    flex-direction: column;
+    max-width: 96px;
+  }
+  .test-result__list .test-result__item .test-result__image {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
 }
 @media screen and (max-width: 960px) {
   body .header__navigation .navigation {
@@ -845,6 +853,12 @@ ul {
   }
   .banner-selection .banner-selection__banner p {
     width: 100%;
+  }
+  .psiholog .psiholog__therapy:nth-child(2) ul {
+    height: inherit;
+  }
+  .psiholog .psiholog__therapy:nth-child(3) ul {
+    height: inherit;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3933,7 +3947,7 @@ th {
 
 .banner {
   position: relative;
-  padding: 60px 0;
+  padding: 45px 0;
   background: #ffffff;
   background-image: url("./../images/svg/bg-banner.svg");
   background-repeat: no-repeat;
@@ -3967,7 +3981,7 @@ th {
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   right: -20px;
   display: block;
   width: 20px;
@@ -4098,7 +4112,7 @@ th {
 
 .problem-solving {
   position: relative;
-  padding: 150px 0 90px 0;
+  padding: 105px 0 45px 0;
 }
 .problem-solving .container {
   display: flex;
@@ -4146,7 +4160,7 @@ th {
 
 .appeal {
   background: #ffffff;
-  padding: 90px 0;
+  padding: 45px 0;
 }
 .appeal .appeal__author p {
   font-size: 24px;
@@ -4298,7 +4312,7 @@ th {
 
 .direction {
   position: relative;
-  padding: 90px 0;
+  padding: 45px 0 60px 0;
   background: #ffffff;
 }
 .direction__more {
@@ -4399,14 +4413,14 @@ th {
 }
 
 .banner-image {
-  padding: 90px 0;
+  padding: 45px 0;
   background: #F1EDFF;
 }
 
 .how-start {
   position: relative;
   background: #ffffff;
-  padding: 90px 0 240px 0;
+  padding: 45px 0 195px 0;
 }
 .how-start__description {
   font-size: 20px;
@@ -4532,7 +4546,7 @@ th {
 .comments-block {
   position: relative;
   background: #F1EDFF;
-  padding: 90px 0;
+  padding: 45px 0 60px 0;
 }
 .comments-block__response {
   position: absolute;
@@ -4686,11 +4700,12 @@ th {
 .question {
   position: relative;
   background: #F1EDFF;
+  padding: 45px 0;
 }
 .question__block {
   display: flex;
   justify-content: space-between;
-  margin: 90px 0;
+  margin-top: 45px;
 }
 .question__list {
   width: 60%;
@@ -4750,7 +4765,6 @@ th {
 }
 .question__right {
   width: 37%;
-  padding-bottom: 90px;
 }
 .question__right__img {
   margin-bottom: 16px;
@@ -4805,7 +4819,7 @@ th {
   color: #ffffff;
   display: flex;
   align-items: center;
-  padding: 21px 0;
+  padding: 21px 24px;
   border-radius: 48px;
   justify-content: center;
 }
@@ -4816,7 +4830,7 @@ th {
 
 .advice {
   position: relative;
-  padding: 90px 0;
+  padding: 45px 0;
   background: #ffffff;
 }
 .advice__block {
@@ -4922,7 +4936,7 @@ th {
 .onlain-consul {
   position: relative;
   background: #F1EDFF;
-  padding: 90px 0;
+  padding: 45px 0;
 }
 .onlain-consul__title {
   font-size: 24px;
@@ -4992,7 +5006,7 @@ th {
 }
 
 .footer {
-  padding: 60px 0;
+  padding: 45px 0;
   background: #ffffff;
 }
 .footer__navigation {
@@ -5128,7 +5142,7 @@ th {
 }
 
 .advice {
-  padding: 90px 0;
+  padding: 45px 0;
   position: relative;
 }
 .advice .filter {
@@ -6237,7 +6251,6 @@ th {
   margin-left: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
-  height: 14vw;
 }
 .psiholog__therapy:nth-child(2) ul li {
   list-style-image: url("./../images/svg/line-style.svg");
@@ -6253,7 +6266,6 @@ th {
   margin-left: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
-  height: 14vw;
 }
 .psiholog__therapy:nth-child(3) ul li {
   list-style-image: url("./../images/svg/line-style-none.svg");
@@ -6282,7 +6294,6 @@ th {
   justify-content: center;
 }
 .psiholog__diplom-slider .diplom-slider__item {
-  min-width: 146px;
   min-height: 207px;
   border: 1px solid #F1EDFF;
   border-radius: 3px;
@@ -6973,6 +6984,22 @@ th {
   display: none;
 }
 
+.therapy-more {
+  background: none;
+  border: 0;
+  color: #795BDA;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.psiholog .psiholog__therapy .psiholog__item__body ul li:nth-child(6) ~ li {
+  display: none;
+}
+.psiholog .psiholog__therapy .psiholog__item__body .therapy-more {
+  display: block;
+}
+
 .hidden {
   display: none !important;
 }
@@ -6982,7 +7009,7 @@ th {
 }
 .vebinares__planned {
   position: relative;
-  padding: 90px 0;
+  padding: 45px 0;
 }
 .vebinares__planned__btn {
   position: absolute;
@@ -7168,7 +7195,7 @@ th {
   margin-right: 8px;
 }
 .vebinares__completed {
-  padding: 90px 0;
+  padding: 45px 0;
   background: #ffffff;
 }
 .vebinares__completed .container {
@@ -8002,7 +8029,6 @@ th {
   color: #423F4D;
   margin: 5px 0 25px 0;
   position: relative;
-  flex-wrap: wrap;
 }
 .save-card a {
   color: #795BDA;

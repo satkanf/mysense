@@ -13752,6 +13752,32 @@ $(document).ready(function() {
       dots: false,
       autoplay: true,
       speed:300,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+  
+      ]
     });
 
     $('.test-result__list').slick({
@@ -13854,6 +13880,23 @@ const closeMobile = document.querySelector('.mobile-menu__close');
 const replaceVerified = document.querySelector('.psiholog__status');
 const cityFilter = document.querySelector('.checked-city');
 const cityActive = document.querySelector('.mobile-filter__item');
+
+const therapyMore = document.querySelectorAll('.therapy-more');
+const therapyItem = document.querySelectorAll('.psiholog__therapy:nth-child(2) ul li')
+
+if(therapyMore){
+  therapyMore.forEach(function(item){
+    item.addEventListener('click', () => {
+      therapyItem.forEach(function(el){
+        el.style.display = 'list-item';
+        
+        
+      });
+      item.style.display = 'none';
+    });
+  });
+}
+
 
 // if(cityFilter){
 //   cityFilter.addEventListener('click', () =>{
@@ -13993,7 +14036,7 @@ if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
     slidesToScroll: 1,
     autoplay:true,
     speed:300,
-    autoplaySpeed:6000,
+    autoplaySpeed:5000,
     dots: true,
     arrows:false,
     variableWidth:true
@@ -14004,6 +14047,7 @@ if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay:true,
+    autoplaySpeed: 5000,
     speed:30,
     dots: true,
     arrows:false,
@@ -14016,6 +14060,7 @@ if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay:true,
+    autoplaySpeed: 5000,
     speed:30,
     dots: true,
     arrows:false,
