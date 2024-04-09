@@ -13883,6 +13883,19 @@ const cityActive = document.querySelector('.mobile-filter__item');
 
 const therapyMore = document.querySelectorAll('.therapy-more');
 const therapyItem = document.querySelectorAll('.psiholog__therapy:nth-child(2) ul li')
+const calendarEnrol = document.querySelectorAll('.calendar__date__time li')
+
+if(calendarEnrol){
+  calendarEnrol.forEach(function(item){
+    item.addEventListener('click', () =>{
+      filterQuery.classList.add('psiholog-query__active');
+    })
+    btnCloseFilter.addEventListener('click', () => {
+      filterQuery.classList.remove('psiholog-query__active');
+    })
+  })
+}
+
 
 if(therapyMore){
   therapyMore.forEach(function(item){
