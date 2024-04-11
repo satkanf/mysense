@@ -13829,17 +13829,20 @@ $(document).ready(function() {
 });
 
 const btnCloseFilter = document.querySelector('.psiholog-query__close');
-const filterQuery = document.querySelector('.psiholog-query');
-const btnfilterQuery = document.querySelector('.psiholog-query__btn');
+const filterQuery = document.querySelector('.psiholog-query-wrap');
+const btnfilterQuery = document.querySelectorAll('.psiholog-query__btn');
 
 
 if(btnfilterQuery){
-  btnfilterQuery.addEventListener('click', () => {
-    filterQuery.classList.add('psiholog-query__active');
+  btnfilterQuery.forEach(function(item){
+    item.addEventListener('click', () => {
+      filterQuery.classList.add('psiholog-query__active');
+    })
+    btnCloseFilter.addEventListener('click', () => {
+      filterQuery.classList.remove('psiholog-query__active');
+    })
   })
-  btnCloseFilter.addEventListener('click', () => {
-    filterQuery.classList.remove('psiholog-query__active');
-  })
+  
 }
 
 const aboutMore = document.querySelector('.psiholog__item__more');
@@ -13852,9 +13855,9 @@ const registerCode = document.querySelector('.registration-code');
 const registerCBtn = document.querySelector('.registration__btn');
 const registerCodeBtn = document.querySelector('.registration-code__submit');
 const registerDone = document.querySelector('.registration-done');
-const  openPopupButtons = document.querySelector('.btn-auth');
+const  openPopupButtons = document.querySelectorAll('.btn-auth');
 const  closePopupButton = document.querySelectorAll('.popup-close'); 
-const singInLink = document.querySelector('.sing-in-link');
+const singInLink = document.querySelectorAll('.sing-in-link');
 const commentsMore = document.querySelector('.comments-block__more');
 const commetsItem = document.querySelectorAll('.comments-block__item');
 const commentsList = document.querySelector('.comments-block__slider');
@@ -13882,8 +13885,47 @@ const cityFilter = document.querySelector('.checked-city');
 const cityActive = document.querySelector('.mobile-filter__item');
 
 const therapyMore = document.querySelectorAll('.therapy-more');
-const therapyItem = document.querySelectorAll('.psiholog__therapy:nth-child(2) ul li')
-const calendarEnrol = document.querySelectorAll('.calendar__date__time li')
+const therapyItem = document.querySelectorAll('.psiholog__therapy:nth-child(2) ul li');
+const calendarEnrol = document.querySelectorAll('.calendar__date__time li');
+
+const feedback = document.querySelector('.comments-block__response');
+const feedbackBlock = document.querySelectorAll('.feedback')
+const feedbackClose = document.querySelectorAll('.feedback__close')
+const subscribe = document.querySelector('.subscribe')
+const subscribeBtn = document.querySelector('.subscribe__not')
+const requestDoneClose = document.querySelectorAll('.request-sent__close');
+const requestDone = document.querySelectorAll('.request-sent')
+
+// setTimeout("document.querySelector('.subscribe').style.display='block'", 5000);
+
+if(requestDoneClose){
+  requestDoneClose.forEach(function(item){
+    item.addEventListener('click', () => {
+      requestDone.forEach(function(el){
+        el.classList.remove('popup-active')
+      })
+    })
+  })
+}
+if(feedback){
+  feedback.addEventListener('click', () =>{
+    popupWrapp.classList.add('popup-active');
+    feedbackBlock.forEach(function(item){
+      item.style.display = 'block';
+    })
+  });
+}
+
+if(feedbackClose){
+  feedbackClose.forEach(function(item){
+    item.addEventListener('click', () =>{
+      popupWrapp.classList.remove('popup-active');
+      feedbackBlock.forEach(function(item){
+        item.style.display = 'none';
+    })
+    })
+  })
+}
 
 if(calendarEnrol){
   calendarEnrol.forEach(function(item){
@@ -13962,18 +14004,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-
-openPopupButtons.addEventListener('click', () => { 
-  // e.preventDefault();
-logIn.classList.add('popup-active'); 
-popupWrapp.classList.add('popup-active');  
+openPopupButtons.forEach(function(item){
+  item.addEventListener('click', () => { 
+      // e.preventDefault();
+    logIn.classList.add('popup-active'); 
+    popupWrapp.classList.add('popup-active');
+    feedbackBlock.forEach(function(item){
+      item.style.display = 'none';
+  }) 
+  })
 }),
 
-singInLink.addEventListener('click',(e) => {
-e.preventDefault();
-singIn.classList.add('popup-active');
-logIn.classList.remove('popup-active');
-}) ,
+singInLink.forEach(function(item){
+  item.addEventListener('click',(e) => {
+    e.preventDefault();
+    singIn.classList.add('popup-active');
+    logIn.classList.remove('popup-active');
+    feedbackBlock.forEach(function(item){
+      item.style.display = 'none';
+  }) 
+})
+}),
+
+
 
 registerCBtn.addEventListener('click',(e) => {
 e.preventDefault();

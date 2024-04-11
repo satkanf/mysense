@@ -707,7 +707,7 @@
         <div class="container">
             <h2 class="section-title">Відгуки наших клієнтів</h2>
             <div class="comments-block__wrapper">
-                <a href="" class="comments-block__response">Залишити відгук</a>
+                <button class="comments-block__response">Залишити відгук</button>
                 <ul class="comments-block__slider">
                     <li class="comments-block__item">
                         <div class="wrapper-item">
@@ -835,7 +835,32 @@
                     <button class="comments-block__more">Показати ще</button>
                 </div>
             </div>
-
+            <!-- Модальні вікна для коментаріїв -->
+            
+                <!-- Мадальне вікно якщо не авторизований -->
+            <div class="comments-notauth feedback">
+                <h3 class="feedback__title">Для того, щоб залишити коментар, авторизуйтеся, будь ласка!</h3>
+                <div class="feedback__close"></div>
+                <div class="comments-notauth__links">
+                    <button class="btn-auth">Вхід</button>
+                    <button class="sing-in-link">Регістрація</button>
+                </div>
+            </div>
+            <!--  -->
+            <!--  Модальне вікно  якщо авторизований -->
+            <!-- <div class="comments-form feedback">
+                <div class="feedback__close"></div>
+                <h3 class="feedback__title">Залишити відгук</h3>
+                
+                <form action="">
+                    <textarea name="" id="" cols="30" rows="10" class="comments-form__type"></textarea>
+                    <input type="submit" value="Відправити" class="comments-form__submit">
+                </form>
+            </div> -->
+            <!--  -->
+            
+            
+            <!--  -->
         </div>
     </section>
     <section class="question">
@@ -1174,6 +1199,7 @@
 
     </section>
     <footer class="footer">
+        
         <div class="container">
             <div class="footer__navigation">
                 <nav class="footer__menu">

@@ -875,6 +875,9 @@ ul {
   .psiholog .psiholog__therapy:nth-child(3) ul {
     height: inherit;
   }
+  body .btn-fixed .psiholog-query__btn {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   body .header__navigation .navigation {
@@ -2247,9 +2250,6 @@ ul {
   .psiholog .psiholog__basic__right .btn-fixed .psiholog-query__link {
     display: none;
   }
-  .psiholog .psiholog__basic__right .btn-fixed .psiholog-query__btn {
-    display: flex;
-  }
   .psiholog .psiholog__basic__right .btn-fixed a {
     width: 48%;
   }
@@ -2347,7 +2347,6 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1200;
-    display: none;
   }
   body .single-psiholog .psiholog-query__active {
     display: block;
@@ -2461,9 +2460,6 @@ ul {
     background-position: center center;
     z-index: 1200;
     transform: rotate(45deg);
-  }
-  body .single-psiholog .psiholog-query .psiholog-query__btn {
-    display: block;
   }
   .advice-page .advice__block {
     margin-top: 120px;
@@ -2608,8 +2604,17 @@ ul {
   }
 }
 @media screen and (min-width: 360px) and (max-width: 478px) {
+  .request-sent {
+    width: 80%;
+  }
   .single-psiholog .last-views .last-views__title {
     margin-top: 0;
+  }
+  .single-psiholog .request-sent {
+    width: 80%;
+  }
+  .single-psiholog .request-sent-2 {
+    width: 80%;
   }
   .appeal__team .appeal__team__title {
     width: 100%;
@@ -2828,6 +2833,15 @@ ul {
   }
   body .comments .comments-reply .comments-block__item__comment {
     margin-left: 80px;
+  }
+  body .request-sent_box {
+    width: 80%;
+  }
+  body .subscribe__box {
+    width: 80%;
+  }
+  body .comments-block .feedback {
+    width: 80%;
   }
   body .comments-block__wrapper {
     background: #ffffff;
@@ -4436,7 +4450,6 @@ th {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  z-index: 1010;
   display: block;
   box-sizing: border-box;
   margin-right: 16px;
@@ -4665,7 +4678,6 @@ th {
 .comments-block__slider .slick-arrow {
   width: 90px;
   height: 90px;
-  z-index: 1005;
   position: absolute;
   top: 115%;
 }
@@ -5186,6 +5198,159 @@ th {
   background: #795BDA;
   height: 2px;
   width: 30px;
+}
+
+.comments-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 24px;
+  border-radius: 8px;
+  z-index: 1100;
+}
+.comments-form__type {
+  border-radius: 8px;
+  box-shadow: 0 0 1px 1px #9895A6;
+  border: none;
+  width: 100%;
+  padding: 16px;
+  outline: none;
+  height: 100px;
+  margin-top: 24px;
+}
+.comments-form__submit {
+  width: 50%;
+  background: #795BDA;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  padding: 16px;
+  border-radius: 48px;
+  margin-top: 24px;
+  float: right;
+}
+.comments-form__submit:hover {
+  background: #8E6BFF;
+  transition: 0.3s;
+}
+
+.comments-notauth {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 24px;
+  border-radius: 8px;
+  z-index: 1100;
+  width: 450px;
+  box-shadow: 0 0 1px 1px #F1EDFF;
+}
+.comments-notauth__links {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comments-notauth__links button {
+  padding: 16px;
+  width: 48%;
+  background: #795BDA;
+  border: none;
+  border-radius: 48px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.comments-notauth__links button:hover {
+  background: #8E6BFF;
+  transition: 0.3s;
+}
+
+.feedback {
+  display: none;
+  z-index: 1200;
+}
+.feedback__close {
+  display: block;
+  background-image: url("./../images/svg/close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+.feedback__title {
+  font-size: 28px;
+  color: #2F264D;
+  font-weight: 400;
+}
+
+.subscribe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(40, 37, 49, 0.75);
+  z-index: 1100;
+}
+.subscribe__box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-delay: 0s 10s;
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 24px;
+  border-radius: 8px;
+  z-index: 1100;
+  width: 400px;
+  box-shadow: 0 0 1px 1px #795BDA;
+}
+.subscribe__title {
+  font-size: 18px;
+  color: #2F264D;
+  font-weight: 400;
+}
+.subscribe__btn {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe__link {
+  width: 48%;
+  background: #795BDA;
+  padding: 16px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 48px;
+}
+.subscribe__not {
+  width: 48%;
+  background: #ffffff;
+  padding: 16px;
+  color: #795BDA;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 48px;
+  border: none;
+  box-shadow: 0 0 1px 1px #795BDA;
 }
 
 #advice-page {
@@ -7031,7 +7196,7 @@ th {
 }
 
 .psiholog-query__btn {
-  display: none;
+  display: flex;
   padding: 12px 0;
   font-size: 14px;
   background: #795BDA;
@@ -7041,9 +7206,82 @@ th {
   justify-content: center;
   border: none;
 }
+.psiholog-query__btn i {
+  margin-right: 10px;
+}
+
+.psiholog-query-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 37, 49, 0.75);
+  z-index: 1200;
+  display: none;
+}
 
 .psiholog-query {
-  display: none;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1200;
+  width: 600px;
+}
+.psiholog-query__active {
+  display: block;
+}
+.psiholog-query__close {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: url("./../images/svg/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1200;
+  transform: rotate(45deg);
+}
+.psiholog-query .product__payment__form input {
+  padding: 12px 0;
+}
+.psiholog-query .product__payment__form .input-box span {
+  top: 21px;
+}
+.psiholog-query .product__payment__form .product-filter {
+  margin-top: 0;
+}
+.psiholog-query .product__payment__form .product-filter .filter__query__box {
+  margin-top: 8px;
+}
+.psiholog-query .product__payment__form .product-filter .filter__query__item {
+  display: block;
+}
+.psiholog-query .product__payment__form .product-filter .filter__query__item:nth-child(1) .filter-btn {
+  padding: 10px;
+}
+.psiholog-query .product__payment__form .product-filter .filter__query__item:nth-child(4) .filter-btn {
+  padding: 10px;
+}
+.psiholog-query .product__payment__form .product-filter .filter__query__item:nth-child(4) .filter-btn i {
+  width: 24px;
+  height: 24px;
+  margin-right: 0;
+}
+.psiholog-query .filter-type {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+.psiholog-query .filter-type .input-box {
+  width: 48%;
+}
+.psiholog-query .product-payment__item {
+  width: 100%;
 }
 
 .therapy-more {
@@ -7064,6 +7302,107 @@ th {
 
 .hidden {
   display: none !important;
+}
+
+.request-sent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(40, 37, 49, 0.75);
+  z-index: 1100;
+  display: none;
+}
+.request-sent__close {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: url("./../images/svg/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1200;
+  transform: rotate(45deg);
+}
+.request-sent__box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 24px;
+  border-radius: 8px;
+  z-index: 1100;
+  width: 400px;
+}
+.request-sent__title {
+  font-size: 24px;
+  color: #2F264D;
+  font-weight: 400;
+}
+.request-sent span {
+  font-size: 16px;
+  color: #423F4D;
+  font-weight: 400;
+  margin: 16px 0;
+  display: block;
+}
+.request-sent a {
+  width: 100%;
+  background: #795BDA;
+  padding: 16px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 48px;
+  margin-top: 24px;
+  display: block;
+  text-align: center;
+}
+
+.request-sent-2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 24px;
+  border-radius: 8px;
+  z-index: 1100;
+  width: 400px;
+  box-shadow: 0 0 1px 1px #795BDA;
+}
+.request-sent-2__title {
+  font-size: 28px;
+  color: #2F264D;
+  font-weight: 400;
+  width: 60%;
+}
+.request-sent-2 span {
+  font-size: 14px;
+  color: #9895A6;
+  font-weight: 400;
+  margin: 16px 0;
+  display: block;
+}
+.request-sent-2 a {
+  width: 100%;
+  background: #795BDA;
+  padding: 16px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 48px;
+  margin-top: 24px;
+  display: block;
+  text-align: center;
 }
 
 .vebinares {
@@ -8893,7 +9232,7 @@ th {
   width: 100%;
   height: 100%;
   background: rgba(40, 37, 49, 0.75);
-  z-index: 1200;
+  z-index: 1100;
   display: none;
 }
 
