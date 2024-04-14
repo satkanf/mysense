@@ -272,6 +272,9 @@ ul {
   .psiholog .psiholog__basic__right .psiholog__basic__btn .btn-fixed {
     width: 33%;
   }
+  body .banner-map__box {
+    padding: 24px;
+  }
 }
 @media screen and (max-width: 960px) {
   body .header__navigation .navigation {
@@ -880,6 +883,28 @@ ul {
   }
 }
 @media screen and (max-width: 768px) {
+  body .banner-map__box {
+    position: relative;
+    justify-content: flex-end;
+  }
+  body .banner-map__box .banner-map__text {
+    z-index: 1100;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 50%;
+  }
+  body .banner-map__box .banner-map__text .banner-map__title {
+    font-size: 24px;
+    width: 120%;
+  }
+  body .banner-map__box .banner-map__text .banner-map__list {
+    width: 60%;
+  }
+  body .banner-map__box .banner-map__image {
+    width: 70%;
+    z-index: 1001;
+  }
   body .header__navigation .navigation {
     display: none;
   }
@@ -1466,7 +1491,35 @@ ul {
     width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  body .banner-map__box {
+    flex-direction: column;
+    padding: 24px;
+  }
+  body .banner-map__box .banner-map__text {
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+    top: 0;
+    left: 0;
+  }
+  body .banner-map__box .banner-map__text .banner-map__title {
+    width: 100%;
+  }
+  body .banner-map__box .banner-map__text .banner-map__list {
+    width: 100%;
+  }
+  body .banner-map__box .banner-map__image {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 480px) {
+  body .advice__more-downloadd::before {
+    width: 25%;
+  }
+  body .advice__more-downloadd::after {
+    width: 25%;
+  }
   body .popup {
     width: 90%;
   }
@@ -3039,7 +3092,7 @@ ul {
     padding-left: 5px;
   }
   body #advice-page .advice__block {
-    margin-top: 150px;
+    margin-top: 70px;
   }
   body .container .product-payment__wrapper .product__payment .product__payment__form .product-filter .filter__query__item {
     display: block;
@@ -3194,6 +3247,15 @@ ul {
   body .singl-article .psikholog__item .psikholog__item__btn a {
     height: auto;
     padding: 13px 0;
+  }
+  body .banner-map__box {
+    align-items: center;
+    text-align: center;
+  }
+  body .banner-map__box .banner-map__text .banner-map__list {
+    width: 80%;
+    margin: 16px auto;
+    justify-content: center;
   }
 }
 /*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
@@ -4482,9 +4544,55 @@ th {
   font-weight: 400;
 }
 
-.banner-image {
+.banner-map {
   padding: 45px 0;
   background: #F1EDFF;
+}
+.banner-map__box {
+  padding: 50px 100px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+.banner-map__text {
+  width: 43%;
+}
+.banner-map__image {
+  width: 50%;
+}
+.banner-map__title {
+  font-size: 32px;
+  color: #2F264D;
+  font-weight: 400;
+  line-height: 110%;
+}
+.banner-map__description {
+  font-size: 20px;
+  color: #423F4D;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 16px;
+}
+.banner-map__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.banner-map__item {
+  margin-right: 16px;
+  font-size: 14px;
+  color: #423F4D;
+  font-weight: 400;
+  line-height: 150%;
+  background-image: url("./../images/svg/checked-act.svg");
+  background-repeat: no-repeat;
+  background-position: 0 60%;
+  padding-left: 18px;
+  margin-bottom: 16px;
 }
 
 .how-start {
@@ -4687,7 +4795,7 @@ th {
   background-position: center center;
 }
 .comments-block__slider .slick-next {
-  left: 17vw;
+  left: 250px;
   background-image: url("./../images/svg/sl-arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center center;
