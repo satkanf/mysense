@@ -1514,6 +1514,10 @@ ul {
   }
 }
 @media screen and (max-width: 480px) {
+  body .vebinar-free__box {
+    width: 90%;
+    margin: 0 auto;
+  }
   body .advice__more-downloadd::before {
     width: 25%;
   }
@@ -8229,6 +8233,107 @@ th {
 }
 .comments__btn .comments__leave:hover {
   box-shadow: 0 0 2px 1px #795BDA;
+}
+
+.vebinar-free {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(40, 37, 49, 0.75);
+  z-index: 1100;
+  display: none;
+}
+.vebinar-free form {
+  margin-top: 24px;
+}
+.vebinar-free .popup-close {
+  border-radius: 8px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.vebinar-free h3 {
+  font-size: 24px;
+  color: #2F264D;
+  font-weight: 400;
+}
+.vebinar-free__box {
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 24px;
+  background: #ffffff;
+  z-index: 1010;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.vebinar-free .form-btn {
+  background: #795BDA;
+  border-radius: 48px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 0;
+  margin-top: 24px;
+}
+.vebinar-free .form-btn:hover {
+  background: #8E6BFF;
+  transition: 0.3s;
+}
+.vebinar-free input {
+  padding: 16px;
+  width: 100%;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #E3E1E5;
+  font-size: 14px;
+  outline: none;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #2F264D;
+  font-size: 14px;
+  position: relative;
+}
+.vebinar-free input:focus {
+  border: 1px solid #795BDA;
+}
+.vebinar-free .input-box {
+  position: relative;
+}
+.vebinar-free .input-box__pl {
+  position: absolute;
+  left: 16px;
+  top: 24px;
+  color: #9895A6;
+  font-size: 14px;
+  font-weight: 400;
+  background: #ffffff;
+  padding: 0 5px;
+  display: block;
+}
+.vebinar-free .input-box input:not(:-moz-placeholder-shown) ~ span {
+  transform: translateY(-27px);
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+.vebinar-free .input-box input:focus ~ span, .vebinar-free .input-box input:not(:placeholder-shown) ~ span {
+  transform: translateY(-27px);
+  transition: 0.3s;
+}
+.vebinar-free input::-moz-placeholder {
+  color: transparent;
+}
+.vebinar-free input::placeholder {
+  color: transparent;
+}
+
+.vebinar-free-btn {
+  cursor: pointer;
 }
 
 .product-payment {

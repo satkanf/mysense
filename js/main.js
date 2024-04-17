@@ -166,6 +166,23 @@ const subscribe = document.querySelector('.subscribe')
 const subscribeBtn = document.querySelector('.subscribe__not')
 const requestDoneClose = document.querySelectorAll('.request-sent__close');
 const requestDone = document.querySelectorAll('.request-sent')
+const vebinarFree = document.querySelector('.vebinar-free');
+const vebinarFreeBtn = document.querySelectorAll('.vebinar-free-btn');
+
+if(vebinarFreeBtn){
+  vebinarFreeBtn.forEach(function(item){
+    item.addEventListener('click', () =>{
+      vebinarFree.classList.add('popup-active')
+    })
+    closePopupButton.forEach(function(el){
+      el.addEventListener('click', () =>{
+        vebinarFree.classList.remove('popup-active')
+      })
+    })
+    
+
+  })
+}
 
 // setTimeout("document.querySelector('.subscribe').style.display='block'", 5000);
 
