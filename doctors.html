@@ -210,7 +210,7 @@
     </header>
     <section class="title-page bg-page">
         <div class="container">
-            <h2>Команда наших найкращих психологів</h2>
+            <h1 class="title-page__title">Команда наших найкращих психологів</h1>
         </div>
     </section>
     <section class="filter">
@@ -531,26 +531,14 @@
                     </div>
                 </div>
                 <div class="filter__bottom">
-                    <div class="type-therapy filter__item-sm">
-                        <div class="filter__select select__header">
-                            <span class="filter__select__name select__current">Підхід</span>
-                            <div class="filter__select__icon select__icon">&#8249</div>
-                        </div>
-                        <div class="filter__select__list select__box">
-                            <div class="filter__select__item select__item">Індивідуальний</div>
-                            <div class="filter__select__item select__item">Груповий</div>
-                        </div>
-                    </div>
+
 
                     <div class="type-therapy filter__item-sm">
                         <div class="filter__select select__header">
                             <span class="filter__select__name select__current">Формат</span>
                             <div class="filter__select__icon select__icon">&#8249</div>
                         </div>
-                        <div class="filter__select__list select__box">
-                            <div class="filter__select__item select__item">Онлайн</div>
-                            <div class="filter__select__item select__item">Очно</div>
-                        </div>
+
                     </div>
                     <div class="type-therapy filter__item-sm">
                         <div class="filter__select select__header">
@@ -582,15 +570,10 @@
 
                     <div class="wrap">
                         <div class="type-therapy filter__item-price">
-                            <label for="type-therapy">Сортування:</label>
-                            <div class="filter__select select__header">
-                                <span class="filter__select__name select__current">За збільшинням ціни</span>
-                                <div class="filter__select__icon select__icon">&#8249</div>
-                            </div>
-                            <div class="filter__select__list select__box">
-                                <div class="filter__select__item select__item">За збільшинням ціни</div>
-                                <div class="filter__select__item select__item">За зменшенням ціни</div>
 
+                            <div class="filter__select select__header">
+                                <span class="filter__select__name select__current">Сортування</span>
+                                <div class="filter__select__icon select__icon">+</div>
                             </div>
                         </div>
                         <button class="mobile-filter-btn">
@@ -606,9 +589,10 @@
                     <div class="search filter__item-sm">
                         <form action="" class="search__form">
                             <input type="search" name="" id="" placeholder="Пошук за ім'ям та інше  ">
+                            <button type="submit"></button>
                         </form>
                     </div>
-
+                    <button class="filter-clean"> Скинути філтр</button>
 
                 </div>
             </div>
@@ -617,169 +601,191 @@
     <section class="content">
         <div class="container">
             <div class="content__psikhologi">
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-6.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
+                <div class="psikholog__item ">
+                    <a href="#" class="psikholog__item__link">
+                        <div class="psikholog__item__profile">
+                            <div class="psikholog__item__foto">
+                                <img class=" lazyloaded" src="images/IMG_6023.jpeg" data-src="/img/113/IMG_0475.png"
+                                    alt="">
+                                <span>Знайомство 15 хв</span>
+                                <button class="play-video"></button>
+                            </div>
+                            <div class="psikholog__item__info">
+                                <h3 class="psikholog__item__name">
+                                    Крістіна Гусєва </h3>
+                                <ul class="psikholog__item__experience">
+                                    <li><i>
+                                            <img class=" lazyloaded" src="images//svg/dosvids.svg"
+                                                data-src=" /img/svg/dosvids.svg" alt="">
+                                        </i> 8 років практики </li>
+
+                                </ul>
+                                <ul class="psikholog__item__speciality">
+                                    <li>
+                                        Психолог, Гештальт-терапевт, кризовий психолог </li>
+
+                                </ul>
+                                <ul class="psikholog__item__direction">
+                                    <li>Проблеми у спілкуванні</li>
+                                    <li>Внутрішні конфлікти</li>
+                                    <li>Самопізнання, саморозвиток</li>
+                                    <li>Та інше</li>
+                                </ul>
+
+
+                            </div>
+                            <span class="psikholog__item__price">1300 ₴</span>
+                            <ul class="psikholog__item__format">
                                 <li><i>
-                                        <img src="images/svg/dosvids.svg" alt="">
-                                    </i>5 років практики</li>
-
-                                <li><i>
-                                        <img src="images/svg/sessia.svg" alt="">
-                                    </i>220+ сесій</li>
+                                        <img class=" lazyloaded" src="images//svg/onlain.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Онлайн </li>
                             </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
+                            <div class="psikholog__item__btn">
 
+                                <button href="/psychologist/kristina-husieva" class="profile-link">В профіль</button>
 
+                            </div>
                         </div>
-                        <span class="psikholog__item__price">від 1200 &#8372;</span>
-                        <ul class="psikholog__item__format">
-                            <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-
-                            <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                        </ul>
-                        <div class="psikholog__item__btn">
-                            <a href="">Чат з терапевтом</a>
-                            <a href="single-doctor.html">В профіль</a>
-                        </div>
-                    </div>
-                    <div class="psikholog__item__session">
-                        <video>
-                            <img src="images/video.png" alt="">
+                    </a>
+                    <div class="psikholog__item__session" style="display: none;">
+                        <span class="close-video"></span>
+                        <video preload="auto" muted="" controls="" playsinline="" class="psiholog__video">
+                            <source src="/video/113/-7936067051400316476.mp4#t=0.1" type="video/mp4">
                         </video>
-
-                        <a href="doctor-query.html"><i>
+                        <button class="psiholog-query__btn" data-hash="kristina-husieva"><i>
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path class="icon-svg"
                                         d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z"
-                                        fill="#795BDA" />
+                                        fill="#795BDA"></path>
                                 </svg>
-                            </i>Домовитисть про сесію</a>
+                            </i>Домовитися про зустріч </button>
                     </div>
                 </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-6.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
+                <div class="psikholog__item ">
+                    <a href="#" class="psikholog__item__link">
+                        <div class="psikholog__item__profile">
+                            <div class="psikholog__item__foto">
+                                <img class=" lazyloaded" src="/img/113/IMG_0475.png" data-src="/img/113/IMG_0475.png"
+                                     alt="">
+                                <span>Знайомство 15 хв</span>
+                                <button class="play-video"></button>
+                            </div>
+                            <div class="psikholog__item__info">
+                                <h3 class="psikholog__item__name">
+                                    Крістіна Гусєва </h3>
+                                <ul class="psikholog__item__experience">
+                                    <li><i>
+                                        <img class=" lazyloaded" src=" /img/svg/dosvids.svg"
+                                             data-src=" /img/svg/dosvids.svg" alt="">
+                                    </i> 8 років практики </li>
+
+                                </ul>
+                                <ul class="psikholog__item__speciality">
+                                    <li>
+                                        Психолог, Гештальт-терапевт, кризовий психолог </li>
+
+                                </ul>
+                                <ul class="psikholog__item__direction">
+                                    <li>Проблеми у спілкуванні</li>
+                                    <li>Внутрішні конфлікти</li>
+                                    <li>Самопізнання, саморозвиток</li>
+                                    <li>Та інше</li>
+                                </ul>
+
+
+                            </div>
+                            <span class="psikholog__item__price">1300 ₴</span>
+                            <ul class="psikholog__item__format">
                                 <li><i>
-                                        <img src="images/svg/dosvids.svg" alt="">
-                                    </i>5 років практики</li>
-
-                                <li><i>
-                                        <img src="images/svg/sessia.svg" alt="">
-                                    </i>220+ сесій</li>
+                                    <img class=" lazyloaded" src="/img/svg/onlain.svg" data-src="/img/svg/onlain.svg"
+                                         alt="">
+                                </i>Онлайн </li>
                             </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
+                            <div class="psikholog__item__btn">
 
+                                <a href="/psychologist/kristina-husieva">В профіль</a>
 
+                            </div>
                         </div>
-                        <span class="psikholog__item__price">від 1200 &#8372;</span>
-                        <ul class="psikholog__item__format">
-                            <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                            <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                        </ul>
-                        <div class="psikholog__item__btn">
-                            <a href="">Чат з терапевтом</a>
-                            <a href="single-doctor.html">В профіль</a>
-                        </div>
+                    </a>
+                    <div class="psikholog__item__session" style="display: none;">
+                        <span class="close-video"></span>
+                        <video preload="auto" muted="" controls="" playsinline="" class="psiholog__video">
+                            <source src="/video/113/-7936067051400316476.mp4#t=0.1" type="video/mp4">
+                        </video>
+                        <button class="psiholog-query__btn" data-hash="kristina-husieva"><i>
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path class="icon-svg"
+                                      d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z"
+                                      fill="#795BDA"></path>
+                            </svg>
+                        </i>Домовитися про зустріч </button>
                     </div>
-
                 </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-6.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
+                <div class="psikholog__item ">
+                    <a href="#" class="psikholog__item__link">
+                        <div class="psikholog__item__profile">
+                            <div class="psikholog__item__foto">
+                                <img class=" lazyloaded" src="/img/113/IMG_0475.png" data-src="/img/113/IMG_0475.png"
+                                     alt="">
+                                <span>Знайомство 15 хв</span>
+                                <button class="play-video"></button>
+                            </div>
+                            <div class="psikholog__item__info">
+                                <h3 class="psikholog__item__name">
+                                    Крістіна Гусєва </h3>
+                                <ul class="psikholog__item__experience">
+                                    <li><i>
+                                        <img class=" lazyloaded" src=" /img/svg/dosvids.svg"
+                                             data-src=" /img/svg/dosvids.svg" alt="">
+                                    </i> 8 років практики </li>
+
+                                </ul>
+                                <ul class="psikholog__item__speciality">
+                                    <li>
+                                        Психолог, Гештальт-терапевт, кризовий психолог </li>
+
+                                </ul>
+                                <ul class="psikholog__item__direction">
+                                    <li>Проблеми у спілкуванні</li>
+                                    <li>Внутрішні конфлікти</li>
+                                    <li>Самопізнання, саморозвиток</li>
+                                    <li>Та інше</li>
+                                </ul>
+
+
+                            </div>
+                            <span class="psikholog__item__price">1300 ₴</span>
+                            <ul class="psikholog__item__format">
                                 <li><i>
-                                        <img src="images/svg/dosvids.svg" alt="">
-                                    </i>5 років практики</li>
-
-                                <li><i>
-                                        <img src="images/svg/sessia.svg" alt="">
-                                    </i>220+ сесій</li>
+                                    <img class=" lazyloaded" src="/img/svg/onlain.svg" data-src="/img/svg/onlain.svg"
+                                         alt="">
+                                </i>Онлайн </li>
                             </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
+                            <div class="psikholog__item__btn">
 
+                                <a href="/psychologist/kristina-husieva">В профіль</a>
 
+                            </div>
                         </div>
-                        <span class="psikholog__item__price">від 1200 &#8372;</span>
-                        <ul class="psikholog__item__format">
-                            <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                            <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                        </ul>
-                        <div class="psikholog__item__btn">
-                            <a href="">Чат з терапевтом</a>
-                            <a href="single-doctor.html">В профіль</a>
-                        </div>
+                    </a>
+                    <div class="psikholog__item__session" style="display: none;">
+                        <span class="close-video"></span>
+                        <video preload="auto" muted="" controls="" playsinline="" class="psiholog__video">
+                            <source src="/video/113/-7936067051400316476.mp4#t=0.1" type="video/mp4">
+                        </video>
+                        <button class="psiholog-query__btn" data-hash="kristina-husieva"><i>
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path class="icon-svg"
+                                      d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z"
+                                      fill="#795BDA"></path>
+                            </svg>
+                        </i>Домовитися про зустріч </button>
                     </div>
-
                 </div>
                 <div class="psikholog__item__profile psikholog__banner">
                     <div class="psikholog__banner__text">
@@ -792,206 +798,7 @@
                         <img src="images/picture/img-banner-2.png" alt="">
                     </div>
                 </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-6.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
-                                <li><i>
-                                        <img src="images/svg/dosvids.svg" alt="">
-                                    </i>5 років практики</li>
 
-                                <li><i>
-                                        <img src="images/svg/sessia.svg" alt="">
-                                    </i>220+ сесій</li>
-                            </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
-
-
-                        </div>
-                        <span class="psikholog__item__price">від 1200 &#8372;</span>
-                        <ul class="psikholog__item__format">
-                            <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                            <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                        </ul>
-                        <div class="psikholog__item__btn">
-                            <a href="">Чат з терапевтом</a>
-                            <a href="single-doctor.html">В профіль</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-6.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
-                                <li><i>
-                                        <img src="images/svg/dosvids.svg" alt="">
-                                    </i>5 років практики</li>
-
-                                <li><i>
-                                        <img src="images/svg/sessia.svg" alt="">
-                                    </i>220+ сесій</li>
-                            </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
-
-
-                        </div>
-                        <span class="psikholog__item__price">від 1200 &#8372;</span>
-                        <ul class="psikholog__item__format">
-                            <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                            <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                        </ul>
-                        <div class="psikholog__item__btn">
-                            <a href="">Чат з терапевтом</a>
-                            <a href="single-doctor.html">В профіль</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-6.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
-                                <li><i>
-                                        <img src="images/svg/dosvids.svg" alt="">
-                                    </i>5 років практики</li>
-
-                                <li><i>
-                                        <img src="images/svg/sessia.svg" alt="">
-                                    </i>220+ сесій</li>
-                            </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
-
-
-                        </div>
-                        <span class="psikholog__item__price">від 1200 &#8372;</span>
-                        <ul class="psikholog__item__format">
-                            <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                            <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                        </ul>
-                        <div class="psikholog__item__btn">
-                            <a href="">Чат з терапевтом</a>
-                            <a href="single-doctor.html">В профіль</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="psikholog__item">
-                    <div class="psikholog__item__profile">
-                        <div class="psikholog__item__foto">
-                            <img src="images/picture/avatar-6.png" alt="">
-                            <span>Знайомство 15 хв</span>
-                        </div>
-                        <div class="psikholog__item__info">
-                            <p class="psikholog__item__city">Київ</p>
-                            <h3 class="psikholog__item__name">Борисенко Андрій</h3>
-                            <ul class="psikholog__item__experience">
-                                <li><i>
-                                        <img src="images/svg/dosvids.svg" alt="">
-                                    </i>5 років практики</li>
-
-                                <li><i>
-                                        <img src="images/svg/sessia.svg" alt="">
-                                    </i>220+ сесій</li>
-                            </ul>
-                            <ul class="psikholog__item__speciality">
-                                <li>Психолог</li>
-                                <li>Сімейний психолог</li>
-                                <li>Гештальт-терапевт</li>
-                            </ul>
-                            <ul class="psikholog__item__direction">
-                                <li>Складно прийняти важливе рішення</li>
-                                <li>Розлучення</li>
-                                <li>Зрада</li>
-                                <li>Страх нових стосунків</li>
-                                <li>Почуття самотності</li>
-                                <li>Та інше</li>
-                            </ul>
-
-
-                        </div>
-                        <span class="psikholog__item__price">від 1200 &#8372;</span>
-                        <ul class="psikholog__item__format">
-                            <li><i>
-                                    <img src="images//svg/ochno.svg" alt="">
-                                </i>Онлайн</li>
-                            <li><i>
-                                    <img src="images/svg/onlain.svg" alt="">
-                                </i>Очно</li>
-                        </ul>
-                        <div class="psikholog__item__btn">
-                            <a href="">Чат з терапевтом</a>
-                            <a href="single-doctor.html">В профіль</a>
-                        </div>
-                    </div>
-
-                </div>
                 <ul class="pagination">
                     <li class="arrow-prev"><a href="">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -1014,6 +821,80 @@
                 </ul>
                 <button class="pagination-more">Завантажити ще</button>
             </div>
+            <div class="septext">
+                <p><span style="font-weight: 400;">Пошук досвідченого психолога у Києві може стати справжнім
+                        випробуванням, якщо не знаєш, як обрати спеціаліста серед великої кількості
+                        пропозицій.&nbsp;</span></p>
+
+                <p><span style="font-weight: 400;">Київ - велике місто, тож не дивно, що вводячи в пошук запит
+                        &ldquo;Психолог Київ&rdquo; ви отримуєте безліч варіантів. Тому давайте розбиратись, як
+                        правильно обрати спеціаліста, як найбільш точно сформулювати свій запит та отримати максимально
+                        якісну послугу.&nbsp;</span></p>
+                <h3><span style="font-weight: 400;">Ціна консультації психолога в Києві</span></h3>
+
+                <p><span style="font-weight: 400;">Перше, що зазвичай хвилює клієнта - це вартість консультації. І тут
+                        ви маєте розуміти принципи&nbsp; ціноутворення в даній галузі. Вартість години консультації буде
+                        вища у спеціалістів, що мають освіту, </span><span style="font-weight: 400;">сертифіковані в
+                        одному або декількох напрямках психотерапії</span><span style="font-weight: 400;"> та мають
+                        більш тривалий досвід роботи.</span></p>
+
+                <p><span style="font-weight: 400;">Якщо ж психолог знаходиться в процесі сертифікації, все ще навчається
+                        та вдосконалює свої навички або лише почав практикувати - вартість буде нижчою, але це не
+                        говорить про некомпетентність даного спеціаліста.&nbsp;</span></p>
+
+                <ul>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Отже, ви маєте
+                            вирішити, яка вартість консультації буде для вас прийнятною та обирати спеціаліста
+                            відповідно до ваших фінансових можливостей.</span></li>
+                </ul>
+
+                <p><span style="font-weight: 400;">Далі вам також потрібно вирішити, чи хочете ви працювати онлайн
+                        (наразі це більш популярний формат сесій, який має безліч переваг), чи очно. І, зрештою,
+                        вирішити, чи принципово для вас, щоб спеціаліст був жінкою чи чоловіком. Бо бувають ситуації,
+                        коли клієнт відчуває себе некомфортно зі спеціалістом певної статі.&nbsp;</span></p>
+                <h2><span style="font-weight: 400;">Як вибрати психолога в Києві на платформі My Sense</span></h2>
+
+                <p><span style="font-weight: 400;">Створюючи платформу психологічної підтримки, ми переслідували мету -
+                        зробити якісні послуги психолога в Києві доступними для наших клієнтів. Вам не потрібно
+                        самостійно шукати інформацію про освіту чи досвід спеціаліста, до якого ви збираєтесь на
+                        консультацію.&nbsp;</span></p>
+
+                <ul>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Всі психологи на
+                            платформі My Sense перевірені та сертифіковані. Ми намагаємось допомогти кожному, хто
+                            звертається за пошуком психологічної підтримки до нас.&nbsp;</span></li>
+                </ul>
+                <p><span style="font-weight: 400;">На платформі ви легко знайдете психолога у Києві, що буде максимально
+                        відповідати саме вашим потребам. Для цього можна пройти тестування (розроблено з урахуванням
+                        всіх нюансів, які можуть виникнути у роботі психолога з клієнтом) та обрати психолога із
+                        запропонованих варіантів. Або ж ви можете скористатись фільтрами.&nbsp;</span></p>
+
+                <p><span style="font-weight: 400;">На сайті My Sense ви легко знайдете психолога для себе, для дитини
+                        незалежно від віку, або для пари. Наші спеціалісти працюють в різних підходах та обирають методи
+                        терапії, що будуть максимально ефективними у вашому окремому випадку.&nbsp;</span></p>
+                <h3><span style="font-weight: 400;">Дитячий психолог Київ&nbsp;</span></h3>
+                <p><span style="font-weight: 400;">У Києві є багато психологів, що спеціалізуються саме на роботі з
+                        дітьми. Дитяча психотерапія вимагає спеціалізованого підходу, де використовуються ігрові техніки
+                        та творчість для спілкування з дітьми.&nbsp;</span></p>
+
+                <p><span style="font-weight: 400;">Психотерапевти My Sense в роботі роблять акценти на вікових
+                        особливостях, реалізують індивідуальний підхід та залучають батьків чи опікунів для досягнення
+                        кращих результатів терапії.&nbsp;</span></p>
+                <h3><span style="font-weight: 400;">Підлітковий психолог Київ</span></h3>
+                <p><span style="font-weight: 400;">Ще один із популярних запитів - це пошук психолога для підлітка у
+                        Києві. І тут ми також готові допомогти. Наші спеціалісти мають досвід роботи з дітьми
+                        підліткового віку та вміють знаходити з ними спільну мову, що дуже важливо для ефективної
+                        терапії.&nbsp;</span></p>
+                <h3><span style="font-weight: 400;">Сімейний психолог у Києві</span></h3>
+                <p><span style="font-weight: 400;">У Києві, як і в інших містах,є багато кваліфікованих психотерапевтів,
+                        які спеціалізуються на сімейній терапії. Сімейна терапія допомагає сім'ям розуміти свої проблеми
+                        та знаходити способи їх вирішення, спільно працюючи з терапевтом. Під час сесій акцент робиться
+                        на поліпшенні спілкування, зміцненні зв'язків та пошуку спільних шляхів до гармонії. Терапія
+                        сприяє появі позитивних змін у відносинах між членами сім'ї.</span></p>
+            </div>
+        </div>
+
+        </div>
         </div>
     </section>
     <footer class="footer">

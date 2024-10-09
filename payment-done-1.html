@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>MySense</title>
 </head>
 
 <body>
+    
     <header class="header">
         <div class="container">
             <menu class="header__menu">
@@ -21,11 +22,13 @@
                     </a>
                 </div>
                 <nav class="header__navigation">
-
                     <div class="mobile-menu">
                         <span class="mobile-menu__close"></span>
-                        <div class="mobile-menu__logo"><a href="index.html"><img src="images/svg/mysense-logo.svg"
-                                    alt=""></a></div>
+                        <div class="mobile-menu__logo">
+                            <a href="index.html">
+                                <img src="images/svg/mysense-logo.svg" alt="">
+                            </a>
+                        </div>
                         <ul class="mobile-menu__list">
                             <li class="mobile-menu__item"><a href="doctors.html">Наші психологи</a></li>
                             <li class="mobile-menu__item"><a href="vebinares.html">Вабінари</a></li>
@@ -40,15 +43,14 @@
                                 <li class="lang-swicher__item filter__select__item">RU</li>
                                 <li class="lang-swicher__item filter__select__item">EN</li>
                             </ul>
-
                         </div>
                     </div>
-
                     <ul class="navigation">
                         <li class="navigation__item"><a href="doctors.html">Наші психологи</a></li>
-                        <li class="navigation__item"><a href="vebinares.html">Вабінари</a></li>
+                        <li class="navigation__item"><a href="vebinares.html">Підібрати психолога</a></li>
                         <li class="navigation__item"><a href="articles.html">Статті</a></li>
-                        <li class="navigation__item"><a href="#">Психологам</a></li>
+                        
+                        
                     </ul>
                 </nav>
                 <!-- Модальні вікна з авторизаціею -->
@@ -185,19 +187,18 @@
                         <a href="#" class="support-link">Служба турботи</a>
                     </div>
                     <div class="">
-                        <button class="btn-auth">Вхід</button>
+                        <!-- <button class="btn-auth">Вхід</button> -->
+                        <button class="btn-logout">Вхід</button>
+                        <a href="#" class="account">Кабінет</a>
                         <div class="lang-switcher ">
                             <span class="lang-header filter__select select__current">UA</span>
                             <ul class="lang-switcher__list filter__select__list">
-                                <li class="lang-swicher__item filter__select__item">UA</li>
-                                <li class="lang-swicher__item filter__select__item">RU</li>
-                                <li class="lang-swicher__item filter__select__item">EN</li>
+                                <li class="lang-swicher__item filter__select__item"><a href="">UA</a></li>
+                                <li class="lang-swicher__item filter__select__item"><a href="">UA</a></li>
+                                <!-- <li class="lang-swicher__item filter__select__item">EN</li> -->
                             </ul>
-
                         </div>
                     </div>
-
-
                 </div>
                 <div class="burger-menu">
                     <span></span>
@@ -205,57 +206,52 @@
                     <span></span>
                 </div>
             </menu>
-
         </div>
     </header>
-
-    <section class="test test-search">
-        <div class="bg-section"></div>
+   <section class="payment-done payment-done-1">
         <div class="container">
-            <div class="test__slider">
-                <div class="test__body">
-                    <div class="test__not-found__image"><img src="images/not-results.png" alt=""></div>
-                    <div class="test-search__text">
-                        <p>
-                            Нажаль ми не знайшли вашого психолога за запитом ;(
-                        </p>
-                        <p>Спробуйте знайти в каталозі чи задати інші параметри</p>
-                        <div class="test-search__links">
-                            <a href="doctors.html">В каталог</a>
-                            <a href="test-phase-1.html">Заповнити анкету ще</a>
-                        </div>
-                    </div>
+            <div class="content-body">
+                <div class="content-body__item">
+                    <h3 class="name-client"> Тетяна,</h3>
+                    <p class="text-done">Ваш платіж пройшов успішно!</p>
+                </div>
+                <div class="content-body__item">
+                    <ul class="payment-information">
+                        <li class="payment-information__item">
+                            <p class="payment-information__name">Номер замовлення</p>  <p class="payment-information__data">2345</p>
+                        </li>
+                        <li class="payment-information__item">
+                            <p class="payment-information__name">Психолог</p>  <p class="payment-information__data">Тетяна Саєнко</p>
+                        </li>
+                        <li class="payment-information__item">
+                            <p class="payment-information__name">Дата сесії</p>  <p class="payment-information__data">02.10.2024</p>
+                        </li>
+                        <li class="payment-information__item">
+                            <p class="payment-information__name">Час</p>  <p class="payment-information__data">12.00 за Києвом</p>
+                        </li>
+                        <li class="payment-information__item">
+                            <p class="payment-information__name">Час оплати</p>  <p class="payment-information__data">28.09.2024 13:10:21</p>
+                        </li>
+                        <li class="payment-information__item">
+                            <p class="payment-information__name">Сума</p>  <p class="payment-information__data">1600 грн.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-body__item">
+                    <p class="payment-done__msg">Для роботи з психологом ми створили ваш особистий кабінет </p>
+                </div>
+                <div class="content-body__item">
+                    <p class="payment-done__msg">
+                        Щоб отримати дані для входу в кабінет та інструкцію щодо проведення зустрічі, 
+                        в обраному вами месенджері Telegram необхідно підписатися на наш Телеграм-бот
+                    </p>
+                    <a href="#" class="subscribe-btn">Підписатися</a>
                 </div>
             </div>
-
-
         </div>
-        <div class="test__control">
-            <div class="test__control__checked">
-                <p>Тільки перевірені фахівці</p>
-
-            </div>
-            <div class="test__control__arrows">
-                <a href="#" class="test__control__prev">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="arrow-icon" d="M15.5 8H1.5M1.5 8L8.5 15M1.5 8L8.5 1" stroke="#795BDA"
-                            stroke-width="1.5" />
-                    </svg>
-                </a>
-                <a href="#" class="test__control__next">Вперед</a>
-            </div>
-            <div class="test__control__result">
-                <p>Знайденно: <span>21</span></p>
-                <ul class="test__control__doctors">
-                    <li><a href="#"><img src="images/picture/avatar-4.png" alt=""></a></li>
-                    <li><a href="#"><img src="images/picture/avatar-7.png" alt=""></a></li>
-                    <li><a href="#"><img src="images/picture/avatar-6.png" alt=""></a></li>
-                    <li><a href="#"><img src="images/picture/avatar-1.png" alt=""></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+   </section>
     <footer class="footer">
+        
         <div class="container">
             <div class="footer__navigation">
                 <nav class="footer__menu">
@@ -287,6 +283,22 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="footer__directions">
+                <nav class="footer__directions__box">
+                    <h3 class="footer__directions__name">Напрямки</h3>
+                    <ul class="footer__directions__list">
+                        <li class="footer__directions__item"><a href="#" class="footer__directions__link">Травматерапія</a></li>
+                        <li class="footer__directions__item"><a href="#" class="footer__directions__link">КПТ</a></li>
+                        <li class="footer__directions__item"><a href="#" class="footer__directions__link">Арт-терапія</a></li>
+                        <li class="footer__directions__item"><a href="#" class="footer__directions__link">Емоційно-образна терапія</a></li>
+                        <li class="footer__directions__item"><a href="#" class="footer__directions__link">Транзакційний аналіз</a></li>
+                        <li class="footer__directions__item"><a href="#" class="footer__directions__link">Сімейна терапія</a></li>
+                        <li class="footer__directions__item"><a href="#" class="footer__directions__link">Гештальт-терапія</a></li>
+                        <li class="footer__directions__item"><a href="#" class="footer__directions__link">EMDR</a></li>
+
+                    </ul>
+                </nav>
             </div>
             <div class="footer__bottom">
                 <ul class="footer__bottom__contract">
