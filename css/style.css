@@ -10324,13 +10324,13 @@ body .reservation__filter .filter__btn {
   body .filter__query__box .form-group .filter__btn .btn-contact-telegram {
     margin-bottom: 8px;
     background-size: 14%;
-    background-position: 20% center;
-    padding-left: 37%;
+    background-position: 14% center;
+    padding-left: 33%;
   }
   body .filter__query__box .form-group .filter__btn .btn-contact-email {
     background-size: 14%;
-    background-position: 20% center;
-    padding-left: 77%;
+    background-position: 14% center;
+    padding-left: 33%;
   }
   .single-psiholog .last-views .last-views__title {
     margin-top: 0;
