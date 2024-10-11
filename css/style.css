@@ -8943,6 +8943,9 @@ body .reservation__filter .filter__btn {
   }
 }
 @media screen and (max-width: 730px) {
+  .payment-done .content-body{
+    width: 100%;
+  }
   .vebinar .comments-block__item__comment {
     padding-right: 0;
   }
