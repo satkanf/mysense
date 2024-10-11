@@ -10230,7 +10230,7 @@ body .reservation__filter .filter__btn {
 @media screen and (min-width: 320px) and (max-width: 478px) {
   body .footer .footer__directions__box {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
   }
   body .footer .footer__directions__box .footer__directions__list {
@@ -10240,7 +10240,7 @@ body .reservation__filter .filter__btn {
     justify-content: center;
   }
   body .footer .footer__directions__box .footer__directions__list .footer__directions__item {
-    text-align: center;
+    text-align: left;
   }
   body .filter__query__box .form-group {
     flex-direction: column;
