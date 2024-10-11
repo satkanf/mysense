@@ -8167,9 +8167,9 @@ body .reservation__filter .filter__btn {
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:last-child {
     margin-bottom: 0;
   }
-  .product-payment .product-payment__item .product__info {
+  /* .product-payment .product-payment__item .product__info {
     margin-top: 70px;
-  }
+  } */
   .product__payment .client .client__auth {
     flex-direction: column;
     align-items: flex-start;
@@ -8830,8 +8830,8 @@ body .reservation__filter .filter__btn {
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:last-child {
     margin-bottom: 0;
   }
-  .product-payment .product-payment__item .product__info {
-    margin-top: 70px;
+  /* .product-payment .product-payment__item .product__info {
+    margin-top: 70px; */
   }
   .product__payment .client .client__auth {
     flex-direction: column;
