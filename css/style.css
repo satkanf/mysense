@@ -5777,6 +5777,9 @@ body .reservation__filter .filter__btn {
   margin-right: 8px;
   margin-bottom: 5px;
 }
+.create-chat .product-payment__wrapper{
+  justify-content: center;
+}
 .product__info {
   position: relative;
   display: flex;
