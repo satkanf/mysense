@@ -10315,22 +10315,22 @@ body .reservation__filter .filter__btn {
   body .footer .footer__directions__box .footer__directions__list .footer__directions__item {
     text-align: left;
   }
-  body .filter__query__box .form-group {
+  /* body .filter__query__box .form-group {
     flex-direction: column;
-  }
+  } */
   body .filter__query__box .form-group .filter__btn {
-    width: 100%;
+    width: 48%;
   }
   body .filter__query__box .form-group .filter__btn .btn-contact-telegram {
     margin-bottom: 8px;
     background-size: 14%;
-    background-position: 34% center;
-    padding-left: 47%;
+    background-position: 20% center;
+    padding-left: 37%;
   }
   body .filter__query__box .form-group .filter__btn .btn-contact-email {
     background-size: 14%;
-    background-position: 34% center;
-    padding-left: 47%;
+    background-position: 20% center;
+    padding-left: 77%;
   }
   .single-psiholog .last-views .last-views__title {
     margin-top: 0;
