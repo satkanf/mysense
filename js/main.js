@@ -258,8 +258,8 @@ const therapyMore = document.querySelectorAll('.therapy-more');
 const therapyMore2 = document.querySelectorAll('.therapy-more-2');
 const educationMore = document.querySelectorAll('.education-more');
 const educationItem = document.querySelectorAll('.psiholog__education__body ul li');
-const therapyItem = document.querySelectorAll('.psiholog__therapy:nth-child(2) ul li');
-const therapyItem2 = document.querySelectorAll('.psiholog__therapy:nth-child(3) ul li');
+const therapyItem = document.querySelectorAll('.psiholog__therapy:nth-child(3) ul li');
+const therapyItem2 = document.querySelectorAll('.psiholog__therapy:nth-child(4) ul li');
 const calendarEnrol = document.querySelectorAll('.calendar__date__time li');
 
 const feedback = document.querySelector('.comments-block__response');
