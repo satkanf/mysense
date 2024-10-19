@@ -7453,10 +7453,6 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
     width: 260px;
     height: 260px;
   }
-  .psiholog__speciality {
-    margin-top: -134px;
-    margin-left: 281px;
-  }
   .psiholog__item__price {
     margin-left: 280px;
   }
@@ -7465,8 +7461,6 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   }
   .psikholog__item__speciality {
     width: 100%;
-    margin-top: -134px;
-    margin-left: 281px;
   }
   .psikholog__item__acquaintance {
     width: 40%;
