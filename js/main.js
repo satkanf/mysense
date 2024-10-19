@@ -10,7 +10,15 @@ $(document).ready(function() {
       responsive: [
         {
            breakpoint: 480,
-           settings: "unslick"
+          
+           settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            // arrows: true,
+            // autoplay: true,
+            // speed:300
+          }
         }
      ]
       
@@ -23,6 +31,7 @@ $(document).ready(function() {
       dots: false,
       autoplay: true,
       speed:300,
+      variableWidth: true,
       responsive: [
         {
           breakpoint: 1024,
@@ -44,7 +53,8 @@ $(document).ready(function() {
           breakpoint: 480,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            
           }
         },
   
@@ -80,7 +90,96 @@ $(document).ready(function() {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay:false,
+          }
+        },
+  
+      ]
+    });
+
+    $('.viewed-list').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: true,
+      speed:300,
+      variableWidth:true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: false,
+                      arrows: false,
+                      infinite: false
+                      
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: false,
+                      arrows: false,
+                      infinite: false
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false,
+                      arrows: false,
+                      infinite: false
+          }
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            infinite: false
+          }
+        },
+      ]
+    });
+
+    $('.direction__list').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: true,
+      speed:300,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            // infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
             slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerMode: true
           }
         },
   
@@ -95,7 +194,7 @@ $(document).ready(function() {
   });
 
 
-  $('.comments-block__item,.diplom-slider__item,.test-result__item,.problem-solving__item').removeAttr('style');
+  $('.comments-block__item,.diplom-slider__item,.test-result__item,.problem-solving__item,.direction__list__item,.viewed-list__item').removeAttr('style');
 
 });
 
@@ -156,7 +255,11 @@ const cityFilter = document.querySelector('.checked-city');
 const cityActive = document.querySelector('.mobile-filter__item');
 
 const therapyMore = document.querySelectorAll('.therapy-more');
+const therapyMore2 = document.querySelectorAll('.therapy-more-2');
+const educationMore = document.querySelectorAll('.education-more');
+const educationItem = document.querySelectorAll('.psiholog__education__body ul li');
 const therapyItem = document.querySelectorAll('.psiholog__therapy:nth-child(2) ul li');
+const therapyItem2 = document.querySelectorAll('.psiholog__therapy:nth-child(3) ul li');
 const calendarEnrol = document.querySelectorAll('.calendar__date__time li');
 
 const feedback = document.querySelector('.comments-block__response');
@@ -168,6 +271,11 @@ const requestDoneClose = document.querySelectorAll('.request-sent__close');
 const requestDone = document.querySelectorAll('.request-sent')
 const vebinarFree = document.querySelector('.vebinar-free');
 const vebinarFreeBtn = document.querySelectorAll('.vebinar-free-btn');
+const accountLink = document.querySelector('.account');
+const blockVideo = document.querySelector('.block-right')
+
+
+
 
 if(vebinarFreeBtn){
   vebinarFreeBtn.forEach(function(item){
@@ -184,7 +292,7 @@ if(vebinarFreeBtn){
   })
 }
 
-// setTimeout("document.querySelector('.subscribe').style.display='block'", 5000);
+
 
 if(requestDoneClose){
   requestDoneClose.forEach(function(item){
@@ -239,21 +347,32 @@ if(therapyMore){
     });
   });
 }
+if(educationMore){
+  educationMore.forEach(function(item){
+    item.addEventListener('click', () => {
+      educationItem.forEach(function(el){
+        el.style.display = 'flex';
+        
+        
+      });
+      item.style.display = 'none';
+    });
+  });
+}
 
+if(therapyMore2){
+  therapyMore2.forEach(function(item){
+    item.addEventListener('click', () => {
+      therapyItem2.forEach(function(el){
+        el.style.display = 'list-item';
+        
+        
+      });
+      item.style.display = 'none';
+    });
+  });
+}
 
-// if(cityFilter){
-//   cityFilter.addEventListener('click', () =>{
-//     cityFilter.setAttribute('checked', 'true');
-//     cityActive.style.display = 'block';
-//   })}else{
-//     cityActive.style.display = 'none';
-//   };
-  
-  
-// }else{
-//   cityActive.classList.remove('mobile-filter__active');
-//   cityActive.removeAttribute(checked);
-// };
 
 if(burgerMenu){
   burgerMenu.addEventListener('click', function(){ 
@@ -331,97 +450,66 @@ closePopupButton.forEach( function(item){
 item.addEventListener('click', () => {
   logIn.classList.remove('popup-active');
   singIn.classList.remove('popup-active');
+  registerCode.classList.remove('popup-active');
+  registerDone.classList.remove('popup-active');
   popupWrapp.classList.remove('popup-active');
+ 
 })
 });
 
-
-if (window.matchMedia("(min-width: 360px) and ( max-width:1024px)").matches) {
-  /* the viewport is at least 400 pixels wide */
+if(window.innerWidth >= 1024){
+  console.log(window.innerWidth)
+  document.querySelectorAll('.psikholog__item').forEach((item) => {
+    item.addEventListener('mouseover', () => {
+        document.querySelectorAll('.psikholog__item__session').forEach((block) => {
+            block.style.display = 'none';
   
+            let v = block.querySelector('video');
+            if(v && !block.parentNode.isEqualNode(item)){
+                v.pause();
+            }
+        })
+        item.querySelector('.psikholog__item__session').style.display = '';
+    });
+  });
+} else{
+ 
+}
 
-  $('.diplom-slider__list').slick({
-    slidesToShow: 4,
+document.querySelectorAll('.psikholog__item').forEach(function(item){
+  let play = item.querySelector('.play-video');
+
+  if(play != null){
+    play.addEventListener('click',() => {
+      item.querySelector('.psikholog__item__session').style.display = 'block'
+    })
+  }
+
+  let close = item.querySelector('.close-video');
+
+  if(close != null){
+    close.addEventListener('click', () => {
+      item.querySelector('.psikholog__item__session').style.display = 'none'
+    })
+  }
+});
+
+
+if (window.matchMedia("(min-width: 320px) and ( max-width:900px)").matches){
+  if(accountLink){
+    accountLink.innerHTML = '';
+  }
+ 
+}
+if (window.matchMedia("(min-width: 360px) and ( max-width:740px)").matches) {
+
+  $('.last-views ul').slick({
+    slidesToShow: 2,
     slidesToScroll: 1,
     dots: false,
     autoplay: true,
     speed:300,
   });
-
-  $('.direction__list').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay:true,
-    autoplaySpeed: 5000,
-    speed:30,
-    dots: true,
-    arrows:false,
-    centerMode:true,
-    variableWidth:true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 3,
-          infinite: true,
-          // variableWidth:false,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          // variableWidth:false,
-          slidesToScroll: 1
-        }
-      },
-
-    ]
-  });
- 
-
- 
-
-} else {
-  /* the viewport is less than 400 pixels wide */
-}
-if (window.matchMedia("(min-width: 360px) and ( max-width:480px)").matches) {
-  /* the viewport is at least 400 pixels wide */
-  const textBtn = document.querySelector('.problem-solving__link');
-  if(textBtn){
-    textBtn.innerHTML = "Підібрати психолога";
-  }
-  if(replaceTtext){
-    replaceTtext.innerHTML = 'Для пари'
-  }
-  if(replaceVerified){
-    replaceVerified.innerHTML = 'Перевірений';
-  }
-
-  // $('.diplom-slider__list').slick({
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   dots: false,
-  //   autoplay: true,
-  //   speed:300,
-  // });
-
-  // $('.last-views ul').slick({
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1,
-  //   dots: false,
-  //   autoplay: true,
-  //   speed:300,
-  // });
 
   $('.problem-solving__list').slick({
     slidesToShow: 1,
@@ -641,6 +729,8 @@ filterApply.addEventListener('click',() => {
 });
 }
 
+
+
 const showTab = (elTabBtn) => {
   const elTab = elTabBtn.closest('.psiholog__item');
   if (elTabBtn.classList.contains('tab-active')) {
@@ -660,26 +750,26 @@ const showTab = (elTabBtn) => {
 
 
 
-this._el.addEventListener('click', (e) => {
-  // получим элемент .accordion__header
-  const elHeader = e.target.closest('.question__item__text');
-  // если такой элемент не найден, то прекращаем выполнение функции
-  if (!elHeader) {
-    return;
-  }
-  // если необходимо, чтобы всегда был открыт один элемент
-  if (!this._config.alwaysOpen) {
-    // получим элемент с классом accordion__item_show и сохраним его в переменную elOpenItem
-    const elOpenItem = this._el.querySelector('.accordion__item_show');
-    // если такой элемент есть
-    if (elOpenItem) {
-      // и он не равен текущему, то переключим ему класс accordion__item_show
-      elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('accordion__item_show') : null;
-    }
-  }
-  // переключим класс accordion__item_show элемента .accordion__header
-  elHeader.parentElement.classList.toggle('accordion__item_show');
-});
+// this._el.addEventListener('click', (e) => {
+//   // получим элемент .accordion__header
+//   const elHeader = e.target.closest('.question__item__text');
+//   // если такой элемент не найден, то прекращаем выполнение функции
+//   if (!elHeader) {
+//     return;
+//   }
+//   // если необходимо, чтобы всегда был открыт один элемент
+//   if (!this._config.alwaysOpen) {
+//     // получим элемент с классом accordion__item_show и сохраним его в переменную elOpenItem
+//     const elOpenItem = this._el.querySelector('.accordion__item_show');
+//     // если такой элемент есть
+//     if (elOpenItem) {
+//       // и он не равен текущему, то переключим ему класс accordion__item_show
+//       elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('accordion__item_show') : null;
+//     }
+//   }
+//   // переключим класс accordion__item_show элемента .accordion__header
+//   elHeader.parentElement.classList.toggle('accordion__item_show');
+// });
 
 
 

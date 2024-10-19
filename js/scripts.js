@@ -13985,6 +13985,8 @@ const cityActive = document.querySelector('.mobile-filter__item');
 
 const therapyMore = document.querySelectorAll('.therapy-more');
 const therapyMore2 = document.querySelectorAll('.therapy-more-2');
+const educationMore = document.querySelectorAll('.education-more');
+const educationItem = document.querySelectorAll('.psiholog__education__body ul li');
 const therapyItem = document.querySelectorAll('.psiholog__therapy:nth-child(2) ul li');
 const therapyItem2 = document.querySelectorAll('.psiholog__therapy:nth-child(3) ul li');
 const calendarEnrol = document.querySelectorAll('.calendar__date__time li');
@@ -14019,7 +14021,7 @@ if(vebinarFreeBtn){
   })
 }
 
-// setTimeout("document.querySelector('.subscribe').style.display='block'", 5000);
+
 
 if(requestDoneClose){
   requestDoneClose.forEach(function(item){
@@ -14074,6 +14076,18 @@ if(therapyMore){
     });
   });
 }
+if(educationMore){
+  educationMore.forEach(function(item){
+    item.addEventListener('click', () => {
+      educationItem.forEach(function(el){
+        el.style.display = 'flex';
+        
+        
+      });
+      item.style.display = 'none';
+    });
+  });
+}
 
 if(therapyMore2){
   therapyMore2.forEach(function(item){
@@ -14088,21 +14102,6 @@ if(therapyMore2){
   });
 }
 
-
-
-// if(cityFilter){
-//   cityFilter.addEventListener('click', () =>{
-//     cityFilter.setAttribute('checked', 'true');
-//     cityActive.style.display = 'block';
-//   })}else{
-//     cityActive.style.display = 'none';
-//   };
-  
-  
-// }else{
-//   cityActive.classList.remove('mobile-filter__active');
-//   cityActive.removeAttribute(checked);
-// };
 
 if(burgerMenu){
   burgerMenu.addEventListener('click', function(){ 
@@ -14186,21 +14185,6 @@ item.addEventListener('click', () => {
  
 })
 });
-// if (window.matchMedia("(min-width: 1024px) ").matches) {
-//   /* the viewport is at least 400 pixels wide */
-//   document.querySelectorAll('.psikholog__item').forEach((item) => {
-//     item.addEventListener('mouseover', () => {
-//         document.querySelectorAll('.psikholog__item__session').forEach((block) => {
-//             block.style.display = 'none';
-  
-//             let v = block.querySelector('video');
-//             if(v && !block.parentNode.isEqualNode(item)){
-//                 v.pause();
-//             }
-//         })
-//         item.querySelector('.psikholog__item__session').style.display = '';
-//     })
-//   })
 
 if(window.innerWidth >= 1024){
   console.log(window.innerWidth)
@@ -14239,32 +14223,7 @@ document.querySelectorAll('.psikholog__item').forEach(function(item){
   }
 });
 
- 
 
-// } else {
-//   /* the viewport is less than 400 pixels wide */
-// }
-
-if (window.matchMedia("(min-width: 360px) and ( max-width:1024px)").matches) {
-  /* the viewport is at least 400 pixels wide */
-  
-
-  $('.diplom-slider__list').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    dots: false,
-    autoplay: true,
-    speed:300,
-  });
-
- 
- 
-
- 
-
-} else {
-  /* the viewport is less than 400 pixels wide */
-}
 if (window.matchMedia("(min-width: 320px) and ( max-width:900px)").matches){
   if(accountLink){
     accountLink.innerHTML = '';
@@ -14272,33 +14231,14 @@ if (window.matchMedia("(min-width: 320px) and ( max-width:900px)").matches){
  
 }
 if (window.matchMedia("(min-width: 360px) and ( max-width:740px)").matches) {
-  /* the viewport is at least 400 pixels wide */
-  // const textBtn = document.querySelector('.problem-solving__link');
-  // if(textBtn){
-  //   textBtn.innerHTML = "Підібрати психолога";
-  // }
-  // if(replaceTtext){
-  //   replaceTtext.innerHTML = 'Для пари'
-  // }
-  // if(replaceVerified){
-  //   replaceVerified.innerHTML = 'Перевірений';
-  // }
 
-  // $('.diplom-slider__list').slick({
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   dots: false,
-  //   autoplay: true,
-  //   speed:300,
-  // });
-
-  // $('.last-views ul').slick({
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1,
-  //   dots: false,
-  //   autoplay: true,
-  //   speed:300,
-  // });
+  $('.last-views ul').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    autoplay: true,
+    speed:300,
+  });
 
   $('.problem-solving__list').slick({
     slidesToShow: 1,
@@ -14539,26 +14479,26 @@ const showTab = (elTabBtn) => {
 
 
 
-this._el.addEventListener('click', (e) => {
-  // получим элемент .accordion__header
-  const elHeader = e.target.closest('.question__item__text');
-  // если такой элемент не найден, то прекращаем выполнение функции
-  if (!elHeader) {
-    return;
-  }
-  // если необходимо, чтобы всегда был открыт один элемент
-  if (!this._config.alwaysOpen) {
-    // получим элемент с классом accordion__item_show и сохраним его в переменную elOpenItem
-    const elOpenItem = this._el.querySelector('.accordion__item_show');
-    // если такой элемент есть
-    if (elOpenItem) {
-      // и он не равен текущему, то переключим ему класс accordion__item_show
-      elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('accordion__item_show') : null;
-    }
-  }
-  // переключим класс accordion__item_show элемента .accordion__header
-  elHeader.parentElement.classList.toggle('accordion__item_show');
-});
+// this._el.addEventListener('click', (e) => {
+//   // получим элемент .accordion__header
+//   const elHeader = e.target.closest('.question__item__text');
+//   // если такой элемент не найден, то прекращаем выполнение функции
+//   if (!elHeader) {
+//     return;
+//   }
+//   // если необходимо, чтобы всегда был открыт один элемент
+//   if (!this._config.alwaysOpen) {
+//     // получим элемент с классом accordion__item_show и сохраним его в переменную elOpenItem
+//     const elOpenItem = this._el.querySelector('.accordion__item_show');
+//     // если такой элемент есть
+//     if (elOpenItem) {
+//       // и он не равен текущему, то переключим ему класс accordion__item_show
+//       elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('accordion__item_show') : null;
+//     }
+//   }
+//   // переключим класс accordion__item_show элемента .accordion__header
+//   elHeader.parentElement.classList.toggle('accordion__item_show');
+// });
 
 
 
