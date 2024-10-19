@@ -830,7 +830,7 @@ th {
 }
 .header__useraction a:nth-child(1) {
   color: #ffffff;
-  background: #A498D9;
+  background: #795BDA;
   border-radius: 8px;
 }
 .header__useraction a:nth-child(1):hover {
@@ -958,7 +958,7 @@ th {
   width: 40%;
 }
 .banner__title {
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 400;
   line-height: 130%;
   color: #2F264D;
@@ -984,7 +984,7 @@ th {
   font-weight: 400;
   line-height: 150%;
   color: #423F4D;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 .banner__link {
   color: #ffffff;
@@ -1038,6 +1038,31 @@ th {
 }
 .banner__choice__list li:hover {
   border: 2px solid #795BDA;
+}
+.banner .make-appointment {
+  width: 115%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 35px;
+}
+.banner .make-appointment__text {
+  width: 60%;
+  font-size: 24px;
+  color: #423F4D;
+}
+.banner .make-appointment__btn {
+  width: 40%;
+  padding: 24px;
+  border: none;
+  box-shadow: 0 0 1px 1px #8E6BFF;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.banner .make-appointment__btn:hover {
+  transition: 0.3s;
+  box-shadow: 0 0 1px 2px #8E6BFF;
 }
 
 .advantages {
@@ -1167,11 +1192,20 @@ th {
   background: #ffffff;
   padding: 45px 0;
 }
+.appeal .appeal__author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
 .appeal .appeal__author p {
   font-size: 24px;
+  font-weight: 500;
+  color: #2F264D;
 }
 .appeal .appeal__author span {
-  color: #2F264D;
+  color: #FF5C8D;
+  font-weight: 500;
 }
 .appeal__entry {
   font-size: 24px;
@@ -1185,13 +1219,29 @@ th {
   margin: 8px 0;
 }
 .appeal__box {
-  padding: 35px 90px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
+  border: 10px solid #F1EDFF;
+  border-radius: 16px;
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
 }
 .appeal__description {
-  width: 52%;
-  margin-top: 30px;
+  width: 100%;
+  position: relative;
+}
+.appeal__description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("./../images/svg/quotes.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 80px;
+  height: 80px;
 }
 .appeal__description__title {
   font-size: 40px;
@@ -1219,54 +1269,29 @@ th {
   margin-top: 24px;
   position: relative;
 }
-.appeal__description__text::before {
-  content: "";
-  position: absolute;
-  top: -132px;
-  left: -78px;
-  background: url("./../images/svg/quotes.svg");
-  background-repeat: no-repeat;
-  display: block;
-  width: 80px;
-  height: 80px;
-}
 .appeal__description__text p {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.appeal__description__text p:nth-child(1) {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .appeal__description__text span {
   color: #FF5C8D;
   font-size: 14px;
 }
 .appeal__image {
-  width: 33%;
-  height: 465px;
-  box-sizing: border-box;
-  position: relative;
-  padding: 24px;
-  z-index: 1;
-}
-.appeal__image::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-image: url("./../images/svg/bottom-corner.svg");
-  width: 75px;
-  height: 75px;
-}
-.appeal__image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-image: url("./../images/svg/top-corner.svg");
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 16px;
 }
 .appeal__image img {
-  height: 422px;
-  z-index: 1200;
-  position: relative;
+  width: 80px;
+  height: 80px;
 }
 .appeal__team__title {
   font-size: 20px;
@@ -1769,7 +1794,7 @@ th {
   color: #423F4D;
   position: absolute;
   top: 8px;
-  left: 0;
+  left: 80px;
 }
 .comments-block__item__job {
   font-family: "Golos Text", sans-serif;
@@ -1778,7 +1803,7 @@ th {
   color: #9895A6;
   position: absolute;
   top: 28px;
-  left: 0;
+  left: 80px;
 }
 .comments-block__item__comment {
   font-family: "Golos Text", sans-serif;
@@ -2189,7 +2214,7 @@ th {
 .footer__contact__item:nth-child(3) {
   padding: 16px 24px;
   color: #ffffff;
-  background: #A498D9;
+  background: #795BDA;
   border-radius: 8px;
 }
 .footer__contact__item:nth-child(3):hover {
@@ -3360,8 +3385,8 @@ button.pagination-more.download-test-doctors:hover {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  background-color: #fff;
   flex-wrap: wrap;
+  border-radius: 16px;
 }
 .psiholog__basic__left {
   width: 65%;
@@ -3401,6 +3426,7 @@ button.pagination-more.download-test-doctors:hover {
   position: fixed;
   max-width: 100%;
   border-radius: 8px;
+  z-index: 1;
 }
 .psiholog__basic__btn {
   display: flex;
@@ -3638,19 +3664,8 @@ button.pagination-more.download-test-doctors:hover {
   font-weight: 400;
   color: #2F264D;
   font-family: "Golos Text", sans-serif;
-  padding: 16px 0;
+  padding: 16px 0 0 0;
   position: relative;
-}
-.psiholog__item__title::after {
-  content: "";
-  position: absolute;
-  top: 24px;
-  right: 16px;
-  background-image: url("./../images/svg/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 16px;
-  height: 16px;
 }
 .psiholog__item__more {
   color: #795BDA;
@@ -3664,20 +3679,17 @@ button.pagination-more.download-test-doctors:hover {
 }
 .psiholog__item__active .psiholog__item__body {
   display: block;
-  padding: 24px 0;
 }
 .psiholog__item__active .psiholog__item__title::after {
   transform: rotate(-45deg);
   transition: 0.3s;
 }
 .psiholog__item__body {
-  padding: 16px 0;
+  padding: 0 0 16px 0;
   font-size: 14px;
   color: #423F4D;
   font-weight: 400;
   line-height: 150%;
-  border-top: 2px solid #F1EDFF;
-  display: none;
 }
 .psiholog__item__body h3 {
   font-size: 20px;
@@ -3695,9 +3707,6 @@ button.pagination-more.download-test-doctors:hover {
   align-items: flex-start;
   padding: 24px 0;
   box-shadow: 0 2px 0 0 #F1EDFF;
-}
-.psiholog__item__type:nth-child(1) {
-  padding-top: 0;
 }
 .psiholog__item__type span:nth-child(1) {
   font-size: 16px;
@@ -3721,7 +3730,7 @@ button.pagination-more.download-test-doctors:hover {
   align-items: center;
   background-image: url("./../images/svg/verified.svg");
   background-repeat: no-repeat;
-  background-position: 35% center;
+  background-position: 27% center;
 }
 .psiholog__therapy:nth-child(3) ul {
   display: flex;
@@ -3931,6 +3940,7 @@ button.pagination-more.download-test-doctors:hover {
   height: 260px;
   overflow: hidden;
   display: block;
+  padding-top: 24px;
 }
 .psiholog__about .psiholog__item__title::after {
   display: none;
@@ -4135,7 +4145,6 @@ button.pagination-more.download-test-doctors:hover {
   border-radius: 3px;
   margin-top: 8px;
   width: 100%;
-  flex-wrap: wrap;
 }
 .reservation__filter__type form .filter__btn {
   margin-right: 8px;
@@ -4536,19 +4545,31 @@ button.pagination-more.download-test-doctors:hover {
   width: 48%;
   border: 1px solid #795BDA;
 }
+.psiholog-query__btn i {
+  display: none;
+  margin-right: 8px;
+}
 
 .psiholog-write__btn {
   display: flex;
   padding: 16px 0;
   font-size: 14px;
-  background-color: #795BDA;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #2F264D;
   border-radius: 8px;
   align-items: center;
   justify-content: center;
   border: none;
   width: 48%;
-  border: 1px solid #795BDA;
+  box-shadow: 0 0 1px 1px #795BDA;
+}
+.psiholog-write__btn i {
+  display: none;
+  margin-right: 8px;
+}
+.psiholog-write__btn:hover {
+  box-shadow: 0 0 1px 2px #795BDA;
+  transition: 0.3s;
 }
 
 .psiholog-acquaintance__btn {
@@ -4878,13 +4899,11 @@ body .reservation__filter__format {
 
 body .reservation__filter .filter__btn {
   width: 100%;
-  min-width: 50%;
 }
 
 body .psiholog .psiholog__contant .reservation .reservation__filter__type form .filter__btn {
   flex: 1;
   margin-right: 0;
-  margin-top: 8px;
 }
 body .psiholog .psiholog__contant .reservation .reservation__filter__type form .filter__btn .filter-btn {
   border: 1px solid #795BDA;
@@ -5590,6 +5609,20 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
 .comments .comments-reply {
   margin-left: 80px;
 }
+.comments .comments-reply .comments-block__item__avatar {
+  width: 48px;
+  height: 48px;
+}
+.comments .comments-reply .comments-block__item__avatar img {
+  width: 48px;
+  height: 48px;
+}
+.comments .comments-reply .comments-block__item__name {
+  left: 65px;
+}
+.comments .comments-reply .comments-block__item__date {
+  left: 65px;
+}
 .comments .comments-block {
   padding: 0;
   margin-top: 24px;
@@ -5607,7 +5640,7 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
 }
 .comments__btn a {
   padding: 17px 24px;
-  border-radius: 48px;
+  border-radius: 8px;
   font-size: 14px;
   font-weight: 500;
 }
@@ -5724,6 +5757,10 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
 
 .vebinar-free-btn {
   cursor: pointer;
+}
+
+body .comments .comments-reply .comments-block__item__comment {
+  margin-left: 56px;
 }
 
 .product-payment {
@@ -7471,6 +7508,10 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   .psikholog__item__btn .profile-link {
     padding: 0 15px;
   }
+  .banner .make-appointment__text {
+    width: 50%;
+    margin-right: 24px;
+  }
 }
 @media screen and (max-width: 1060px) {
   body .filter__query__box .btn-contact-telegram {
@@ -7498,6 +7539,17 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   }
 }
 @media screen and (max-width: 1024px) {
+  .banner__inner {
+    padding-bottom: 70px;
+  }
+  .banner .make-appointment {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+  }
+  .banner .make-appointment .make-appointment__text {
+    text-align: center;
+  }
   body .psiholog-query .filter-cl {
     display: block;
   }
@@ -7559,12 +7611,8 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
     padding: 0;
   }
   .appeal .appeal__box {
-    padding: 35px 0;
-    width: 91%;
-    margin-left: 8%;
-  }
-  .appeal .appeal__box .appeal__description {
-    margin-top: 30px;
+    width: 90%;
+    margin: 0 auto;
   }
   .appeal .appeal__team__list {
     width: 100%;
@@ -7888,14 +7936,8 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   body .problem-solving {
     padding: 150px 0 90px 0;
   }
-  .appeal .appeal__image {
-    width: 39%;
-  }
   .appeal .appeal__description__text p:nth-child(1) {
     margin-bottom: 10px;
-  }
-  .appeal .appeal__description {
-    margin-top: 60px;
   }
   .appeal .appeal__description__title::before {
     left: 0;
@@ -8363,6 +8405,9 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   }
 }
 @media screen and (max-width: 900px) {
+  .appeal .appeal__box {
+    width: 100%;
+  }
   body .footer .footer__directions {
     width: 100%;
   }
@@ -8390,6 +8435,21 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   }
 }
 @media screen and (max-width: 768px) {
+  .psiholog__item__type {
+    padding: 16px 0;
+  }
+  .psiholog__therapy:nth-child(3) ul {
+    margin-top: 16px;
+  }
+  .psiholog__therapy:nth-child(4) ul {
+    margin-top: 16px;
+  }
+  .psiholog__contant .psiholog__about .psiholog__item__body {
+    padding-top: 16px;
+  }
+  .appeal .appeal__author {
+    width: 100%;
+  }
   .comments {
     padding: 16px;
   }
@@ -8561,34 +8621,6 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   }
   body .problem-solving {
     padding: 150px 0 90px 0;
-  }
-  .appeal .appeal__image {
-    width: 40%;
-  }
-  .appeal .appeal__description__text p:nth-child(1) {
-    margin-bottom: 10px;
-  }
-  .appeal .appeal__description__text::before {
-    left: 0;
-    top: -152px;
-  }
-  .appeal .appeal__description {
-    margin-top: 60px;
-    width: 55%;
-  }
-  .appeal .appeal__description__title::before {
-    left: 0;
-    top: -70px;
-  }
-  .appeal .appeal__team__title {
-    width: 100%;
-  }
-  .appeal .appeal__team__list {
-    width: 100%;
-  }
-  .appeal .appeal__box {
-    margin-left: 0;
-    width: 100%;
   }
   .qualification .qualification__item {
     width: 48%;
@@ -8783,7 +8815,7 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   }
   .psiholog .psiholog__basic__right {
     width: 90%;
-    margin: 0 auto;
+    margin: 16px auto 0px auto;
   }
   .psiholog .psiholog__basic__right video {
     width: 100%;
@@ -9071,6 +9103,9 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   }
   body .content .content__psikhologi .psikholog__item__profile .psikholog__item__btn {
     width: 25%;
+  }
+  .psiholog__contant .psiholog__request {
+    padding: 16px;
   }
 }
 @media screen and (max-width: 730px) {
@@ -9652,30 +9687,6 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
     right: 14%;
     bottom: 22px;
   }
-  body .appeal {
-    padding: 20px 0;
-  }
-  body .appeal .appeal__box {
-    flex-direction: column-reverse;
-    margin-left: 0;
-    width: 100%;
-  }
-  body .appeal .appeal__box .appeal__description {
-    width: 100%;
-  }
-  body .appeal .appeal__box .appeal__image {
-    width: 80%;
-    margin: 0 auto;
-    height: 476px;
-    margin-bottom: 24px;
-  }
-  body .appeal .appeal__box .appeal__image::after {
-    display: none;
-  }
-  body .appeal .appeal__box .appeal__image img {
-    width: 100%;
-    height: 437px;
-  }
   body .how-start {
     padding: 20px 0;
   }
@@ -10123,9 +10134,6 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   body .single-psiholog .location-item span {
     margin-right: 16px;
   }
-  body .single-psiholog .psiholog__basic__right {
-    margin-top: 16px;
-  }
   .psiholog .psiholog__basic__right .psiholog__basic__btn .btn-fixed {
     width: 100%;
   }
@@ -10194,14 +10202,17 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   body .psiholog .psiholog__basic__right .psiholog-query__btn {
     width: 48%;
     margin-right: 0;
-    padding: 15px 0;
-    border-radius: 3px;
+    padding: 10px 0;
+  }
+  body .psiholog .psiholog__basic__right .psiholog-query__btn i {
+    display: block;
   }
   body .psiholog .psiholog__basic__right .psiholog-write__btn {
-    border: 4px solid #795BDA;
-    padding: 15px 0;
+    padding: 10px 0;
     width: 48%;
-    border-radius: 3px;
+  }
+  body .psiholog .psiholog__basic__right .psiholog-write__btn i {
+    display: block;
   }
   .psiholog__item__title {
     font-size: 20px;
@@ -10273,7 +10284,58 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
     display: none;
   }
 }
+@media screen and (max-width: 680px) {
+  .appeal__description::before {
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
+  .psiholog__working {
+    padding: 16px !important;
+  }
+  body .banner-map__box .banner-map__text .banner-map__title {
+    width: 100%;
+  }
+  body .banner-map .container .banner-map__box {
+    flex-direction: column;
+    padding: 24px;
+  }
+  body .banner-map__box .banner-map__text {
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+    top: 0;
+    left: 0;
+  }
+  body .banner-map__box .banner-map__text .banner-map__list {
+    width: 100%;
+  }
+  .appeal .appeal__author__data p {
+    font-size: 20px;
+    width: 80%;
+  }
+  .appeal__author__data span {
+    font-size: 14px;
+  }
+  .appeal__box {
+    padding: 16px;
+  }
+  .banner__inner {
+    padding-bottom: 100px;
+  }
+  .banner .make-appointment {
+    flex-direction: column;
+  }
+  .banner .make-appointment .make-appointment__text {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .banner .make-appointment .make-appointment__btn {
+    width: 80%;
+    padding: 16px;
+  }
   .psiholog__working__list {
     width: 50%;
     margin-bottom: 24px;
@@ -10409,11 +10471,13 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
     width: 100%;
   }
   .psiholog__basic__images {
-    width: 132px;
-    height: 132px;
+    width: 152px;
+    height: 152px;
+    margin-right: 13px;
   }
   .psiholog__basic__images img {
-    height: 132px;
+    width: 152px;
+    height: 152px;
   }
   .psiholog .psiholog__basic .psiholog__speciality {
     margin-top: 20px;
@@ -10421,8 +10485,8 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
     width: 90%;
   }
   .psiholog .psiholog__basic .psiholog__experience {
-    margin-left: -151px;
-    margin-top: 70px;
+    margin-left: -166px;
+    margin-top: 88px;
   }
   .psiholog .psiholog__basic .psiholog__item__price {
     margin-top: 75px;
@@ -10566,17 +10630,6 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
     font-size: 20px;
     padding: 0;
   }
-  .appeal .container .appeal__box {
-    padding: 0;
-  }
-  .appeal .container .appeal__box .appeal__description {
-    margin-top: 60px;
-  }
-  .appeal .container .appeal__box .appeal__image {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 24px;
-  }
   body .banner-selection .banner-selection__banner {
     padding: 24px;
   }
@@ -10610,7 +10663,8 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
     margin-left: 0;
   }
   body .comments .comments-reply .comments-block__item__comment {
-    margin-left: 80px;
+    margin-left: 65px;
+    margin-top: 0;
   }
   body .request-sent_box {
     width: 80%;
