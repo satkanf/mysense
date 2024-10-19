@@ -3723,21 +3723,6 @@ button.pagination-more.download-test-doctors:hover {
   background-repeat: no-repeat;
   background-position: 35% center;
 }
-.psiholog__therapy:nth-child(2) ul {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  color: #423F4D;
-  gap: 8px;
-  margin-left: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-.psiholog__therapy:nth-child(2) ul li {
-  list-style-image: url("./../images/svg/line-style.svg");
-  padding-left: 10px;
-  width: 50%;
-}
 .psiholog__therapy:nth-child(3) ul {
   display: flex;
   flex-direction: column;
@@ -3749,6 +3734,21 @@ button.pagination-more.download-test-doctors:hover {
   margin-top: 20px;
 }
 .psiholog__therapy:nth-child(3) ul li {
+  list-style-image: url("./../images/svg/line-style.svg");
+  padding-left: 10px;
+  width: 50%;
+}
+.psiholog__therapy:nth-child(4) ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #423F4D;
+  gap: 8px;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.psiholog__therapy:nth-child(4) ul li {
   list-style-image: url("./../images/svg/line-style-none.svg");
   padding-left: 10px;
   width: 50%;
@@ -4553,7 +4553,7 @@ button.pagination-more.download-test-doctors:hover {
 
 .psiholog-acquaintance__btn {
   display: flex;
-  padding: 16px 0 16px 16px;
+  padding: 16px 0 16px 27px;
   font-size: 14px;
   background-color: #ffffff;
   color: #2F264D;
@@ -4565,7 +4565,7 @@ button.pagination-more.download-test-doctors:hover {
   border: 1px solid #795BDA;
   background-image: url("./../images/svg/hello.svg");
   background-repeat: no-repeat;
-  background-position: 30% center;
+  background-position: 15% center;
 }
 .psiholog-acquaintance__btn:hover {
   box-shadow: 0 0 1px 1px #795BDA;
@@ -10177,8 +10177,9 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   body .psiholog .psiholog__basic__right .psiholog__video {
     height: 200px;
   }
-  body .psiholog .psiholog__basic__right .psiholog__basic__btn > a {
+  body .psiholog .psiholog__basic__right .psiholog-acquaintance__btn {
     width: 100%;
+    background-position: 9% center;
   }
   body .psiholog .psiholog__basic__right .btn-fixed {
     position: fixed;
@@ -10324,15 +10325,20 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
     top: 120px;
   }
   body .content .content__psikhologi .psikholog__item__profile .psikholog__item__info .psikholog__item__price {
-    bottom: -116px;
+    bottom: -215px;
   }
   body .content .content__psikhologi .psikholog__item__profile .psikholog__item__btn {
     bottom: 8px;
     right: 8px;
+    width: 33%;
+  }
+  body .content .content__psikhologi .psikholog__item__profile .psikholog__item__name {
+    width: 80%;
   }
   body .content .content__psikhologi .psikholog__item__profile .psikholog__item__info .psikholog__item__acquaintance {
     width: 100%;
     top: 140px;
+    left: initial;
   }
   .psikholog__item__price li {
     width: 100px;
