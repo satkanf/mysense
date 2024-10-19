@@ -3008,7 +3008,7 @@ button.pagination-more.download-test-doctors:hover {
 .content {
   background: #F1EDFF;
   position: relative;
-  padding-top: 90px;
+  margin-top: 24px;
 }
 
 .content__psikhologi .not-active .psikholog__item__session {
@@ -3830,7 +3830,7 @@ button.pagination-more.download-test-doctors:hover {
   padding: 16px 24px;
 }
 .psiholog__request__btn {
-  margin-top: 48px;
+  margin-top: 24px;
   display: inline-block;
 }
 .psiholog__request a {
@@ -4548,6 +4548,10 @@ button.pagination-more.download-test-doctors:hover {
 .psiholog-query__btn i {
   display: none;
   margin-right: 8px;
+}
+.psiholog-query__btn:hover {
+  box-flex-group: #8E6BFF;
+  transition: 0.3s ease;
 }
 
 .psiholog-write__btn {
@@ -7820,13 +7824,6 @@ body .comments .comments-reply .comments-block__item__comment {
     width: 140%;
     font-size: 40px;
   }
-  .content {
-    margin-top: 100px;
-  }
-  .test .test__progress__list {
-    width: 400px;
-    margin: 0 auto;
-  }
   body .test .test__body__options {
     background: none;
   }
@@ -8255,9 +8252,6 @@ body .comments .comments-reply .comments-block__item__comment {
   body .title-page {
     padding-bottom: 30px;
   }
-  body .content {
-    padding-top: 30px;
-  }
   .vebinares__planned__item .vebinares__planned__images {
     height: 200px;
   }
@@ -8518,9 +8512,6 @@ body .comments .comments-reply .comments-block__item__comment {
   .title-page .container > h2::after {
     right: 31%;
     bottom: 33%;
-  }
-  .content {
-    margin-top: 100px;
   }
   .test .test__progress__list {
     width: 400px;
@@ -8937,9 +8928,6 @@ body .comments .comments-reply .comments-block__item__comment {
   }
   body .title-page {
     padding-bottom: 30px;
-  }
-  body .content {
-    padding-top: 30px;
   }
   .vebinares__planned__item .vebinares__planned__images {
     height: 200px;
