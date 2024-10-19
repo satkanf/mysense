@@ -3424,7 +3424,7 @@ button.pagination-more.download-test-doctors:hover {
   background: #ffffff;
   padding: 24px;
   position: fixed;
-  max-width: 100%;
+  max-width: 402px;
   border-radius: 8px;
   z-index: 1;
 }
