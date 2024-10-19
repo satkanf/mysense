@@ -10384,6 +10384,27 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   }
 }
 @media screen and (min-width: 320px) and (max-width: 478px) {
+  body .content .content__psikhologi .psikholog__item {
+    height: 336px;
+  }
+  body .content .content__psikhologi .psikholog__item .psikholog__item__profile .psikholog__item__info .psikholog__item__name {
+    width: 80%;
+  }
+  body .content .content__psikhologi .psikholog__item .psikholog__item__profile .psikholog__item__info .psikholog__item__acquaintance {
+    top: 187px;
+  }
+  body .content .content__psikhologi .psikholog__item .psikholog__item__profile .psikholog__item__info .psikholog__item__price {
+    bottom: -115px;
+  }
+  body .content .content__psikhologi .psikholog__item .psikholog__item__profile .psikholog__item__speciality {
+    margin-top: 35px;
+    margin-left: -150px;
+    width: 170%;
+  }
+  body .content .content__psikhologi .psikholog__item .psikholog__item__profile .psikholog__item__experience {
+    top: 165px;
+    width: 200%;
+  }
   .psiholog__working__list {
     width: 100%;
   }
