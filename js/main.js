@@ -747,8 +747,13 @@ const showTab = (elTabBtn) => {
     elTabPane.classList.add('tab-show');
   }
 }
-
-
+document.querySelector(".available-hours__close").addEventListener("click", function(){
+  document.querySelector(".available-hours__wrapper").classList.remove('available-hours__active');
+})
+function PopupHaurs(){
+  document.querySelector(".available-hours__wrapper").classList.add('available-hours__active');
+}
+setTimeout(PopupHaurs,3000);
 
 // this._el.addEventListener('click', (e) => {
 //   // получим элемент .accordion__header
