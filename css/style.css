@@ -3536,7 +3536,7 @@ button.pagination-more.download-test-doctors:hover {
   background: #ffffff;
   padding: 24px;
   position: fixed;
-  max-width: 402px;
+  width: 402px;
   border-radius: 8px;
   z-index: 1;
 }
@@ -7398,7 +7398,7 @@ body .comments .comments-reply .comments-block__item__comment {
 }
 .authentication .authentication__form .form-btn, .authentication .registration__form .form-btn, .authentication .registration-code__form .form-btn, .registration .authentication__form .form-btn, .registration .registration__form .form-btn, .registration .registration-code__form .form-btn, .registration-code .authentication__form .form-btn, .registration-code .registration__form .form-btn, .registration-code .registration-code__form .form-btn, .registration-done .authentication__form .form-btn, .registration-done .registration__form .form-btn, .registration-done .registration-code__form .form-btn {
   background: #795BDA;
-  border-radius: 48px;
+  border-radius: 8px;
   border: none;
   color: #ffffff;
   font-size: 14px;
@@ -7577,7 +7577,7 @@ body .comments .comments-reply .comments-block__item__comment {
 .registration-done .form-btn {
   width: 100%;
   background: #795BDA;
-  border-radius: 48px;
+  border-radius: 8px;
   border: none;
   color: #ffffff;
   font-size: 14px;
@@ -7612,7 +7612,7 @@ body .comments .comments-reply .comments-block__item__comment {
   }
   .psiholog__basic__btn .btn-fixed .psiholog-query__btn {
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
   .psiholog__basic__btn .btn-fixed .psiholog-write__btn {
     width: 100%;
@@ -7622,6 +7622,10 @@ body .comments .comments-reply .comments-block__item__comment {
   }
 }
 @media screen and (max-width: 1200px) {
+  .psiholog__speciality {
+    margin-top: -128px;
+    margin-left: 282px;
+  }
   .psiholog__basic__images {
     width: 260px;
     height: 260px;
@@ -7634,7 +7638,7 @@ body .comments .comments-reply .comments-block__item__comment {
     margin-left: 280px;
   }
   .psiholog__experience {
-    margin-top: 65px;
+    margin-top: 55px;
   }
   .psikholog__item__speciality {
     width: 100%;
@@ -7947,6 +7951,9 @@ body .comments .comments-reply .comments-block__item__comment {
   }
 }
 @media screen and (max-width: 960px) {
+  body .psiholog__basic__right {
+    margin-top: 16px;
+  }
   body .psiholog__basic__right .block-right {
     position: relative;
     width: 100%;
