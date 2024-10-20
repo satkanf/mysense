@@ -2761,6 +2761,38 @@ button.pagination-more.download-test-doctors:hover {
   width: 30%;
 }
 
+.title-page-h {
+  position: relative;
+  background: #ffffff;
+  padding-bottom: 0;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 100%;
+}
+.title-page-h .container {
+  display: flex;
+  justify-content: center;
+}
+.title-page-h .title-page__title {
+  font-size: 40px;
+  font-weight: 400;
+  color: #2F264D;
+  text-align: center;
+  margin: 60px 0;
+  display: inline;
+  position: relative;
+}
+.title-page-h .title-page__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: url("./../images/svg/heard.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 108%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .title-page {
   position: relative;
   background: #ffffff;
@@ -3061,10 +3093,39 @@ button.pagination-more.download-test-doctors:hover {
   margin-top: 24px;
 }
 
+.content__psikhologi .not-active .psikholog__item__profile .profile-link {
+  opacity: 0.2;
+}
+.content__psikhologi .not-active .psikholog__item__profile .profile-link:hover {
+  background-color: #795BDA;
+}
+
 .content__psikhologi .not-active .psikholog__item__session {
   background: #e3e1e5;
 }
 
+.psikholog__hours {
+  display: flex;
+  margin-left: 200px;
+  margin-top: -35px;
+  align-items: center;
+}
+.psikholog__hours__list {
+  display: flex;
+  justify-content: flex-start;
+}
+.psikholog__hours__item {
+  background-color: #F1EDFF;
+  padding: 8px;
+  color: #795BDA;
+  margin-right: 8px !important;
+  border-radius: 4px;
+}
+.psikholog__hours__text {
+  color: #9895A6;
+  font-size: 14px;
+  margin-right: 8px;
+}
 .psikholog__item {
   display: flex;
   margin-bottom: 16px;
@@ -3164,6 +3225,7 @@ button.pagination-more.download-test-doctors:hover {
 .psikholog__item__city {
   font-size: 14px;
   display: flex;
+  color: #9895A6;
 }
 .psikholog__item__name {
   font-size: 24px;
@@ -3259,10 +3321,10 @@ button.pagination-more.download-test-doctors:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 22%;
+  width: 20%;
 }
 .psikholog__item__btn .profile-link {
-  height: 57px;
+  height: 50px;
   color: #ffffff;
   border-radius: 8px;
   display: flex;
@@ -3576,7 +3638,7 @@ button.pagination-more.download-test-doctors:hover {
   display: flex;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 8px;
   justify-content: flex-end;
 }
 .psiholog__format li {
@@ -3612,14 +3674,15 @@ button.pagination-more.download-test-doctors:hover {
 .psiholog__status {
   font-size: 14px;
   font-weight: 400;
-  color: #423F4D;
+  color: #9895A6;
   background-image: url("./../images/svg/verified.svg");
   background-repeat: no-repeat;
   background-position: 0 center;
   padding-left: 24px;
 }
 .psiholog__city {
-  color: #2F264D;
+  color: #9895A6;
+  margin-top: 8px;
 }
 .psiholog__contant {
   width: 63%;
@@ -3627,7 +3690,7 @@ button.pagination-more.download-test-doctors:hover {
 }
 .psiholog__experience {
   display: flex;
-  margin-top: 75px;
+  margin-top: 63px;
   font-size: 14px;
   color: #423F4D;
   font-weight: 400;
@@ -3636,6 +3699,11 @@ button.pagination-more.download-test-doctors:hover {
   display: flex;
   margin-right: 10px;
   padding: 4px 0;
+}
+.psiholog__experience__item span {
+  margin-right: 5px;
+  color: #795BDA;
+  text-decoration: underline;
 }
 .psiholog__experience i {
   width: 14px;
@@ -4593,11 +4661,17 @@ button.pagination-more.download-test-doctors:hover {
   justify-content: center;
   border: none;
   width: 48%;
-  border: 1px solid #795BDA;
+  box-shadow: 0 0 1px 1px #795BDA;
 }
 .psiholog-query__btn i {
   display: none;
   margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+.psiholog-query__btn i img {
+  width: 24px;
+  height: 24px;
 }
 .psiholog-query__btn:hover {
   box-flex-group: #8E6BFF;
@@ -4620,6 +4694,12 @@ button.pagination-more.download-test-doctors:hover {
 .psiholog-write__btn i {
   display: none;
   margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+.psiholog-write__btn i img {
+  width: 24px;
+  height: 24px;
 }
 .psiholog-write__btn:hover {
   box-shadow: 0 0 1px 2px #795BDA;
@@ -4961,6 +5041,10 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
 }
 body .psiholog .psiholog__contant .reservation .reservation__filter__type form .filter__btn .filter-btn {
   border: 1px solid #795BDA;
+}
+
+.psikhologi-hours .content__psikhologi {
+  padding-bottom: 45px;
 }
 
 .vebinares {
@@ -5940,7 +6024,6 @@ body .comments .comments-reply .comments-block__item__comment {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-top: 24px;
   width: 100%;
 }
 .product__info__list {
@@ -6061,7 +6144,7 @@ body .comments .comments-reply .comments-block__item__comment {
 .product__payment__form .input-box span {
   position: absolute;
   left: 16px;
-  top: 24px;
+  top: 20px;
   color: #9895A6;
   font-size: 14px;
   font-weight: 400;
@@ -8389,9 +8472,6 @@ body .comments .comments-reply .comments-block__item__comment {
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:last-child {
     margin-bottom: 0;
   }
-  .product-payment .product-payment__item .product__info {
-    margin-top: 70px;
-  }
   .product__payment .client .client__auth {
     flex-direction: column;
     align-items: flex-start;
@@ -8455,6 +8535,17 @@ body .comments .comments-reply .comments-block__item__comment {
   }
 }
 @media screen and (max-width: 900px) {
+  .psikhologi-hours .psikholog__item {
+    height: 310px;
+  }
+  .psikhologi-hours .psikholog__item .psikholog__hours {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .psikhologi-hours .psikholog__item .psikholog__item__price {
+    margin-top: 140px;
+    margin-left: -200px;
+  }
   .appeal .appeal__box {
     width: 100%;
   }
@@ -9066,9 +9157,6 @@ body .comments .comments-reply .comments-block__item__comment {
   .product__payment .product__payment__form .product-filter .filter__query__item:nth-child(3) .filter__query__box .filter__btn:last-child {
     margin-bottom: 0;
   }
-  .product-payment .product-payment__item .product__info {
-    margin-top: 70px;
-  }
   .product__payment .client .client__auth {
     flex-direction: column;
     align-items: flex-start;
@@ -9156,6 +9244,10 @@ body .comments .comments-reply .comments-block__item__comment {
   }
 }
 @media screen and (max-width: 730px) {
+  body .psikhologi-hours .psikhologi-hours .psikholog__item__info .psikholog__item__format {
+    top: 16px;
+    left: 175px !important;
+  }
   body .payment-done .content-body {
     width: 100%;
     margin: 0 auto;
@@ -10219,6 +10311,7 @@ body .comments .comments-reply .comments-block__item__comment {
   }
   body .psiholog .psiholog__name {
     font-size: 24px;
+    margin-top: 0;
   }
   body .psiholog .psiholog__basic__location div:not(:nth-child(1)) {
     display: none;
@@ -10418,7 +10511,7 @@ body .comments .comments-reply .comments-block__item__comment {
   }
   .psiholog__status {
     position: relative;
-    top: 0;
+    top: -7px;
   }
   .psiholog__city {
     margin-top: 25px;
@@ -10495,9 +10588,6 @@ body .comments .comments-reply .comments-block__item__comment {
   body .doctor-query .product__doctor__info {
     width: 48%;
   }
-  body .doctor-query .product .product__info {
-    margin-top: 20px;
-  }
   body .doctor-query .product-payment__item {
     margin-bottom: 0;
     padding-bottom: 8px;
@@ -10518,7 +10608,7 @@ body .comments .comments-reply .comments-block__item__comment {
     width: 80%;
   }
   body .content .content__psikhologi .psikholog__item .psikholog__item__profile .psikholog__item__info .psikholog__item__acquaintance {
-    top: 187px;
+    top: 185px;
   }
   body .content .content__psikhologi .psikholog__item .psikholog__item__profile .psikholog__item__info .psikholog__item__price {
     bottom: -115px;
@@ -10545,16 +10635,16 @@ body .comments .comments-reply .comments-block__item__comment {
     height: 152px;
   }
   .psiholog .psiholog__basic .psiholog__speciality {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 0;
     width: 90%;
   }
   .psiholog .psiholog__basic .psiholog__experience {
     margin-left: -166px;
-    margin-top: 88px;
+    margin-top: 74px;
   }
   .psiholog .psiholog__basic .psiholog__item__price {
-    margin-top: 75px;
+    margin-top: 70px;
   }
   body .footer .footer__directions__box {
     flex-direction: column;
