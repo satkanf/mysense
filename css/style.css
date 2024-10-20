@@ -3536,7 +3536,7 @@ button.pagination-more.download-test-doctors:hover {
   background: #ffffff;
   padding: 24px;
   position: fixed;
-  width: 402px;
+  max-width: 402px;
   border-radius: 8px;
   z-index: 1;
 }
@@ -7956,7 +7956,7 @@ body .comments .comments-reply .comments-block__item__comment {
   }
   body .psiholog__basic__right .block-right {
     position: relative;
-    width: 100%;
+    min-width: 100%;
     margin-left: 0;
     padding-top: 0;
   }
