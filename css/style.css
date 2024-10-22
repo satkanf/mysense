@@ -3116,7 +3116,7 @@ button.pagination-more.download-test-doctors:hover {
 }
 .psikholog__hours__item {
   background-color: #F1EDFF;
-  padding: 8px;
+  padding: 8px 12px;
   color: #795BDA;
   margin-right: 8px !important;
   border-radius: 4px;
@@ -3510,23 +3510,6 @@ button.pagination-more.download-test-doctors:hover {
 .psiholog__basic__right {
   width: 35%;
   padding-left: 24px;
-}
-.psiholog__basic__right .btn-fixed a {
-  padding: 12px 0;
-  font-size: 14px;
-  background: #795BDA;
-  color: #ffffff;
-  border-radius: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.psiholog__basic__right .btn-fixed a i {
-  margin-right: 8px;
-}
-.psiholog__basic__right .btn-fixed a:hover {
-  background: #8E6BFF;
-  transition: 0.3s;
 }
 .psiholog__basic__right .psiholog__video {
   width: 100%;
@@ -7686,9 +7669,6 @@ body .comments .comments-reply .comments-block__item__comment {
   .available-hours__body {
     width: 80%;
   }
-  .banner__inner {
-    padding-bottom: 70px;
-  }
   .banner .make-appointment {
     position: absolute;
     width: 100%;
@@ -8561,6 +8541,9 @@ body .comments .comments-reply .comments-block__item__comment {
   }
 }
 @media screen and (max-width: 800px) {
+  body .psikhologi-hours .psikholog__item__speciality {
+    width: 65%;
+  }
   body .filter__query__box .form-group {
     flex-direction: column;
   }
@@ -8583,6 +8566,20 @@ body .comments .comments-reply .comments-block__item__comment {
   }
 }
 @media screen and (max-width: 768px) {
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__format {
+    top: 16px !important;
+    left: 176px !important;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__name {
+    margin-top: 0;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__experience {
+    top: 80px !important;
+    left: 0 !important;
+  }
+  .psikhologi-hours .psikholog__item .psikholog__item__price {
+    margin-left: 0;
+  }
   .available-hours__body .available-hours__text {
     font-size: 32px;
   }
@@ -10455,6 +10452,30 @@ body .comments .comments-reply .comments-block__item__comment {
   }
 }
 @media screen and (max-width: 600px) {
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__format {
+    left: 164px !important;
+    top: 8px !important;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__price {
+    left: -154px !important;
+    bottom: -155px !important;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__info {
+    margin-top: 12px;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__experience {
+    top: 83px !important;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__hours {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__hours .psikholog__hours__text {
+    margin-bottom: 10px;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__speciality {
+    width: 80%;
+  }
   .psiholog__working {
     padding: 16px !important;
   }
@@ -10484,9 +10505,6 @@ body .comments .comments-reply .comments-block__item__comment {
   }
   .appeal__box {
     padding: 16px;
-  }
-  .banner__inner {
-    padding-bottom: 100px;
   }
   .banner .make-appointment {
     flex-direction: column;
@@ -10608,6 +10626,24 @@ body .comments .comments-reply .comments-block__item__comment {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 478px) {
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__speciality {
+    margin-top: 72px !important;
+    margin-left: -154px !important;
+    width: 100% !important;
+    width: 150% !important;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__experience {
+    top: 73px !important;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__hours {
+    margin-top: 55px;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__item__price {
+    bottom: -117px !important;
+  }
+  body .psikhologi-hours .content__psikhologi .psikholog__item__profile .psikholog__hours__item {
+    padding: 9px;
+  }
   body .content .content__psikhologi .psikholog__item {
     height: 336px;
   }
