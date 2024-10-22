@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MySense</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <menu class="header__menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/svg/mysense-logo.svg" alt="">
+                    </a>
+                </div>
+                <nav class="header__navigation">
+
+                    <div class="mobile-menu">
+                        <span class="mobile-menu__close"></span>
+                        <div class="mobile-menu__logo"><a href="index.html"><img src="images/svg/mysense-logo.svg"
+                                    alt=""></a></div>
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="doctors.html">Наші психологи</a></li>
+                            <li class="mobile-menu__item"><a href="vebinares.html">Вабінари</a></li>
+                            <li class="mobile-menu__item"><a href="articles.html">Статті</a></li>
+                            <li class="mobile-menu__item"><a href="#">Психологам</a></li>
+                        </ul>
+                        <a href="#" class="support-link">Відділ підтримки</a>
+                        <div class="lang-switcher ">
+                            <span class="lang-header filter__select select__current">UA</span>
+                            <ul class="lang-switcher__list filter__select__list">
+                                <li class="lang-swicher__item filter__select__item">UA</li>
+                                <li class="lang-swicher__item filter__select__item">RU</li>
+                                <li class="lang-swicher__item filter__select__item">EN</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="navigation__item"><a href="doctors.html">Наші психологи</a></li>
+                        <li class="navigation__item"><a href="vebinares.html">Вабінари</a></li>
+                        <li class="navigation__item"><a href="articles.html">Статті</a></li>
+                        <li class="navigation__item"><a href="#">Психологам</a></li>
+                    </ul>
+                </nav>
+                <!-- Модальні вікна з авторизаціею -->
+                <div class="blur-bg">
+                    <div class="authentication popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <h3>Вхід в особистий кабінет</h3>
+                        <span>Увійдіть до свого облікового запису</span>
+                        <div class="authentication__social">
+                            <a href="#">Війти через Google</a>
+                            <a href="#">Війти через Facebook</a>
+                        </div>
+                        <span>Або</span>
+                        <div class="authentication__form">
+                            <form action="">
+
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Ел. адреса">
+                                    <span class="input-box__pl">Ел. адреса</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="password" placeholder="Пароль">
+                                    <span class="input-box__pl">Пароль</span>
+                                </div>
+                                <div class="authentication__links">
+                                    <button class="sing-in-link">Реєстрація</button>
+                                    <a href="">Не пам'ятаєте свій пароль?</a>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn" value="Увійти">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <h3>Створення облікового запису</h3>
+                        <span>Введіть ваші дані</span>
+                        <div class="registration__form">
+                            <form action="">
+                                <div class="input-box">
+                                    <input type="text" name="login" placeholder="Ваше  ім'я">
+                                    <span class="input-box__pl">Ваше ім'я</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="tel" name="phone" placeholder="Номер телефону">
+                                    <span class="input-box__pl">Номер телефону</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Ел. адреса">
+                                    <span class="input-box__pl">Ел. адреса</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" name="password" placeholder="Пароль">
+                                    <span class="input-box__pl">Пароль</span>
+                                </div>
+                                <div class="registration__checked">
+                                    <label for="" class="">
+                                        <input type="checkbox" class="real-chackbox">
+                                        <div class="custom-checkbox">
+                                            <svg width="12" height="11" class="chackedmark" viewBox="0 0 12 11"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 5.8L4.57143 9L11 1" stroke="white" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg>
+
+                                        </div>
+                                        Я погоджуюсь з <a href="#"> політикою конфіденційності</a>
+                                    </label>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn registration__btn" value="Продовжити">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration-code popup">
+                        <span class="popup-close">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="24" height="24" fill=""/> -->
+                                <path d="M7 17L16.8995 7.10051" stroke="#795BDA" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7 7.00001L16.8995 16.8995" stroke="#795BDA" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <h3>Підтвердження створення</h3>
+                        <span>Код підтвердження відправлений на вашу електрону адресу</span>
+                        <div class="registration-code__form">
+                            <form action="" method="post">
+                                <div class="input-box">
+                                    <input type="text" name="code" placeholder="Код підтвердження">
+                                    <span class="input-box__pl">Код підтвердження</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" name="" class="form-btn registration-code__submit"
+                                        value="Підтвердити">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration-done popup">
+
+                        <h3>Вітаємо, ви успішно пройшли реєстрацію! </h3>
+                        <span>Тепер ви можете записатись на сесію</span>
+                        <button class="form-btn popup-close">Продовжити</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="header__useraction">
+                    <div class="support">
+                        <a href="#" class="support-link">Служба турботи</a>
+                    </div>
+                    <div class="">
+                        <button class="btn-auth">Вхід</button>
+                        <div class="lang-switcher ">
+                            <span class="lang-header filter__select select__current">UA</span>
+                            <ul class="lang-switcher__list filter__select__list">
+                                <li class="lang-swicher__item filter__select__item">UA</li>
+                                <li class="lang-swicher__item filter__select__item">RU</li>
+                                <li class="lang-swicher__item filter__select__item">EN</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </menu>
+
+        </div>
+    </header>
+    <section class="title-page-h bg-page">
+        <div class="container">
+            <h1 class="title-page__title">Команда наших найкращих психологів</h1>
+        </div>
+    </section>
+
+    <section class="content psikhologi-hours">
+        <div class="container">
+            <div class="content__psikhologi">
+                <div class="psikholog__item ">
+                    <a href="#" class="psikholog__item__link">
+                        <div class="psikholog__item__profile">
+                            <div class="psikholog__item__foto">
+                                <img class=" lazyloaded" src="images/IMG_6023.jpeg" data-src="/img/113/IMG_0475.png"
+                                    alt="">
+                                <button class="play-video"></button>
+                            </div>
+                            <div class="psikholog__item__info">
+                                
+                                <h3 class="psikholog__item__name">Крістіна Гусєва </h3>
+                                <ul class="psikholog__item__speciality">
+                                    <li>
+                                        Психолог, Гештальт-терапевт, кризовий психолог 
+                                    </li>
+
+                                </ul>
+                                <ul class="psikholog__item__experience">
+                                    <li><i>
+                                            <img class=" lazyloaded" src="images//svg/praktika.svg"
+                                                data-src=" /img/svg/dosvids.svg" alt="">
+                                        </i> 8 років практики 
+                                    </li>
+
+                                </ul>
+                            
+                                <ul class="psikholog__item__price">
+                                    <li>Індивідуальна <span>1200</span> грн.</li>
+                        
+                                </ul>
+                            </div>
+                           
+                            <ul class="psikholog__item__format">
+                                <li><i>
+                                        <img class=" lazyloaded" src="images//svg/onlain.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Онлайн </li>
+                                    <li><i>
+                                        <img class=" lazyloaded" src="images//svg/ochno.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Очно</li>
+                            </ul>
+                            <div class="psikholog__hours">
+                                <p class="psikholog__hours__text">Оберіть час:</p>
+                               <ul class="psikholog__hours__list">
+                                <li class="psikholog__hours__item">09:00</li>
+                                <li class="psikholog__hours__item">12:00</li>
+                                <li class="psikholog__hours__item">15:10</li>
+                                <li class="psikholog__hours__item">16:00</li>
+                                <li class="psikholog__hours__item">17:00</li>
+
+                               </ul>
+                            </div>
+                            <div class="psikholog__item__btn">
+
+                                <button href="/psychologist/kristina-husieva" class="profile-link">В профіль</button>
+
+                            </div>
+                        </div>
+                    </a>
+                    <div class="psikholog__item__session" style="">
+                        <span class="close-video"></span>
+                        <video preload="auto" muted="" controls="" playsinline="" class="psiholog__video">
+                            <source src="/video/113/-7936067051400316476.mp4#t=0.1" type="video/mp4">
+                        </video>
+                        <button class="psikholog-query__btn" data-hash="kristina-husieva"><i>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon-svg"
+                                        d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z"
+                                        fill="#795BDA"></path>
+                                </svg>
+                            </i>Домовитися про зустріч </button>
+                    </div>
+                </div>
+                <div class="psikholog__item ">
+                    <a href="#" class="psikholog__item__link">
+                        <div class="psikholog__item__profile">
+                            <div class="psikholog__item__foto">
+                                <img class=" lazyloaded" src="images/IMG_6023.jpeg" data-src="/img/113/IMG_0475.png"
+                                    alt="">
+                                <button class="play-video"></button>
+                            </div>
+                            <div class="psikholog__item__info">
+                                
+                                <h3 class="psikholog__item__name">Крістіна Гусєва </h3>
+                                <ul class="psikholog__item__speciality">
+                                    <li>
+                                        Психолог, Гештальт-терапевт, кризовий психолог 
+                                    </li>
+
+                                </ul>
+                                <ul class="psikholog__item__experience">
+                                    <li><i>
+                                            <img class=" lazyloaded" src="images//svg/praktika.svg"
+                                                data-src=" /img/svg/dosvids.svg" alt="">
+                                        </i> 8 років практики 
+                                    </li>
+
+                                </ul>
+                            
+                                <ul class="psikholog__item__price">
+                                    <li>Індивідуальна <span>1200</span> грн.</li>
+                        
+                                </ul>
+                            </div>
+                           
+                            <ul class="psikholog__item__format">
+                                <li><i>
+                                        <img class=" lazyloaded" src="images//svg/onlain.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Онлайн </li>
+                                    <li><i>
+                                        <img class=" lazyloaded" src="images//svg/ochno.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Очно</li>
+                            </ul>
+                            <div class="psikholog__hours">
+                                <p class="psikholog__hours__text">Оберіть час:</p>
+                               <ul class="psikholog__hours__list">
+                                <li class="psikholog__hours__item">09:00</li>
+                                <li class="psikholog__hours__item">12:00</li>
+                                <li class="psikholog__hours__item">15:10</li>
+                                <li class="psikholog__hours__item">16:00</li>
+                                <li class="psikholog__hours__item">17:00</li>
+
+                               </ul>
+                            </div>
+                            <div class="psikholog__item__btn">
+
+                                <button href="/psychologist/kristina-husieva" class="profile-link">В профіль</button>
+
+                            </div>
+                        </div>
+                    </a>
+                    <div class="psikholog__item__session" style="">
+                        <span class="close-video"></span>
+                        <video preload="auto" muted="" controls="" playsinline="" class="psiholog__video">
+                            <source src="/video/113/-7936067051400316476.mp4#t=0.1" type="video/mp4">
+                        </video>
+                        <button class="psikholog-query__btn" data-hash="kristina-husieva"><i>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon-svg"
+                                        d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z"
+                                        fill="#795BDA"></path>
+                                </svg>
+                            </i>Домовитися про зустріч </button>
+                    </div>
+                </div>
+                <div class="psikholog__item ">
+                    <a href="#" class="psikholog__item__link">
+                        <div class="psikholog__item__profile">
+                            <div class="psikholog__item__foto">
+                                <img class=" lazyloaded" src="images/IMG_6023.jpeg" data-src="/img/113/IMG_0475.png"
+                                    alt="">
+                                <button class="play-video"></button>
+                            </div>
+                            <div class="psikholog__item__info">
+                                
+                                <h3 class="psikholog__item__name">Крістіна Гусєва </h3>
+                                <ul class="psikholog__item__speciality">
+                                    <li>
+                                        Психолог, Гештальт-терапевт, кризовий психолог 
+                                    </li>
+
+                                </ul>
+                                <ul class="psikholog__item__experience">
+                                    <li><i>
+                                            <img class=" lazyloaded" src="images//svg/praktika.svg"
+                                                data-src=" /img/svg/dosvids.svg" alt="">
+                                        </i> 8 років практики 
+                                    </li>
+
+                                </ul>
+                            
+                                <ul class="psikholog__item__price">
+                                    <li>Індивідуальна <span>1200</span> грн.</li>
+                        
+                                </ul>
+                            </div>
+                           
+                            <ul class="psikholog__item__format">
+                                <li><i>
+                                        <img class=" lazyloaded" src="images//svg/onlain.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Онлайн </li>
+                                    <li><i>
+                                        <img class=" lazyloaded" src="images//svg/ochno.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Очно</li>
+                            </ul>
+                            <div class="psikholog__hours">
+                                <p class="psikholog__hours__text">Оберіть час:</p>
+                               <ul class="psikholog__hours__list">
+                                <li class="psikholog__hours__item">09:00</li>
+                                <li class="psikholog__hours__item">12:00</li>
+                                <li class="psikholog__hours__item">15:10</li>
+                                <li class="psikholog__hours__item">16:00</li>
+                                <li class="psikholog__hours__item">17:00</li>
+
+                               </ul>
+                            </div>
+                            <div class="psikholog__item__btn">
+
+                                <button href="/psychologist/kristina-husieva" class="profile-link">В профіль</button>
+
+                            </div>
+                        </div>
+                    </a>
+                    <div class="psikholog__item__session" style="">
+                        <span class="close-video"></span>
+                        <video preload="auto" muted="" controls="" playsinline="" class="psiholog__video">
+                            <source src="/video/113/-7936067051400316476.mp4#t=0.1" type="video/mp4">
+                        </video>
+                        <button class="psikholog-query__btn" data-hash="kristina-husieva"><i>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon-svg"
+                                        d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z"
+                                        fill="#795BDA"></path>
+                                </svg>
+                            </i>Домовитися про зустріч </button>
+                    </div>
+                </div>
+                <div class="psikholog__item__profile psikholog__banner">
+                    <div class="psikholog__banner__text">
+                        <span>це безкоштовно ;)</span>
+                        <h2>15 хвилин на знайомство</h2>
+                        <p>Зустріч—знайомство з фахівцем який Вам сподобався</p>
+                        <a href="test-phase-1.html">Підібрати психолога</a>
+                    </div>
+                    <div class="psikholog__banner__img">
+                        <img src="images/picture/img-banner-2.png" alt="">
+                    </div>
+                </div>
+                <div class="psikholog__item ">
+                    <a href="#" class="psikholog__item__link">
+                        <div class="psikholog__item__profile">
+                            <div class="psikholog__item__foto">
+                                <img class=" lazyloaded" src="images/IMG_6023.jpeg" data-src="/img/113/IMG_0475.png"
+                                    alt="">
+                                <button class="play-video"></button>
+                            </div>
+                            <div class="psikholog__item__info">
+                                
+                                <h3 class="psikholog__item__name">Крістіна Гусєва </h3>
+                                <ul class="psikholog__item__speciality">
+                                    <li>
+                                        Психолог, Гештальт-терапевт, кризовий психолог 
+                                    </li>
+
+                                </ul>
+                                <ul class="psikholog__item__experience">
+                                    <li><i>
+                                            <img class=" lazyloaded" src="images//svg/praktika.svg"
+                                                data-src=" /img/svg/dosvids.svg" alt="">
+                                        </i> 8 років практики 
+                                    </li>
+
+                                </ul>
+                            
+                                <ul class="psikholog__item__price">
+                                    <li>Індивідуальна <span>1200</span> грн.</li>
+                        
+                                </ul>
+                            </div>
+                           
+                            <ul class="psikholog__item__format">
+                                <li><i>
+                                        <img class=" lazyloaded" src="images//svg/onlain.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Онлайн </li>
+                                    <li><i>
+                                        <img class=" lazyloaded" src="images//svg/ochno.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Очно</li>
+                            </ul>
+                            <div class="psikholog__hours">
+                                <p class="psikholog__hours__text">Оберіть час:</p>
+                               <ul class="psikholog__hours__list">
+                                <li class="psikholog__hours__item">09:00</li>
+                                <li class="psikholog__hours__item">12:00</li>
+                                <li class="psikholog__hours__item">15:10</li>
+                                <li class="psikholog__hours__item">16:00</li>
+                                <li class="psikholog__hours__item">17:00</li>
+
+                               </ul>
+                            </div>
+                            <div class="psikholog__item__btn">
+
+                                <button href="/psychologist/kristina-husieva" class="profile-link">В профіль</button>
+
+                            </div>
+                        </div>
+                    </a>
+                    <div class="psikholog__item__session" style="">
+                        <span class="close-video"></span>
+                        <video preload="auto" muted="" controls="" playsinline="" class="psiholog__video">
+                            <source src="/video/113/-7936067051400316476.mp4#t=0.1" type="video/mp4">
+                        </video>
+                        <button class="psikholog-query__btn" data-hash="kristina-husieva"><i>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon-svg"
+                                        d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z"
+                                        fill="#795BDA"></path>
+                                </svg>
+                            </i>Домовитися про зустріч </button>
+                    </div>
+                </div>
+                <div class="psikholog__item ">
+                    <a href="#" class="psikholog__item__link">
+                        <div class="psikholog__item__profile">
+                            <div class="psikholog__item__foto">
+                                <img class=" lazyloaded" src="images/IMG_6023.jpeg" data-src="/img/113/IMG_0475.png"
+                                    alt="">
+                                <button class="play-video"></button>
+                            </div>
+                            <div class="psikholog__item__info">
+                                
+                                <h3 class="psikholog__item__name">Крістіна Гусєва </h3>
+                                <ul class="psikholog__item__speciality">
+                                    <li>
+                                        Психолог, Гештальт-терапевт, кризовий психолог 
+                                    </li>
+
+                                </ul>
+                                <ul class="psikholog__item__experience">
+                                    <li><i>
+                                            <img class=" lazyloaded" src="images//svg/praktika.svg"
+                                                data-src=" /img/svg/dosvids.svg" alt="">
+                                        </i> 8 років практики 
+                                    </li>
+
+                                </ul>
+                            
+                                <ul class="psikholog__item__price">
+                                    <li>Індивідуальна <span>1200</span> грн.</li>
+                        
+                                </ul>
+                            </div>
+                           
+                            <ul class="psikholog__item__format">
+                                <li><i>
+                                        <img class=" lazyloaded" src="images//svg/onlain.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Онлайн </li>
+                                    <li><i>
+                                        <img class=" lazyloaded" src="images//svg/ochno.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Очно</li>
+                            </ul>
+                            <div class="psikholog__hours">
+                                <p class="psikholog__hours__text">Оберіть час:</p>
+                               <ul class="psikholog__hours__list">
+                                <li class="psikholog__hours__item">09:00</li>
+                                <li class="psikholog__hours__item">12:00</li>
+                                <li class="psikholog__hours__item">15:10</li>
+                                <li class="psikholog__hours__item">16:00</li>
+                                <li class="psikholog__hours__item">17:00</li>
+
+                               </ul>
+                            </div>
+                            <div class="psikholog__item__btn">
+
+                                <button href="/psychologist/kristina-husieva" class="profile-link">В профіль</button>
+
+                            </div>
+                        </div>
+                    </a>
+                    <div class="psikholog__item__session" style="">
+                        <span class="close-video"></span>
+                        <video preload="auto" muted="" controls="" playsinline="" class="psiholog__video">
+                            <source src="/video/113/-7936067051400316476.mp4#t=0.1" type="video/mp4">
+                        </video>
+                        <button class="psikholog-query__btn" data-hash="kristina-husieva"><i>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon-svg"
+                                        d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z"
+                                        fill="#795BDA"></path>
+                                </svg>
+                            </i>Домовитися про зустріч </button>
+                    </div>
+                </div>
+                <div class="psikholog__item ">
+                    <a href="#" class="psikholog__item__link">
+                        <div class="psikholog__item__profile">
+                            <div class="psikholog__item__foto">
+                                <img class=" lazyloaded" src="images/IMG_6023.jpeg" data-src="/img/113/IMG_0475.png"
+                                    alt="">
+                                <button class="play-video"></button>
+                            </div>
+                            <div class="psikholog__item__info">
+                                
+                                <h3 class="psikholog__item__name">Крістіна Гусєва </h3>
+                                <ul class="psikholog__item__speciality">
+                                    <li>
+                                        Психолог, Гештальт-терапевт, кризовий психолог 
+                                    </li>
+
+                                </ul>
+                                <ul class="psikholog__item__experience">
+                                    <li><i>
+                                            <img class=" lazyloaded" src="images//svg/praktika.svg"
+                                                data-src=" /img/svg/dosvids.svg" alt="">
+                                        </i> 8 років практики 
+                                    </li>
+
+                                </ul>
+                            
+                                <ul class="psikholog__item__price">
+                                    <li>Індивідуальна <span>1200</span> грн.</li>
+                        
+                                </ul>
+                            </div>
+                           
+                            <ul class="psikholog__item__format">
+                                <li><i>
+                                        <img class=" lazyloaded" src="images//svg/onlain.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Онлайн </li>
+                                    <li><i>
+                                        <img class=" lazyloaded" src="images//svg/ochno.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Очно</li>
+                            </ul>
+                            <div class="psikholog__hours">
+                                <p class="psikholog__hours__text">Оберіть час:</p>
+                               <ul class="psikholog__hours__list">
+                                <li class="psikholog__hours__item">09:00</li>
+                                <li class="psikholog__hours__item">12:00</li>
+                                <li class="psikholog__hours__item">15:10</li>
+                                <li class="psikholog__hours__item">16:00</li>
+                                <li class="psikholog__hours__item">17:00</li>
+
+                               </ul>
+                            </div>
+                            <div class="psikholog__item__btn">
+
+                                <button href="/psychologist/kristina-husieva" class="profile-link">В профіль</button>
+
+                            </div>
+                        </div>
+                    </a>
+                    <div class="psikholog__item__session" style="">
+                        <span class="close-video"></span>
+                        <video preload="auto" muted="" controls="" playsinline="" class="psiholog__video">
+                            <source src="/video/113/-7936067051400316476.mp4#t=0.1" type="video/mp4">
+                        </video>
+                        <button class="psikholog-query__btn" data-hash="kristina-husieva"><i>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon-svg"
+                                        d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z"
+                                        fill="#795BDA"></path>
+                                </svg>
+                            </i>Домовитися про зустріч </button>
+                    </div>
+                </div>
+                <div class="psikholog__item ">
+                    <a href="#" class="psikholog__item__link">
+                        <div class="psikholog__item__profile">
+                            <div class="psikholog__item__foto">
+                                <img class=" lazyloaded" src="images/IMG_6023.jpeg" data-src="/img/113/IMG_0475.png"
+                                    alt="">
+                                <button class="play-video"></button>
+                            </div>
+                            <div class="psikholog__item__info">
+                                
+                                <h3 class="psikholog__item__name">Крістіна Гусєва </h3>
+                                <ul class="psikholog__item__speciality">
+                                    <li>
+                                        Психолог, Гештальт-терапевт, кризовий психолог 
+                                    </li>
+
+                                </ul>
+                                <ul class="psikholog__item__experience">
+                                    <li><i>
+                                            <img class=" lazyloaded" src="images//svg/praktika.svg"
+                                                data-src=" /img/svg/dosvids.svg" alt="">
+                                        </i> 8 років практики 
+                                    </li>
+
+                                </ul>
+                            
+                                <ul class="psikholog__item__price">
+                                    <li>Індивідуальна <span>1200</span> грн.</li>
+                        
+                                </ul>
+                            </div>
+                           
+                            <ul class="psikholog__item__format">
+                                <li><i>
+                                        <img class=" lazyloaded" src="images//svg/onlain.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Онлайн </li>
+                                    <li><i>
+                                        <img class=" lazyloaded" src="images//svg/ochno.svg" data-src="/img/svg/onlain.svg"
+                                            alt="">
+                                    </i>Очно</li>
+                            </ul>
+                            <div class="psikholog__hours">
+                                <p class="psikholog__hours__text">Оберіть час:</p>
+                               <ul class="psikholog__hours__list">
+                                <li class="psikholog__hours__item">09:00</li>
+                                <li class="psikholog__hours__item">12:00</li>
+                                <li class="psikholog__hours__item">15:10</li>
+                                <li class="psikholog__hours__item">16:00</li>
+                                <li class="psikholog__hours__item">17:00</li>
+
+                               </ul>
+                            </div>
+                            <div class="psikholog__item__btn">
+
+                                <button href="/psychologist/kristina-husieva" class="profile-link">В профіль</button>
+
+                            </div>
+                        </div>
+                    </a>
+                    <div class="psikholog__item__session" style="">
+                        <span class="close-video"></span>
+                        <video preload="auto" muted="" controls="" playsinline="" class="psiholog__video">
+                            <source src="/video/113/-7936067051400316476.mp4#t=0.1" type="video/mp4">
+                        </video>
+                        <button class="psikholog-query__btn" data-hash="kristina-husieva"><i>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon-svg"
+                                        d="M17.75 4.5H17V3.75C17 3.336 16.6648 3 16.25 3C15.8352 3 15.5 3.336 15.5 3.75V4.5H9.5V3.75C9.5 3.336 9.16475 3 8.75 3C8.33525 3 8 3.336 8 3.75V4.5H7.25C5.18225 4.5 3.5 6.18225 3.5 8.25V17.25C3.5 19.3177 5.18225 21 7.25 21H17.75C19.8177 21 21.5 19.3177 21.5 17.25V8.25C21.5 6.18225 19.8177 4.5 17.75 4.5ZM7.25 6H17.75C18.9905 6 20 7.0095 20 8.25V9H5V8.25C5 7.0095 6.0095 6 7.25 6ZM17.75 19.5H7.25C6.0095 19.5 5 18.4905 5 17.25V10.5H20V17.25C20 18.4905 18.9905 19.5 17.75 19.5ZM16.874 11.864C17.162 12.1618 17.153 12.6372 16.8552 12.9245L13.3003 16.3505C12.8855 16.7653 12.32 17 11.7192 17C11.1185 17 10.553 16.766 10.1285 16.3407L8.4395 14.7717C8.1365 14.4897 8.1185 14.015 8.4005 13.712C8.684 13.4082 9.158 13.3918 9.46025 13.673L11.1688 15.2607C11.4935 15.5833 11.966 15.5623 12.248 15.2803L15.8135 11.8438C16.112 11.5565 16.586 11.5662 16.874 11.864Z"
+                                        fill="#795BDA"></path>
+                                </svg>
+                            </i>Домовитися про зустріч </button>
+                    </div>
+                </div>
+                <ul class="pagination">
+                    <li class="arrow-prev"><a href="">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="arrow" d="M16 8H2M2 8L9 15M2 8L9 1" stroke="" stroke-width="1.5" />
+                            </svg>
+                        </a></li>
+                    <li><a href="" class="pagination-active">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li class="arrow-next"><a href="">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="arrow" d="M16 8H2M2 8L9 15M2 8L9 1" stroke="" stroke-width="1.5" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <button class="pagination-more">Завантажити ще</button>
+            </div>
+            
+        </div>
+
+        </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__navigation">
+                <nav class="footer__menu">
+                    <ul class="footer__menu__list">
+                        <li class="footer__menu__item"><a href="doctors.html">Наші психологи</a></li>
+                        <li class="footer__menu__item"><a href="">Про нас</a></li>
+                        <li class="footer__menu__item"><a href="articles.html">Статті</a></li>
+                        <li class="footer__menu__item"><a href="">Психологам</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__contact">
+                    <ul class="footer__contact__list">
+                        <li class="footer__contact__item">care@mysense.care</li>
+                        <li class="footer__contact__item">
+                            <a href="">
+                                <img src="images/svg/Instagram.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="images/svg/Teleg.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="images/svg/Facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__contact__item">
+                            <a href="">
+                                Служба турботи
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__bottom__contract">
+                    <li class="footer__bottom__item">
+                        <a href="">Договір оферта</a>
+                    </li>
+                    <li class="footer__bottom__item">
+                        <a href="">Політика конфіденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__bottom__payment">
+                    <li><img src="images/svg/Vctor.svg" alt=""></li>
+                    <li><img src="images/svg/Vecor.svg" alt=""></li>
+                    <li><img src="images/svg/Vecto.svg" alt=""></li>
+                    <li><img src="images/svg/Vector.svg" alt=""></li>
+                </ul>
+                <span class="footer__bottom__copyright">© 2023 Mysense. всі права захищені</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/slick.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
