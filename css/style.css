@@ -2189,7 +2189,7 @@ th {
 .footer__contact__item:nth-child(3) {
   padding: 16px 24px;
   color: #ffffff;
-  background: #795BDA;
+  background: #A498D9;
   border-radius: 8px;
 }
 .footer__contact__item:nth-child(3):hover {
@@ -5028,6 +5028,11 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
 
 .psikhologi-hours .content__psikhologi {
   padding-bottom: 45px;
+}
+.psikhologi-hours .content__psikhologi .profile-link {
+  background-color: #fff;
+  box-shadow: 0 0 1px 1px #795BDA;
+  color: #2F264D;
 }
 
 .vebinares {
@@ -10691,7 +10696,7 @@ body .comments .comments-reply .comments-block__item__comment {
   }
   body .footer .footer__directions__box {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
   }
   body .footer .footer__directions__box .footer__directions__list {
@@ -10701,7 +10706,7 @@ body .comments .comments-reply .comments-block__item__comment {
     justify-content: center;
   }
   body .footer .footer__directions__box .footer__directions__list .footer__directions__item {
-    text-align: center;
+    text-align: left;
   }
   body .filter__query__box .form-group .filter__btn {
     width: 48%;
