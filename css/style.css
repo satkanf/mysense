@@ -5034,6 +5034,10 @@ body .psiholog .psiholog__contant .reservation .reservation__filter__type form .
   box-shadow: 0 0 0 1px #795BDA;
   color: #2F264D;
 }
+.psikhologi-hours .content__psikhologi .profile-link:hover {
+  box-shadow: 0 0 0 2px #795BDA;
+  transition: 0.3s ease;
+}
 
 .vebinares {
   position: relative;
